@@ -1,10 +1,13 @@
 "use client";
-
 import Head from "next/head";
+import gsap from "gsap";
+import { useRef } from "react";
+import { useLayoutEffect } from "react";
 import React, { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import BgSlides from "react-bootstrap/Carousel";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 const images = [
@@ -20,6 +23,36 @@ const images = [
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
+
+  const iconComponent = useRef(null);
+  useLayoutEffect(() => {
+    console.log(iconComponent);
+    let ctx = gsap.context(() => {
+      gsap.from(".Ig", {
+        rotation: "360",
+        delay: 2,
+        y: -50,
+        x: 10,
+        duration: 1,
+      });
+
+      gsap.to(".Li", {
+        rotation: "360",
+        delay: 2,
+        y: -50,
+        x: 10,
+        duration: 1,
+      });
+      gsap.to(".Tw", {
+        rotation: "360",
+        delay: 2,
+        y: -40,
+        x: 30,
+        duration: 1,
+      });
+    }, iconComponent);
+    return () => ctx.revert();
+  }, []);
 
   useEffect(() => {
     const image = new Image();
@@ -80,9 +113,32 @@ export default function Home() {
               ></div>
             </BgSlides.Item>
           </BgSlides>
-          <div className="heroContent text-white">
-            <div className="d-flex justify-content-center fs-1 align-items-center w-100 h-100">
-              <h1 className="text-center" style={{fontSize:"60px"}}>Software <span>Consulting</span> and <br />Development</h1>
+          <div className="heroContent text-white ">
+            <div className="position-relative px-2 px-md-5 px-lg-5 w-100 h-100">
+              <div className="d-flex flex-column justify-content-md-center fs-1 px-2 px-md-5 px-lg-5 heroH1">
+                <h1
+                  className="text-md-center text-lg-center"
+                  style={{ fontSize: "50px" }}
+                >
+                  Software <span>Solutions</span> and <br />
+                  Engineering
+                </h1>
+                <p className="fs-6 mt-4 text-md-center">
+                  "Reach for the stars with Stardelite – your innovation partners.
+                  Transform your vision into reality with cutting-edge tech and
+                  personalized solutions."
+                </p>
+              </div>
+              <div
+                ref={iconComponent}
+                className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 pb-3"
+              >
+                <FaInstagram className="Ig" fontSize={30} />
+
+                <FaLinkedin className="Li" fontSize={30} />
+
+                <FaTwitter className="Tw" fontSize={30} />
+              </div>
             </div>
           </div>
         </section>
