@@ -87,10 +87,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <section
-          className="w-100 bg-black position-relative"
-          style={{
-            height: "100vh",
-          }}
+          className="w-100 bg-black position-relative hero-section"
         >
           <BgSlides
             fade
@@ -123,7 +120,7 @@ export default function Home() {
               ></div>
             </BgSlides.Item>
           </BgSlides>
-          <div className="heroContent text-white ">
+          <div className="heroContent text-white container-fluid">
             <div className="position-relative px-2 px-md-5 px-lg-5 w-100 h-100">
               <div className="d-flex flex-column justify-content-md-center fs-1 px-2 px-md-5 px-lg-5 heroH1">
                 <h1
@@ -141,11 +138,10 @@ export default function Home() {
                     |
                   </span>
                 </p>
-                
               </div>
               <div
                 ref={iconComponent}
-                className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 pb-3"
+                className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 mb-3 media-icons"
               >
                 <Link
                   className="text-white icon-hover"
