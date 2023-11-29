@@ -87,7 +87,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <section
-          className="w-100 bg-black position-fixed"
+          className="w-100 bg-black position-relative"
           style={{
             height: "100vh",
           }}
@@ -141,7 +141,9 @@ export default function Home() {
                     |
                   </span>
                 </p>
-                <div
+                
+              </div>
+              <div
                 ref={iconComponent}
                 className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 pb-3"
               >
@@ -167,33 +169,6 @@ export default function Home() {
                   <FaTwitter className="Tw" fontSize={30} />
                 </Link>
               </div>
-              </div>
-              {/* <div
-                ref={iconComponent}
-                className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 pb-3"
-              >
-                <Link
-                  className="text-white icon-hover"
-                  href={`https://instagram.com/stardelitesolutions`}
-                  style={{ cursor: "pointer" }}
-                >
-                  <FaInstagram className="Ig" fontSize={30} />
-                </Link>
-                <Link
-                  className="text-white icon-hover"
-                  href={`https://www.linkedin.com/company/stardelite/`}
-                  style={{ cursor: "pointer" }}
-                >
-                  <FaLinkedin className="Li" fontSize={30} />
-                </Link>
-                <Link
-                  className="text-white icon-hover"
-                  href={`https://twitter.com/stardeliteLtd`}
-                  style={{ cursor: "pointer" }}
-                >
-                  <FaTwitter className="Tw" fontSize={30} />
-                </Link>
-              </div> */}
             </div>
           </div>
         </section>
