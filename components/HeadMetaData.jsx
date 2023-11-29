@@ -13,10 +13,10 @@ export default function HeadMetaData() {
         property="og:description"
         content="We are your partners in innovation, transforming visions into reality through cutting-edge technology and personalized solutions. Join our community of dreamers and achievers. Let's propel your business to new heights together!"
       />
-      <meta property="og:image" content="URL_TO_YOUR_LOGO_OR_FEATURED_IMAGE" />
-      <meta property="og:url" content="URL_TO_YOUR_WEBSITE" />
+      <meta property="og:image" content="https://res.cloudinary.com/techbro/image/upload/v1701280408/Artboard_6_300x_1_bhprsw.png" />
+      <meta property="og:url" content="https://stardelite.vercel.app/" />
       <meta property="og:site_name" content="Stardelite" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="https://res.cloudinary.com/techbro/image/upload/v1701280408/Artboard_6_300x_1_bhprsw.png" />
       <meta
         name="twitter:title"
         content="Stardelite - Elevate Your Ideas, Reach for the Stars"
@@ -25,7 +25,7 @@ export default function HeadMetaData() {
         name="twitter:description"
         content="We are your partners in innovation, transforming visions into reality through cutting-edge technology and personalized solutions. Join our community of dreamers and achievers. Let's propel your business to new heights together!"
       />
-      <meta name="twitter:image" content="URL_TO_YOUR_LOGO_OR_FEATURED_IMAGE" />
+      <meta name="twitter:image" content="https://res.cloudinary.com/techbro/image/upload/v1701280408/Artboard_6_300x_1_bhprsw.png" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
