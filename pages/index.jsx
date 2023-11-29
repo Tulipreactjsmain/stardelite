@@ -2,9 +2,9 @@
 import Head from "next/head";
 import gsap from "gsap";
 import { useRef } from "react";
-import { useLayoutEffect } from "react";
 import React, { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
+import { TextPlugin } from "gsap/dist/TextPlugin";
 import styles from "@/styles/Home.module.css";
 import BgSlides from "react-bootstrap/Carousel";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -12,7 +12,6 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const inter = Inter({ subsets: ["latin"] });
 const images = [
   "https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D",
-
   "https://res.cloudinary.com/techbro/image/upload/v1700832852/Frame_1_ryctrp.svg",
   "https://res.cloudinary.com/techbro/image/upload/v1700739951/unsplash_Xk4hnBZHHZ0_azpwb1.svg",
   "https://res.cloudinary.com/techbro/image/upload/v1700738619/unsplash_DBGb9u1Yf6Q_zham6v.svg",
@@ -23,10 +22,21 @@ const images = [
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
-
+  gsap.registerPlugin(TextPlugin);
   const iconComponent = useRef(null);
-  useLayoutEffect(() => {
-    console.log(iconComponent);
+  const div = useRef();
+  const cursor = useRef();
+  useEffect(() => {
+    gsap.to(cursor.current, {
+      opacity: 0,
+      ease: "power2.inOut",
+      repeat: -1,
+    });
+    gsap.to(div.current, {
+      duration: 10,
+      text: "Transform your vision into reality with cutting-edge tech and personalized solutions.",
+      ease: "none",
+    });
     let ctx = gsap.context(() => {
       gsap.from(".Ig", {
         rotation: "360",
@@ -120,13 +130,16 @@ export default function Home() {
                   className="text-md-center text-lg-center"
                   style={{ fontSize: "50px" }}
                 >
-                  Software <span>Solutions</span> and <br />
+                  Software <span className="shining-text">Solutions</span> and{" "}
+                  <br />
                   Engineering
                 </h1>
-                <p className="fs-6 mt-4 text-md-center">
-                  "Reach for the stars with Stardelite – your innovation partners.
-                  Transform your vision into reality with cutting-edge tech and
-                  personalized solutions."
+                <p className="fs-6 mt-4 text-md-center typing-texts">
+                  "Reach for the stars with Stardelite – your innovation
+                  partners.<span ref={div}></span>
+                  <span className="cursor" ref={cursor}>
+                    |
+                  </span>
                 </p>
               </div>
               <div

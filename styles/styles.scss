@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sumana&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sumana&display=swap");
 :root {
   --yello-gradient: linear-gradient(
     90deg,
@@ -17,8 +17,7 @@ html {
 }
 
 h1 {
-  font-family:  'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 .navBtn {
   background: var(--light-yello);
@@ -75,14 +74,17 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  span {
+  .shining-text {
     background: var(--light-yello);
     background: var(--yello-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-size: 200% auto;
-    animation: shine 3s linear infinite running ;
+    animation: shine 3s linear infinite running;
+  }
+  .typing-texts {
+    height: 5vw !important;
   }
 }
 
@@ -124,7 +126,6 @@ h1 {
       0 8px 0 #191919, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
-
 
 @keyframes glow {
   0% {
@@ -182,7 +183,7 @@ h1 {
     left: 0 !important;
     transform: translate(0, -50%) !important;
 
-    h1{
+    h1 {
       font-size: 3rem !important;
     }
     p {
