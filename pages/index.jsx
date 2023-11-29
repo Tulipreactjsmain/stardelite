@@ -1,4 +1,3 @@
-"use client";
 import Head from "next/head";
 import gsap from "gsap";
 import { useRef } from "react";
@@ -8,6 +7,7 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import styles from "@/styles/Home.module.css";
 import BgSlides from "react-bootstrap/Carousel";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 const images = [
@@ -87,7 +87,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <section
-          className="w-100 bg-black position-relative"
+          className="w-100 bg-black position-fixed"
           style={{
             height: "100vh",
           }}
@@ -146,16 +146,31 @@ export default function Home() {
                 ref={iconComponent}
                 className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 pb-3"
               >
-                <FaInstagram className="Ig" fontSize={30} />
-
-                <FaLinkedin className="Li" fontSize={30} />
-
-                <FaTwitter className="Tw" fontSize={30} />
+                <Link
+                  className="text-white icon-hover"
+                  href={`https://instagram.com/stardelitesolutions`}
+                  style={{ cursor: "pointer" }}
+                >
+                  <FaInstagram className="Ig" fontSize={30} />
+                </Link>
+                <Link
+                  className="text-white icon-hover"
+                  href={`https://www.linkedin.com/company/stardelite/`}
+                  style={{ cursor: "pointer" }}
+                >
+                  <FaLinkedin className="Li" fontSize={30} />
+                </Link>
+                <Link
+                  className="text-white icon-hover"
+                  href={`https://twitter.com/stardeliteLtd`}
+                  style={{ cursor: "pointer" }}
+                >
+                  <FaTwitter className="Tw" fontSize={30} />
+                </Link>
               </div>
             </div>
           </div>
         </section>
-        <section style={{ width: "50px", height: "500px" }}></section>
       </main>
     </>
   );
