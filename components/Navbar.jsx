@@ -10,16 +10,13 @@ export default function Navbar() {
       <div className="fade-right-animation delay-1">
         <Link href={`/`} style={{ cursor: "pointer" }}>
           <Image
-            src="https://res.cloudinary.com/techbro/image/upload/v1700607786/pngfilewhite_rkaopf.svg"
+            src="/logo-white.svg"
             width={185}
             height={57}
             className="logo"
             alt="Stardelite logo"
-            priority={false}
             placeholder="blur"
-            blurDataURL={
-              "https://res.cloudinary.com/techbro/image/upload/v1700607786/pngfilewhite_rkaopf.svg"
-            }
+            blurDataURL={"/logo-white.svg"}
           />
         </Link>
       </div>
