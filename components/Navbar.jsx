@@ -21,7 +21,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div
-        className="text-white d-none d-md-flex d-lg-flex gap-4 justify-content-center align-items-center"
+        className="text-white d-none d-md-flex d-lg-flex gap-4 justify-content-center align-items-center cursor-pointer"
         style={{ cursor: "pointer" }}
       >
         <span>

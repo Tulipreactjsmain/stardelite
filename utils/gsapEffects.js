@@ -13,7 +13,7 @@ export default function gsapEffects(ref) {
         repeat: -1,
       });
       gsap.to(".heroDescription", {
-        duration: 10,
+        duration: 3,
         text: "Transform your vision into reality with cutting-edge tech and personalized solutions.",
         ease: "none",
       });
