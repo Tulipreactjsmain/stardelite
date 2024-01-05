@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <HeadMetaData />
       <Layout>
-        <Navbar />
+        {/* <Navbar /> */}
         <Component {...pageProps} />
       </Layout>
     </>

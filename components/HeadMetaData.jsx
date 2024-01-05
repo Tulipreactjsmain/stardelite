@@ -14,7 +14,7 @@ export default function HeadMetaData() {
         content="We are your partners in innovation, transforming visions into reality through cutting-edge technology and personalized solutions. Join our community of dreamers and achievers. Let's propel your business to new heights together!"
       />
       <meta property="og:image" content="/coverImage.webp" />
-      <meta property="og:url" content="https://stardelite.vercel.app/" />
+      <meta property="og:url" content="https://stardelitesolutions.com/" />
       <meta property="og:site_name" content="Stardelite" />
       <meta name="twitter:card" content="/coverImage.webp" />
       <meta

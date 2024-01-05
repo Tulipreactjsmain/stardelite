@@ -4,23 +4,18 @@ import { useRef, useEffect, use } from "react";
 import { Inter } from "next/font/google";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import styles from "@/sass/Home.module.scss";
-import { BackgroundSlides, MediaIcons } from "@/components";
+import { BackgroundSlides, MediaIcons, Navbar, ContentBackground } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  gsap.registerPlugin(TextPlugin);
   const DOM_REF = useRef(null);
   gsapEffects(DOM_REF);
 
   useEffect(() => {
     const lenis = new Lenis();
-
-    lenis.on("scroll", (e) => {
-      console.log(e);
-    });
 
     function raf(time) {
       lenis.raf(time);
@@ -41,6 +36,7 @@ export default function Home() {
         />
       </Head>
       <main className={`${styles.main} ${inter.className}`} ref={DOM_REF}>
+        <Navbar/>
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
           <div className="heroContent text-white container-fluid">
@@ -51,7 +47,7 @@ export default function Home() {
               >
                 <h1
                   className="text-md-center text-lg-center"
-                  style={{ fontSize: "50px" }}
+                  style={{ fontSize: "50px", fontWeight:"bold" }}
                 >
                   Software <span className="shining-text">Solutions</span> and{" "}
                   <br />
@@ -70,7 +66,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-100" style={{ height: "100vh" }}></section>
+        <section className="w-100" style={{ height: "6218px" }}>
+          <ContentBackground/>
+        </section>
       </main>
     </>
   );
