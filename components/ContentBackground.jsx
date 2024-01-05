@@ -8,9 +8,22 @@ export default function ContentBackground() {
     "/path5597-2.svg",
   ];
   return (
-    <div className="px-2 px-md-5 px-lg-5 d-flex flex-column" style={{opacity:0.1}}>
+    <div
+      className="px-0 px-md-0 px-lg-5d-flex flex-column align-items-center justify-content-center"
+      style={{ opacity: 0.1 }}
+    >
       {images.map((img, index) => (
-        <Image key={index} src={img} />
+        <Image
+          key={index}
+          style={{
+            backgroundImage: `url("${img}")`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height:"1554px",
+            width:"100%"
+          }}
+        />
       ))}
     </div>
   );
