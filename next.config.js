@@ -4,9 +4,6 @@ const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
   },
-  env: {
-    INTERCOM_APP_ID: process.env.INTERCOM_APP_ID,
-  },
 
 };
 

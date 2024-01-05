@@ -11,15 +11,20 @@
   --light-yello: rgb(252, 242, 201);
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body,
 html {
-  margin: 0;
-  padding: 0;
+  max-width: 100vw;
   position: relative;
+  // overscroll-behavior: none;
   overflow-x: hidden;
   overflow-y: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
+  position: relative;
 }
 
 html.lenis {
@@ -67,6 +72,11 @@ h1 {
   -webkit-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
 }
+
+.black-text span  {
+  color: black;
+}
+
 
 .navBtnBorder {
   position: relative;

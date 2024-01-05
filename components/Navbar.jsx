@@ -4,27 +4,32 @@ import { Button } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({ heroBottomIsTop }) {
   return (
     <div
-      className="d-flex justify-content-between align-items-center w-100 position-fixed px-2 px-md-5 px-lg-5 pt-2 pt-md-4 pt-lg-4 navbar"
+      className={`${
+        heroBottomIsTop ? "update-navbar" : ""
+      } d-flex justify-content-between align-items-center w-100 position-fixed px-2 px-md-5 px-lg-5 pt-2 pt-md-4 pt-lg-4 navbar`}
       style={{ zIndex: 5000 }}
     >
       <div className="fade-right-animation delay-1">
         <Link href={`/`} style={{ cursor: "pointer" }}>
           <Image
-            src="/logo-white.svg"
+            src={heroBottomIsTop ? `/Star22.svg` : `/white22.svg`}
             width={150}
             height={50}
             className="logo"
             alt="Stardelite logo"
             placeholder="blur"
-            blurDataURL={"/logo-white.svg"}
+            blurDataURL={"/white22.svg"}
           />
         </Link>
       </div>
       <div
-        className="nav-links text-white d-none d-md-flex d-lg-flex gap-4 justify-content-center align-items-center cursor-pointer"
+        className={`
+       nav-links text-white d-none d-md-flex d-lg-flex gap-4 text-black justify-content-center align-items-center cursor-pointer
+       ${heroBottomIsTop ? "black-text" : "text-white"}
+     `}
         style={{ cursor: "pointer", fontSize: "0.85rem" }}
       >
         <span>
@@ -39,14 +44,20 @@ export default function Navbar() {
         <div className="navBtnBorder">
           <Button
             type="button"
-            className="navBtn text-black"
+            className={`navBtn text-black ${
+              heroBottomIsTop ? "update-btn" : ""
+            }`}
             style={{ fontSize: "0.85rem" }}
           >
             Contact us
           </Button>
         </div>
       </div>
-      <AiOutlineMenu className="fs-1 d-md-none d-lg-none outlineMenu" />
+      <AiOutlineMenu
+        className={`fs-1 d-md-none d-lg-none ${
+          heroBottomIsTop ? "text-black" : "text-white"
+        }`}
+      />
     </div>
   );
 }

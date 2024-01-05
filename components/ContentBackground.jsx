@@ -8,7 +8,7 @@ export default function ContentBackground() {
     "/path5597-2.svg",
   ];
   return (
-    <div className="d d-flex flex-column opacity-25">
+    <div className="px-2 px-md-5 px-lg-5 d-flex flex-column" style={{opacity:0.1}}>
       {images.map((img, index) => (
         <Image key={index} src={img} />
       ))}
