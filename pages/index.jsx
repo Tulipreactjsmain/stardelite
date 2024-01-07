@@ -35,7 +35,6 @@ export default function Home() {
       const heroSection = document.querySelector('.hero-section');
       if (heroSection) {
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-        console.log(heroBottom);
         const isTop = window.scrollY >= heroBottom;
         setHeroBottomIsTop(isTop);
       }
@@ -46,7 +45,6 @@ export default function Home() {
     };
     
   }, []);
-  console.log("heroistop", heroBottomIsTop);
   return (
     <>
       <Head>
