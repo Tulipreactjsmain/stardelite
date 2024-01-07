@@ -6,28 +6,27 @@ import Link from "next/link";
 import LogoWhite from "./LogoWhite";
 import LogoColored from "./LogoColored";
 
-
 export default function Navbar({ heroBottomIsTop }) {
   return (
     <div
       className={`${
         heroBottomIsTop ? "update-navbar" : ""
-      } d-flex justify-content-between align-items-center w-100 position-fixed  pt-2 pt-md-4 pt-lg-4 navbar`}
-      style={{ zIndex: 5000, paddingLeft:"144px", paddingRight:"144px"  }}
+      } d-flex justify-content-between align-items-center w-100 position-fixed px-2 px-md-5 px-lg-5  pt-2 pt-md-4 pt-lg-4 navbar`}
+      style={{ zIndex: 5000 }}
     >
       <div className="fade-right-animation delay-1">
         <Link href={`/`} style={{ cursor: "pointer" }}>
-          <Image
-            src={heroBottomIsTop ? `/Star22.svg` : `/white22.svg`}
+          {/* <Image
+            src={heroBottomIsTop ? `/Star22.svg` : `/logoColored.svg`}
             width={150}
             height={50}
             className="logo"
             alt="Stardelite logo"
             placeholder="blur"
             blurDataURL={"/white22.svg"}
-          />
-          {/* <LogoWhite/>
-          <LogoColored/> */}
+          /> */}
+
+          {heroBottomIsTop ? <LogoColored /> : <LogoWhite />}
         </Link>
       </div>
       <div

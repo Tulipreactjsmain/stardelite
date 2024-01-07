@@ -73,10 +73,9 @@ h1 {
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
 }
 
-.black-text span  {
+.black-text span {
   color: black;
 }
-
 
 .navBtnBorder {
   position: relative;
@@ -169,7 +168,6 @@ h1 {
   color: #ffcc00 !important;
 }
 
-
 @keyframes shine {
   to {
     background-position: 200% 0;
@@ -244,4 +242,38 @@ h1 {
   .media-icons {
     position: static;
   }
+}
+
+// svg styles
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-8 {
+  fill-rule: evenodd;
+}
+.cls-1 {
+  fill: url(#GradientFill_1);
+}
+.cls-2,
+.cls-7 {
+  fill: #003398;
+}
+.cls-3 {
+  fill: #6698ff;
+}
+.cls-4 {
+  fill: #1b4eb3;
+}
+.cls-5 {
+  fill: url(#GradientFill_1-2);
+}
+.cls-6 {
+  fill: url(#GradientFill_2);
+}
+.cls-8 {
+  fill: url(#GradientFill_1-3);
 }
