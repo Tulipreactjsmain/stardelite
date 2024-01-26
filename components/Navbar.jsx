@@ -1,12 +1,20 @@
-import Image from "next/image";
 import { IoChevronDownSharp } from "react-icons/io5";
 import { Button } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
-import Link from "next/link";
 import LogoWhite from "./LogoWhite";
 import LogoColored from "./LogoColored";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar({ heroBottomIsTop }) {
+  const scrollToHome = () => {
+    scroll.scrollTo(0, {
+      delay: 0,
+      spy: true,
+      smooth: true,
+      duration: 700,
+    });
+  };
+
   return (
     <div
       className={`${
@@ -15,19 +23,13 @@ export default function Navbar({ heroBottomIsTop }) {
       style={{ zIndex: 5000 }}
     >
       <div className="fade-right-animation delay-1">
-        <Link href={`/`} style={{ cursor: "pointer" }}>
-          {/* <Image
-            src={heroBottomIsTop ? `/Star22.svg` : `/logoColored.svg`}
-            width={150}
-            height={50}
-            className="logo"
-            alt="Stardelite logo"
-            placeholder="blur"
-            blurDataURL={"/white22.svg"}
-          /> */}
-
+        <ScrollLink
+          href={`/`}
+          onClick={scrollToHome}
+          style={{ cursor: "pointer" }}
+        >
           {heroBottomIsTop ? <LogoColored /> : <LogoWhite />}
-        </Link>
+        </ScrollLink>
       </div>
       <div
         className={`
@@ -36,14 +38,28 @@ export default function Navbar({ heroBottomIsTop }) {
      `}
         style={{ cursor: "pointer", fontSize: "0.85rem" }}
       >
+        <span></span>
+        <ScrollLink to="services" smooth={true} duration={700}>
+          <span>Services</span>
+          <span>
+            <IoChevronDownSharp color="#ffcc00" />
+          </span>
+        </ScrollLink>
         <span>
-          Services <IoChevronDownSharp color="#ffcc00" />
+          <ScrollLink to="technologies" smooth={true} duration={700}>
+            <span> Technologies </span>{" "}
+            <span>
+              <IoChevronDownSharp color="#ffcc00" />
+            </span>
+          </ScrollLink>
         </span>
         <span>
-          Technologies <IoChevronDownSharp color="#ffcc00" />
-        </span>
-        <span>
-          About <IoChevronDownSharp color="#ffcc00" />
+          <ScrollLink to="about" smooth={true} duration={700}>
+            <span>About</span>
+            <span>
+              <IoChevronDownSharp color="#ffcc00" />
+            </span>
+          </ScrollLink>
         </span>
         <div className="navBtnBorder">
           <Button

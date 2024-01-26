@@ -9,12 +9,14 @@ import {
   ContentBackground,
   Technologies,
   Layout,
+  Services,
+  About,
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [heroBottomIsTop, setHeroBottomIsTop] = useState(false);
@@ -56,7 +58,7 @@ export default function Home() {
           stars with Stardelite. We are more than a software development company; we're your partners in innovation. Transform your vision into reality through cutting-edge technology and personalized solutions. Join a community of dreamers and achievers. Let's propel your business to new heights together!"
         />
       </Head>
-      <main className={`${styles.main} ${inter.className}`} ref={DOM_REF}>
+      <main className={`${styles.main} `} ref={DOM_REF}>
         <Navbar heroBottomIsTop={heroBottomIsTop} />
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
@@ -95,6 +97,8 @@ export default function Home() {
             <ContentBackground />
             <div className="page-content position-absolute w-100 explicitPosition layout-padding">
               <Technologies />
+              <Services />
+              <About />
             </div>
           </Layout>
         </section>

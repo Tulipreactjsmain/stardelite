@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Sumana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 :root {
   --yello-gradient: linear-gradient(
@@ -15,6 +15,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  // scroll-behavior: smooth !important;
 }
 
 body,
@@ -26,7 +27,6 @@ html {
   overflow-y: auto;
   position: relative;
   font-size: 16px !important;
-  scroll-behavior: smooth;
   // word-break: break-word;
   // word-break: break-all;
 }
@@ -194,7 +194,7 @@ h1 {
 
 .technology-icons svg {
   filter: grayscale(100%);
-  width: 8rem;
+  max-width: 8rem;
   opacity: 50%;
 }
 
@@ -213,12 +213,20 @@ h1 {
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
   .scroller-inner {
-    animation: scroll 70s linear infinite;
+    -webkit-animation: scroll var(--_animation-duration, 70s) linear infinite;
+    animation: scroll var(--_animation-duration, 70s)
+      var(--_animation-direction, running) linear infinite;
     width: max-content;
   }
 }
+
+.scroller-inner[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
 @keyframes scroll {
   to {
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
   }
 }
@@ -286,9 +294,9 @@ h1 {
     word-break: break-all;
   }
 
-  // .technology-icons svg {
-  //   min-width: 5.125rem !important;
-  // }
+  .technology-icons svg {
+    max-width: 6.125rem !important;
+  }
 
   .layout-padding {
     padding-right: 10px !important;
@@ -321,7 +329,7 @@ h1 {
     padding-left: 2.7777777777777777vw !important;
   }
   // .technology-icons svg {
-  //   min-width: 7.125rem !important;
+  //   max-width: 7.125rem !important;
   // }
 }
 
