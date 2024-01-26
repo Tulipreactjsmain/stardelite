@@ -25,6 +25,15 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
+  font-size: 16px !important;
+  scroll-behavior: smooth;
+  // word-break: break-word;
+  // word-break: break-all;
+}
+
+body {
+  font-family: "Poppins" !important;
+  background-color: #fcfcfc;
 }
 
 html.lenis {
@@ -55,6 +64,10 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+// h5 {
+//   font-size: calc(3.5rem - 5vw * 1) !important;
+// }
+
 .btn-primary,
 .btn {
   background: var(--light-yello);
@@ -68,6 +81,7 @@ h1 {
 }
 
 .update-navbar {
+  background-color: #fcfcfc;
   box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -webkit-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
@@ -168,6 +182,47 @@ h1 {
   color: #ffcc00 !important;
 }
 
+.explicitPosition {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.text-dark-custom {
+  color: #001a4d !important;
+}
+
+.technology-icons svg {
+  filter: grayscale(100%);
+  width: 8rem;
+  opacity: 50%;
+}
+
+.technology-icons svg:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.scroller {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+  .scroller-inner {
+    animation: scroll 70s linear infinite;
+    width: max-content;
+  }
+}
+@keyframes scroll {
+  to {
+    transform: translate(-50%);
+  }
+}
+
 @keyframes shine {
   to {
     background-position: 200% 0;
@@ -225,10 +280,26 @@ h1 {
     height: auto;
   }
 
+  h5 {
+    font-size: 2rem !important;
+    word-break: break-word;
+    word-break: break-all;
+  }
+
+  // .technology-icons svg {
+  //   min-width: 5.125rem !important;
+  // }
+
+  .layout-padding {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
   .heroH1 {
     top: 50%;
     left: 0 !important;
     transform: translate(0, -50%) !important;
+    flex-wrap: wrap;
 
     h1 {
       font-size: 3rem !important;
@@ -244,36 +315,26 @@ h1 {
   }
 }
 
-// svg styles
+@media (min-width: 768px) {
+  .layout-padding {
+    padding-right: 2.7777777777777777vw !important;
+    padding-left: 2.7777777777777777vw !important;
+  }
+  // .technology-icons svg {
+  //   min-width: 7.125rem !important;
+  // }
+}
 
-.cls-1,
-.cls-2,
-.cls-3,
-.cls-4,
-.cls-5,
-.cls-6,
-.cls-8 {
-  fill-rule: evenodd;
+@media (min-width: 992px) {
+  .layout-padding {
+    padding-right: 8vw !important;
+    padding-left: 8vw !important;
+  }
 }
-.cls-1 {
-  fill: url(#GradientFill_1);
-}
-.cls-2,
-.cls-7 {
-  fill: #003398;
-}
-.cls-3 {
-  fill: #6698ff;
-}
-.cls-4 {
-  fill: #1b4eb3;
-}
-.cls-5 {
-  fill: url(#GradientFill_1-2);
-}
-.cls-6 {
-  fill: url(#GradientFill_2);
-}
-.cls-8 {
-  fill: url(#GradientFill_1-3);
-}
+
+// @media (max-width: 992px) {
+//   .layout-padding {
+//     padding-right: 144px !important;
+//     padding-left: 144px !important;
+//   }
+// }

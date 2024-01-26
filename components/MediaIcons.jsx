@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function MediaIcons() {
   return (
-    <div className="d-flex gap-3 text-white position-absolute bottom-0 start-0 px-2 px-md-5 px-lg-5 mb-3 media-icons">
+    <div className="d-flex gap-3 text-white position-absolute bottom-0 start-0 layout-padding mb-3 media-icons">
       <Link
         className="text-white icon-hover"
         href={`https://instagram.com/stardelitesolutions`}
