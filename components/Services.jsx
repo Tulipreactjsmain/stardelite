@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Image, Row, Col } from "react-bootstrap";
+import { GoArrowRight } from "react-icons/go";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
+  const [viewWidth, setViewWidth] = useState(0);
 
   const services = [
     {
@@ -57,7 +59,16 @@ export default function Services() {
       </React.Fragment>
     ));
 
-  console.log(isMouseIn);
+  useEffect(() => {
+    const vw = Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    );
+    setViewWidth(vw);
+  }, []);
+
+  console.log(viewWidth);
+
   return (
     <div
       className="services d-flex justify-content-between flex-column"
@@ -79,10 +90,10 @@ export default function Services() {
           <>
             <Col
               md={4}
-              className="cursor-pointer position-relative shadow-lg overflow-hidden p-0 m-0"
+              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-3"
               style={{
-                height: "18rem",
-                width: "18rem",
+                height: "auto",
+                width: "33.3%",
                 maxWidth: "18rem",
                 cursor: "pointer",
                 borderRadius: "2px",
@@ -104,31 +115,44 @@ export default function Services() {
                   opacity: 0.9,
                   transition: "background-color 0.3s ease-in-out",
                 }}
-                onMouseOver={(e) => {
-                  setIsMouseIn(index);
+                onMouseOver={() => {
+                  viewWidth > 992 && setIsMouseIn(index);
                 }}
-                onMouseOut={(e) => {
-                  setIsMouseIn(null);
+                onMouseOut={() => {
+                  viewWidth > 992 && setIsMouseIn(null);
                 }}
               >
                 {isMouseIn === index ? (
                   <div className="w-100 text-dark-custom h-100 d-flex flex-column p-4 ">
                     <div className="d-flex flex-column ">
-                      <p className="text-center" style={{ fontSize: "1.8rem" }}>
+                      <p className="text-center service-title" style={{ fontSize: "1.8rem" }}>
                         {getTitleWithBreaks(service.title)}
                       </p>
-                      <p style={{ lineHeight: "28px", fontWeight:"300"  }} className="">{service.summary}</p>
+                      <p
+                        style={{ lineHeight: "28px", fontWeight: "300" }}
+                        className=""
+                      >
+                        {service.summary}
+                      </p>
                     </div>
-                    <div className="text-end" style={{fontSize:"0.6rem"}}><p>See more</p></div>
+                    <div className="text-end" style={{ fontSize: "0.7rem" }}>
+                      <span className="me-2">See more</span>
+                      <span>
+                        <GoArrowRight />
+                      </span>
+                    </div>
                   </div>
                 ) : (
-                  <div className="w-100 h-100 d-flex align-items-center justify-content-center">
+                  <div className="w-100 h-100 d-flex align-items-center justify-content-center position-relative">
                     <p
-                      className="text-center"
-                      style={{ fontSize: "2rem", color: "#FFCC00" }}
+                      className="text-center service-title"
+                      style={{ fontSize: "1.6rem", color: "#FFCC00" }}
                     >
                       {getTitleWithBreaks(service.title)}
                     </p>
+                    <div className="position-absolute bottom-0 end-0 text-white p-3">
+                      <GoArrowRight />
+                    </div>
                   </div>
                 )}
               </div>
@@ -136,8 +160,8 @@ export default function Services() {
           </>
         ))}
         <div
-          className="p-0 m-0"
-          style={{ height: "18rem", width: "18rem", maxWidth: "18rem" }}
+          className="p-0 mb-3 service-box"
+          style={{ width: "33.3%", maxWidth: "18rem" }}
         >
           <div className="w-100 h-100 text-center d-flex align-items-center justify-content-center shadow">
             <span>See more</span>
