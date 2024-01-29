@@ -2,6 +2,7 @@ export default function LogoWhite() {
   return (
     <>
       <svg
+        className="logo"
         width="150"
         height=""
         viewBox="0 0 1559 489"

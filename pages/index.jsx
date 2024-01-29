@@ -70,7 +70,7 @@ export default function Home() {
               >
                 <h1
                   className="text-md-center text-lg-center"
-                  style={{ fontSize: "50px", fontWeight: "bold" }}
+                  style={{ fontSize: "3.125rem", fontWeight: "bold" }}
                 >
                   Software <span className="shining-text">Solutions</span> and{" "}
                   <br />

@@ -67,7 +67,6 @@ export default function Services() {
     setViewWidth(vw);
   }, []);
 
-  console.log(viewWidth);
 
   return (
     <div

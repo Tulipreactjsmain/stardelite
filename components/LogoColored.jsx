@@ -3,6 +3,7 @@ import React from "react";
 export default function LogoColored() {
   return (
     <svg
+      className="logo"
       width="150"
       height=""
       viewBox="0 0 1559 489"
