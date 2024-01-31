@@ -27,7 +27,7 @@ export default function Services() {
     },
     {
       title: "Ui/Ux Design",
-      image: "/Ui:Ux-Design.png",
+      image: "/UiUx-Design.png",
       summary:
         "Our team of experienced product designers are ready to take your projects from the drawing board to reality.",
     },

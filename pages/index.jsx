@@ -99,6 +99,7 @@ export default function Home() {
               <Technologies />
               <Services />
               <About />
+            
             </div>
           </Layout>
         </section>
