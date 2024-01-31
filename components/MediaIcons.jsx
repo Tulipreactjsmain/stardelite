@@ -9,6 +9,7 @@ export default function MediaIcons() {
         href={`https://instagram.com/stardelitesolutions`}
         rel="noopener"
         target="_blank"
+        
         style={{ cursor: "pointer" }}
       >
         <FaInstagram className="Ig" fontSize={30} />
