@@ -16,6 +16,7 @@ export default function About() {
          ABOUT US
         </h5>
       </div>
+      <div>Solo the CEO</div>
     </div>
   )
 }
