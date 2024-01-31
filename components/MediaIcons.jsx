@@ -7,6 +7,8 @@ export default function MediaIcons() {
       <Link
         className="text-white icon-hover"
         href={`https://instagram.com/stardelitesolutions`}
+        rel="noopener"
+        target="_blank"
         style={{ cursor: "pointer" }}
       >
         <FaInstagram className="Ig" fontSize={30} />
@@ -14,6 +16,8 @@ export default function MediaIcons() {
       <Link
         className="text-white icon-hover"
         href={`https://www.linkedin.com/company/stardelite/`}
+        rel="noopener"
+        target="_blank"
         style={{ cursor: "pointer" }}
       >
         <FaLinkedin className="Li" fontSize={30} />
@@ -21,6 +25,8 @@ export default function MediaIcons() {
       <Link
         className="text-white icon-hover"
         href={`https://twitter.com/stardeliteLtd`}
+        rel="noopener"
+        target="_blank"
         style={{ cursor: "pointer" }}
       >
         <FaTwitter className="Tw" fontSize={30} />

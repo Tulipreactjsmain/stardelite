@@ -11,7 +11,7 @@ export default function About() {
         <p>who we are</p>
         <h5
           className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3rem", lineHeight: "72px" }}
+          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
         >
          ABOUT US
         </h5>

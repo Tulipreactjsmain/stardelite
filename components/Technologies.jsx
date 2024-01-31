@@ -45,7 +45,7 @@ export default function Technologies() {
         <p>what we work with</p>
         <h5
           className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3rem", lineHeight: "72px" }}
+          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
         >
           TECHNOLOGIES
         </h5>
