@@ -12,43 +12,49 @@ export default function Services() {
       title: "Software Development",
       image: "/Software-Development.png",
       summary:
-        "Our team of experienced software engineers are ready to take your projects from the drawing board to reality",
+        "Our team of experienced software engineers is adept at turning your concepts into robust software solutions.",
     },
     {
       title: "Web Development",
       image: "/Web-Development.png",
       summary:
-        "Our team of experienced web developers are ready to take your projects from the drawing board to reality",
+        "We bring your visions to life online, crafting captivating web experiences with expertise and innovation.",
     },
     {
       title: "Mobile Development",
       image: "/Mobile-Development.png",
       summary:
-        "Our team of experienced software engineers are ready to take your projects from the drawing board to reality",
+        "We specialize in creating seamless mobile experiences, transforming your ideas into reality across all platforms.",
     },
     {
-      title: "Ui/Ux Design",
+      title: "UI/UX Design",
       image: "/UiUx-Design.png",
       summary:
-        "Our team of experienced product designers are ready to take your projects from the drawing board to reality.",
+        "Our team combines creativity and user-centric design principles to craft intuitive and visually stunning interfaces.",
     },
     {
       title: "Data Analytics",
       image: "/Data-Analytics.png",
       summary:
-        "Our team of experienced data analysts are ready to take your projects from the drawing board to reality",
+        "We extract actionable insights from your data, empowering your business with informed decision-making.",
     },
     {
       title: "IT Consulting",
       image: "/IT-Consulting.png",
       summary:
-        "Our team of experienced consultants are ready to take your projects from the drawing board to reality.",
+        "We provide strategic IT guidance and technical expertise tailored to address your specific challenges.",
     },
     {
       title: "Graphic Design",
       image: "/Graphic-Design.png",
       summary:
-        "Our team of experienced graphic designers are ready to take your projects from the drawing board to reality.",
+        "We transform your ideas into captivating visuals that communicate your brand's story effectively.",
+    },
+    {
+      title: "Education",
+      image: "/Graphic-Design.png",
+      summary:
+        "We create engaging and immersive educational experiences that inspire curiosity and drive meaningful learning outcomes.",
     },
   ];
 
@@ -88,7 +94,6 @@ export default function Services() {
             OUR SERVICES
           </h5>
         </div>
-        {/* d-flex flex-wrap w-100 position-relative align-items-center justify-content-center justify-content-lg-between justify-content-md-center */}
         <Row className="w-100 p-0 m-0 justify-content-evenly gap-1">
           {services?.map((service, index) => (
             <Col
@@ -162,7 +167,6 @@ export default function Services() {
                       style={{ fontSize: "1.8rem", color: "#FFCC00" }}
                     >
                       {getTitleWithBreaks(service.title)}
-                      {/* {service.title} */}
                     </p>
                     <div className="position-absolute bottom-0 end-0 text-white p-3">
                       <GoArrowRight />
@@ -172,17 +176,6 @@ export default function Services() {
               </div>
             </Col>
           ))}
-          <div
-            className="p-0 mb-3 service-box"
-            style={{ width: "33.3%", maxWidth: "21.375rem" }}
-          >
-            <div className="w-100 h-100 text-center d-flex align-items-center justify-content-center shadow">
-              <span className="me-2">See more</span>
-              <span>
-                <GoArrowRight />
-              </span>
-            </div>
-          </div>
         </Row>
       </section>
     </Layout>

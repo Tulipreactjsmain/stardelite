@@ -198,6 +198,7 @@ h1 {
 .contentBackground {
   height: inherit !important;
 }
+
 .scroller {
   -webkit-mask: linear-gradient(
     90deg,
@@ -275,9 +276,20 @@ h1 {
   .service-title {
     font-size: 1rem !important;
   }
+  .aboutUs-description {
+    max-width: 375px !important;
+  }
+  .aboutUs-description section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .aboutUs-description h5 {
+    font-size: 1.5rem !important;
+  }
 }
 
-@media  screen and (min-width: 768px) and (max-width: 991px) {
+// Ipad screens
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .layout-padding {
     padding-right: 2.7777777777777777vw !important;
     padding-left: 2.7777777777777777vw !important;
@@ -289,6 +301,14 @@ h1 {
   }
   .service-title {
     font-size: 1.6rem !important;
+  }
+  .aboutUs-description section p {
+    text-align: center;
+    font-size: 1.4rem !important;
+  }
+
+  .aboutUs-description {
+    max-width: 700px !important;
   }
 }
 
@@ -302,16 +322,15 @@ h1 {
   html {
     --root-fontSize: 16px !important;
   }
-  // .service-title {
-  //   font-size: 1.6rem !important;
-  // }
 }
 
-@media screen and (min-width: 992px)  and (max-width: 1400px) {
-    .service-title {
+// Desktop Screens
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .service-title {
     font-size: 1.9047619047619047vw !important;
   }
 }
+
 
 // Animation KeyFrames ///////////////////////////////////////////////////
 @keyframes scroll {
