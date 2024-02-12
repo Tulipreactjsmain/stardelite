@@ -11,6 +11,8 @@ import {
   Layout,
   Services,
   About,
+  CoreValues,
+  Vision,
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -89,19 +91,15 @@ export default function Home() {
             </Layout>
           </div>
         </section>
-        <section
-          className="w-100 position-relative"
-          style={{ height: "6218px" }}
-        >
-          <Layout>
-            <ContentBackground />
-            <div className="page-content position-absolute w-100 explicitPosition layout-padding">
-              <Technologies />
-              <Services />
-              <About />
-            
-            </div>
-          </Layout>
+        <section className="w-100 position-relative" style={{ height: "100%" }}>
+          <ContentBackground />
+          <div className="page-content  w-100">
+            <Technologies />
+            <Services />
+            <About />
+            <CoreValues />
+            <Vision />
+          </div>
         </section>
       </main>
     </>

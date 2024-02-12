@@ -16,6 +16,7 @@ import {
   ReactIcon,
   Sql,
   MsOffice,
+  Layout,
 } from ".";
 
 export default function Technologies() {
@@ -36,97 +37,101 @@ export default function Technologies() {
 
   // }
   return (
-    <div
-      className="d-flex justify-content-between flex-column"
-      id="technologies"
-      style={{ paddingTop: "8.5rem", gap: "4rem" }}
-    >
-      <div className="text-dark-custom text-center">
-        <p>what we work with</p>
-        <h5
-          className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
-        >
-          TECHNOLOGIES
-        </h5>
-      </div>
+    <Layout>
       <div
-        className="scroller overflow-hidden d-flex flex-column"
-        data-animated="true"
-        style={{ gap: "3.5rem" }}
+        className="d-flex justify-content-between flex-column"
+        id="technologies"
+        style={{ paddingTop: "8.5rem", gap: "4rem" }}
       >
-        <div className="technology-icons scroller-inner d-flex justify-content-between align-items-center">
-
-          <AiIllustrator />
-
-          <Aws />
-
-          <Blockchain />
-
-          <Azure />
-
-          <Javascript />
-
-          <Gimp />
-
-          <MsOffice />
-
-          <Photoshop />
-
-          <Sql />
-
-          <Inkscape />
-
-          <PowerBi />
-
-          <Tableu />
-
-          <Figma />
-
-          <Python />
-
-          <ReactIcon />
-
-          <Vue />
+        <div className="text-dark-custom text-center">
+          <p>what we work with</p>
+          <h5
+            className="fw-semibold"
+            style={{
+              color: "#8099CC",
+              fontSize: "3.75rem",
+              lineHeight: "72px",
+            }}
+          >
+            TECHNOLOGIES
+          </h5>
         </div>
         <div
-          className="technology-icons scroller-inner d-flex justify-content-between align-items-center"
-          data-direction="right"
+          className="scroller overflow-hidden d-flex flex-column"
+          data-animated="true"
+          style={{ gap: "3.5rem" }}
         >
+          <div className="technology-icons scroller-inner d-flex justify-content-between align-items-center">
+            <AiIllustrator />
 
-          <AiIllustrator />
+            <Aws />
 
-          <Aws />
+            <Blockchain />
 
-          <Blockchain />
+            <Azure />
 
-          <Azure />
+            <Javascript />
 
-          <Javascript />
+            <Gimp />
 
-          <Gimp />
+            <MsOffice />
 
-          <MsOffice />
+            <Photoshop />
 
-          <Photoshop />
+            <Sql />
 
-          <Sql />
+            <Inkscape />
 
-          <Inkscape />
+            <PowerBi />
 
-          <PowerBi />
+            <Tableu />
 
-          <Tableu />
+            <Figma />
 
-          <Figma />
+            <Python />
 
-          <Python />
+            <ReactIcon />
 
-          <ReactIcon />
+            <Vue />
+          </div>
+          <div
+            className="technology-icons scroller-inner d-flex justify-content-between align-items-center"
+            data-direction="right"
+          >
+            <AiIllustrator />
 
-          <Vue />
+            <Aws />
+
+            <Blockchain />
+
+            <Azure />
+
+            <Javascript />
+
+            <Gimp />
+
+            <MsOffice />
+
+            <Photoshop />
+
+            <Sql />
+
+            <Inkscape />
+
+            <PowerBi />
+
+            <Tableu />
+
+            <Figma />
+
+            <Python />
+
+            <ReactIcon />
+
+            <Vue />
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

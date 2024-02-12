@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Image, Row, Col } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
+import Layout from "./Layout";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
@@ -68,24 +69,28 @@ export default function Services() {
   }, []);
 
   return (
-    <div
-      className="services d-flex justify-content-between flex-column"
-      id="services"
-      style={{ paddingTop: "8.5rem", gap: "4rem" }}
-    >
-      <div className="text-dark-custom text-center">
-        <p>what we do</p>
-        <h5
-          className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
-        >
-          OUR SERVICES
-        </h5>
-      </div>
-      {/* d-flex flex-wrap w-100 position-relative align-items-center justify-content-center justify-content-lg-between justify-content-md-center */}
-      <Row className="w-100 p-0 m-0 justify-content-evenly gap-1">
-        {services?.map((service, index) => (
-          <>
+    <Layout>
+      <section
+        className="services d-flex justify-content-between flex-column"
+        id="services"
+        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+      >
+        <div className="text-dark-custom text-center">
+          <p>what we do</p>
+          <h5
+            className="fw-semibold"
+            style={{
+              color: "#8099CC",
+              fontSize: "3.75rem",
+              lineHeight: "72px",
+            }}
+          >
+            OUR SERVICES
+          </h5>
+        </div>
+        {/* d-flex flex-wrap w-100 position-relative align-items-center justify-content-center justify-content-lg-between justify-content-md-center */}
+        <Row className="w-100 p-0 m-0 justify-content-evenly gap-1">
+          {services?.map((service, index) => (
             <Col
               md={4}
               className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-3"
@@ -121,7 +126,10 @@ export default function Services() {
                 }}
               >
                 {isMouseIn === index ? (
-                  <div className="w-100 text-dark-custom h-100 d-flex flex-column" style={{padding:"1.125rem 2.313rem"}}>
+                  <div
+                    className="w-100 text-dark-custom h-100 d-flex flex-column"
+                    style={{ padding: "1.125rem 2.313rem" }}
+                  >
                     <div className="d-flex flex-column pb-4">
                       <p
                         className="text-center service-title p-2"
@@ -130,7 +138,11 @@ export default function Services() {
                         {getTitleWithBreaks(service.title)}
                       </p>
                       <p
-                        style={{ lineHeight: "28px", fontWeight: "300", fontSize:"1.125rem" }}
+                        style={{
+                          lineHeight: "28px",
+                          fontWeight: "300",
+                          fontSize: "1.125rem",
+                        }}
                         className=""
                       >
                         {service.summary}
@@ -147,9 +159,10 @@ export default function Services() {
                   <div className="w-100 h-100 d-flex align-items-center justify-content-center position-relative">
                     <p
                       className="text-center service-title"
-                      style={{ fontSize: "2rem", color: "#FFCC00" }}
+                      style={{ fontSize: "1.8rem", color: "#FFCC00" }}
                     >
                       {getTitleWithBreaks(service.title)}
+                      {/* {service.title} */}
                     </p>
                     <div className="position-absolute bottom-0 end-0 text-white p-3">
                       <GoArrowRight />
@@ -158,20 +171,20 @@ export default function Services() {
                 )}
               </div>
             </Col>
-          </>
-        ))}
-        <div
-          className="p-0 mb-3 service-box"
-          style={{ width: "33.3%", maxWidth: "21.375rem" }}
-        >
-          <div className="w-100 h-100 text-center d-flex align-items-center justify-content-center shadow">
-            <span className="me-2">See more</span>
-            <span>
-              <GoArrowRight />
-            </span>
+          ))}
+          <div
+            className="p-0 mb-3 service-box"
+            style={{ width: "33.3%", maxWidth: "21.375rem" }}
+          >
+            <div className="w-100 h-100 text-center d-flex align-items-center justify-content-center shadow">
+              <span className="me-2">See more</span>
+              <span>
+                <GoArrowRight />
+              </span>
+            </div>
           </div>
-        </div>
-      </Row>
-    </div>
+        </Row>
+      </section>
+    </Layout>
   );
 }

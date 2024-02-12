@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 :root {
   --root-fontSize: 16px;
   --yello-gradient: linear-gradient(
@@ -8,7 +7,6 @@
     rgba(255, 204, 0, 1) 48%,
     rgba(207, 166, 0, 1) 100%
   );
-
   --light-yello: rgb(252, 242, 201);
 }
 
@@ -16,7 +14,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  // scroll-behavior: smooth !important;
 }
 
 body,
@@ -28,8 +25,6 @@ html {
   overflow-y: auto;
   position: relative;
   font-size: var(--root-fontSize);
-  // word-break: break-word;
-  // word-break: break-all;
 }
 
 body {
@@ -64,10 +59,6 @@ html.lenis {
 h1 {
   font-family: "Poppins", sans-serif;
 }
-
-// h5 {
-//   font-size: calc(3.5rem - 5vw * 1) !important;
-// }
 
 .btn-primary,
 .btn {
@@ -203,6 +194,10 @@ h1 {
   filter: grayscale(0);
   opacity: 1;
 }
+
+.contentBackground {
+  height: inherit !important;
+}
 .scroller {
   -webkit-mask: linear-gradient(
     90deg,
@@ -225,10 +220,10 @@ h1 {
   --_animation-direction: reverse;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body,
   html {
-    --root-fontSize: 4vw !important;
+    --root-fontSize: 1rem !important;
   }
 
   .logo {
@@ -272,15 +267,17 @@ h1 {
   }
 
   .service-box {
-    width: 70% !important;
+    width: 100% !important;
+    height: 7.5rem !important;
+    max-width: 100% !important;
   }
 
   .service-title {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
   }
 }
 
-@media (min-width: 768px) {
+@media  screen and (min-width: 768px) and (max-width: 991px) {
   .layout-padding {
     padding-right: 2.7777777777777777vw !important;
     padding-left: 2.7777777777777777vw !important;
@@ -288,11 +285,11 @@ h1 {
 
   body,
   html {
-    --root-fontSize: 2vw !important;
+    --root-fontSize: max(0.125rem, min(1.3333vw + 0.1rem, 10rem)) !important;
   }
-  // .service-title {
-  //   font-size: 1.4rem !important;
-  // }
+  .service-title {
+    font-size: 1.6rem !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -308,6 +305,12 @@ h1 {
   // .service-title {
   //   font-size: 1.6rem !important;
   // }
+}
+
+@media screen and (min-width: 992px)  and (max-width: 1400px) {
+    .service-title {
+    font-size: 1.9047619047619047vw !important;
+  }
 }
 
 // Animation KeyFrames ///////////////////////////////////////////////////

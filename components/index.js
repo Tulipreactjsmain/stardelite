@@ -6,6 +6,8 @@ export { default as ContentBackground } from "./ContentBackground.jsx";
 export { default as Technologies } from "./Technologies.jsx";
 export { default as Services } from "./Services.jsx";
 export { default as About } from "./About.jsx";
+export { default as CoreValues } from "./CoreValues.jsx";
+export { default as Vision } from "./OurVision.jsx";
 export { default as Gimp } from "./svgs/Gimp.jsx";
 export { default as Inkscape } from "./svgs/Inkscape.jsx";
 export { default as AiIllustrator } from "./svgs/AiIllustrator.jsx";
