@@ -12,6 +12,8 @@ export default function CoreValues() {
   const height = 342;
   const aspectRatio = width / height;
 
+  function addCustomClass(value) {}
+
   return (
     <Layout>
       <section
@@ -35,10 +37,11 @@ export default function CoreValues() {
         <Row className="w-100 p-0 m-0">
           {coreValues.map((value, index) => (
             <Col
+              key={index}
               sm={12}
               md={3}
               lg={6}
-              className="d-flex align-items-center justify-content-center bg-white core-values-col"
+              className={`d-flex align-items-center justify-content-center bg-white core-values-col core${index}`}
               style={{
                 aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",

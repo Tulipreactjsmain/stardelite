@@ -181,7 +181,8 @@ h1 {
 }
 
 .text-dark-custom {
-  color: #001a4d !important;
+  --dark-custom-color: #001a4d;
+  color: var(--dark-custom-color) !important;
 }
 
 .technology-icons svg {
@@ -200,7 +201,6 @@ h1 {
 }
 
 .core-values .row {
-  // align-items: center !important;
   justify-content: center;
   gap: 2rem;
 }
@@ -208,10 +208,6 @@ h1 {
 .core-values-col {
   box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
   transition: box-shadow 0.5s ease-in-out;
-}
-
-.core-values-col:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .core-values svg {
@@ -307,6 +303,10 @@ h1 {
     font-size: 1.5rem !important;
   }
 
+  .aboutUs-description header p {
+    font-size: 0.8rem !important;
+  }
+
   .core-values-col {
     width: 50vw !important;
   }
@@ -315,6 +315,12 @@ h1 {
   }
   .core-values svg {
     width: 17.619047619047619vw;
+  }
+
+  .vision figcaption {
+    max-width: 350px !important;
+    font-size: 1rem !important;
+    text-align: center !important;
   }
 }
 
@@ -353,9 +359,20 @@ h1 {
   .core-values span.title {
     font-size: 1.4rem;
   }
+
+  .vision figcaption {
+    width: 80% !important;
+    font-size: 1.4rem !important;
+    text-align: center !important;
+  }
 }
 
 @media (min-width: 992px) {
+
+  body,
+  html {
+    --root-fontSize: 16px !important;
+  }
   .layout-padding {
     padding-right: 8vw !important;
     padding-left: 8vw !important;
@@ -373,10 +390,33 @@ h1 {
     margin: 0 !important;
   }
 
-  body,
-  html {
-    --root-fontSize: 16px !important;
+  .core-values-col:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+
+  .core0 .bulb-bottom {
+    fill: white;
+    transition: fill 0.8s ease;
+  }
+  .core0:hover .bulb-bottom {
+    fill: var(--dark-custom-color) !important;
+  }
+
+  .core0 .bulb-top {
+    fill: transparent;
+    stroke: "#001133";
+    transition: fill 0.8s ease, stroke 0.8s ease;
+  }
+  .core0:hover .bulb-top {
+    stroke: transparent;
+    fill: #ffd42b !important;
+  }
+
+  .vision figcaption {
+    max-width: 50% !important;
+  }
+
+  
 }
 
 // Desktop Screens

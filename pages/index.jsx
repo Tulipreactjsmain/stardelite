@@ -13,6 +13,7 @@ import {
   About,
   CoreValues,
   Vision,
+  WhyChooseUs
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -99,6 +100,7 @@ export default function Home() {
             <About />
             <CoreValues />
             <Vision />
+            <WhyChooseUs/>
           </div>
         </section>
       </main>

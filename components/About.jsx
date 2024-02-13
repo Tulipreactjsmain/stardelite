@@ -43,7 +43,7 @@ export default function About() {
                 Welcome to Stardelite
               </h5>
               <p style={{ fontSize: "1.1rem", fontWeight: "300" }}>
-                [where innovation meets expertise]
+                where innovation meets expertise
               </p>
             </header>
             <section
