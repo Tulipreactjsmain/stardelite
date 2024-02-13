@@ -199,6 +199,26 @@ h1 {
   height: inherit !important;
 }
 
+.core-values .row {
+  // align-items: center !important;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.core-values-col {
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.core-values-col:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.core-values svg {
+  width: 7.619047619047619vw;
+  height: auto;
+}
+
 .scroller {
   -webkit-mask: linear-gradient(
     90deg,
@@ -269,7 +289,7 @@ h1 {
 
   .service-box {
     width: 100% !important;
-    height: 7.5rem !important;
+    height: 8.2rem !important;
     max-width: 100% !important;
   }
 
@@ -285,6 +305,16 @@ h1 {
   }
   .aboutUs-description h5 {
     font-size: 1.5rem !important;
+  }
+
+  .core-values-col {
+    width: 50vw !important;
+  }
+  .core-values span.title {
+    font-size: 4vw;
+  }
+  .core-values svg {
+    width: 17.619047619047619vw;
   }
 }
 
@@ -310,12 +340,37 @@ h1 {
   .aboutUs-description {
     max-width: 700px !important;
   }
+
+  .col-md-4 {
+    flex: 0 0 auto !important;
+    width: 33.33333333% !important;
+  }
+
+  .core-values-col {
+    margin: auto !important;
+  }
+
+  .core-values span.title {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 992px) {
   .layout-padding {
     padding-right: 8vw !important;
     padding-left: 8vw !important;
+  }
+
+  .col-lg-6 {
+    width: 20.357142857142858vw !important;
+  }
+
+  .core-values .row {
+    justify-content: space-between !important;
+    gap: 0;
+  }
+  .core-values-col {
+    margin: 0 !important;
   }
 
   body,
@@ -331,6 +386,22 @@ h1 {
   }
 }
 
+// TV screens or Desktop screens and beyond
+@media screen and (min-width: 1401px) {
+  .service-box {
+    width: 20.357142857142858vw !important;
+    max-width: none !important;
+  }
+
+  .service-title {
+    font-size: 1.9047619047619047vw !important;
+  }
+
+  article picture {
+    width: 32.67857142857143vw !important;
+    max-width: none !important;
+  }
+}
 
 // Animation KeyFrames ///////////////////////////////////////////////////
 @keyframes scroll {

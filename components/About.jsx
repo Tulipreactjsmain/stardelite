@@ -1,5 +1,4 @@
 import Layout from "./Layout";
-
 export default function About() {
   return (
     <Layout>
@@ -22,18 +21,18 @@ export default function About() {
           </h5>
         </div>
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
-            <picture
-              style={{
-                maxWidth: "34.313rem",
-                display: "block",
-              }}
-            >
-              <img
-                src="./AboutUs.png"
-                alt="about-us-image"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </picture>
+          <picture
+            style={{
+              maxWidth: "34.313rem",
+              display: "block",
+            }}
+          >
+            <img
+              src="./AboutUs.png"
+              alt="about-us-image"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </picture>
 
           <div
             className="aboutUs-description text-dark-custom d-flex flex-column my-4 gap-5"
@@ -43,9 +42,18 @@ export default function About() {
               <h5 className="fw-semibold" style={{ fontSize: "3.25rem" }}>
                 Welcome to Stardelite
               </h5>
-              <p style={{fontSize:"1.1rem", fontWeight:"300"}}>[where innovation meets expertise]</p>
+              <p style={{ fontSize: "1.1rem", fontWeight: "300" }}>
+                [where innovation meets expertise]
+              </p>
             </header>
-            <section className="" style={{fontSize:"1.4285714285714286vw", textAlign:"justify", fontWeight:"300"}}>
+            <section
+              className=""
+              style={{
+                fontSize: "1.4285714285714286vw",
+                textAlign: "justify",
+                fontWeight: "300",
+              }}
+            >
               <p className="mb-5">
                 At Stardelite, we believe in the transformative power of
                 technology to shape a better future. As a cutting-edge tech

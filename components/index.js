@@ -24,4 +24,8 @@ export { default as ReactIcon } from "./svgs/ReactIcon.jsx";
 export { default as Sql } from "./svgs/Sql.jsx";
 export { default as Vue } from "./svgs/Vue.jsx";
 export { default as Tableu } from "./svgs/Tablue.jsx";
+export { default as Adaptability } from "./svgs/Adaptability.jsx";
+export { default as Collaboration } from "./svgs/Collaboration.jsx";
+export { default as Expertise } from "./svgs/Expertise.jsx";
+export { default as Innovation } from "./svgs/Innovation.jsx";
 export { default as HeadMetaData } from "./HeadMetaData.jsx";

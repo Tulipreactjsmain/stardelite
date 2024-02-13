@@ -51,10 +51,10 @@ export default function Services() {
         "We transform your ideas into captivating visuals that communicate your brand's story effectively.",
     },
     {
-      title: "Education",
-      image: "/Graphic-Design.png",
+      title: "Online Education",
+      image: "/online-education.jpg",
       summary:
-        "We create engaging and immersive educational experiences that inspire curiosity and drive meaningful learning outcomes.",
+        "We create immersive educational experiences that drive meaningful learning outcomes.",
     },
   ];
 
@@ -94,11 +94,12 @@ export default function Services() {
             OUR SERVICES
           </h5>
         </div>
-        <Row className="w-100 p-0 m-0 justify-content-evenly gap-1">
+        <Row className="w-100 p-0 m-0 justify-content-evenly gap-2">
           {services?.map((service, index) => (
             <Col
               md={4}
-              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-3"
+              lg={3}
+              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-4"
               style={{
                 height: "auto",
                 width: "33.3%",
@@ -112,7 +113,8 @@ export default function Services() {
                 src={service.image}
                 width={`100%`}
                 height={`100%`}
-                className="img-fluid"
+                className=" object-fit-cover"
+                style={{objectPosition:"50% 50%"}}
               />
               <div
                 className="w-100 position-absolute top-0 h-100 text-center"
@@ -146,14 +148,13 @@ export default function Services() {
                         style={{
                           lineHeight: "28px",
                           fontWeight: "300",
-                          fontSize: "1.125rem",
+                          fontSize: "1.0714285714285714vw",
                         }}
-                        className=""
                       >
                         {service.summary}
                       </p>
                     </div>
-                    <div className="text-end" style={{ fontSize: "0.7rem" }}>
+                    <div className="position-absolute bottom-0 end-0 p-4" style={{ fontSize: "0.7rem" }}>
                       <span className="me-2">See more</span>
                       <span>
                         <GoArrowRight />
@@ -163,7 +164,7 @@ export default function Services() {
                 ) : (
                   <div className="w-100 h-100 d-flex align-items-center justify-content-center position-relative">
                     <p
-                      className="text-center service-title"
+                      className="text-center service-title  fw-medium"
                       style={{ fontSize: "1.8rem", color: "#FFCC00" }}
                     >
                       {getTitleWithBreaks(service.title)}
