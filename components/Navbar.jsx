@@ -47,7 +47,7 @@ export default function Navbar({ heroBottomIsTop }) {
         </ScrollLink>
         <span>
           <ScrollLink to="technologies" smooth={true} duration={700}>
-            <span> Technologies </span>{" "}
+            <span> Technologies </span>
             <span>
               <IoChevronDownSharp color="#ffcc00" />
             </span>
@@ -61,7 +61,7 @@ export default function Navbar({ heroBottomIsTop }) {
             </span>
           </ScrollLink>
         </span>
-        <div className="navBtnBorder">
+        <div className="navBtnBorder" data-animated={true}>
           <Button
             type="button"
             onClick={scrollToHome}

@@ -84,9 +84,12 @@ h1 {
 }
 
 .navBtnBorder {
+  width: fit-content;
   position: relative;
   border: solid rgb(255, 221, 86) !important;
   overflow: hidden;
+}
+.navBtnBorder[data-animated="true"] {
   animation: glow 5s infinite;
 }
 
@@ -212,6 +215,39 @@ h1 {
 .core-values svg {
   width: 7.619047619047619vw;
   height: auto;
+}
+
+.contact form {
+  aspect-ratio: 1 !important;
+  width: 25.178571428571427vw;
+}
+
+.form-label-top-left {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: #001a4d;
+  font-weight: 400;
+  background-color: rgb(233, 233, 233);
+  transform: translateY(-100%) translateX(10px);
+}
+
+.form-input {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #001a4d;
+  border-radius: 4px;
+}
+
+.centered-placeholder::placeholder {
+  font-size: 0.8rem;
+  padding-top: 20px;
+  color: #aabbdd !important;
+}
+
+.form-group {
+  margin-bottom: 30px;
 }
 
 .scroller {
@@ -376,7 +412,6 @@ h1 {
 }
 
 @media (min-width: 992px) {
-
   body,
   html {
     --root-fontSize: 16px !important;
@@ -428,8 +463,6 @@ h1 {
   .vision figcaption {
     max-width: 50% !important;
   }
-
-  
 }
 
 // Desktop Screens
@@ -513,7 +546,6 @@ h1 {
     opacity: 1;
   }
 }
-
 
 // @keyframes bg {
 //   0% {
