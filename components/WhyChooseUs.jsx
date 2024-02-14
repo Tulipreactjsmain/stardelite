@@ -2,7 +2,7 @@ import { Layout } from ".";
 
 export default function CoreValues() {
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <section
         className="vision d-flex justify-content-between flex-column"
         id="vision"

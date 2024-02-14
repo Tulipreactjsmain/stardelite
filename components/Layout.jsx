@@ -1,7 +1,7 @@
-export default function Layout({ children, bgColor }) {
+export default function Layout({ children, bgColor, padding }) {
   return (
     <div
-      className="layout-padding position-relative layout-padding w-100 h-100"
+      className={`${padding} position-relative w-100 h-100`}
       style={{ backgroundColor: `${bgColor}` }}
     >
       {children}

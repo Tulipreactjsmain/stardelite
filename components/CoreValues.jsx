@@ -15,7 +15,7 @@ export default function CoreValues() {
   function addCustomClass(value) {}
 
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <section
         className="core-values d-flex justify-content-between flex-column"
         id="core-values"

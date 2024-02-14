@@ -13,7 +13,8 @@ import {
   About,
   CoreValues,
   Vision,
-  WhyChooseUs
+  WhyChooseUs,
+  ContactUs,
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -66,7 +67,7 @@ export default function Home() {
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
           <div className="heroContent text-white ">
-            <Layout>
+            <Layout padding={`layout-padding`}>
               <div
                 className="d-flex flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 px-2 px-md-5 px-lg-5 heroH1 w-100"
                 style={{ flexWrap: "wrap" }}
@@ -100,7 +101,8 @@ export default function Home() {
             <About />
             <CoreValues />
             <Vision />
-            <WhyChooseUs/>
+            {/* <WhyChooseUs /> */}
+            <ContactUs/>
           </div>
         </section>
       </main>

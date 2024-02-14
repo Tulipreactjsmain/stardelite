@@ -75,7 +75,7 @@ export default function Services() {
   }, []);
 
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <section
         className="services d-flex justify-content-between flex-column"
         id="services"

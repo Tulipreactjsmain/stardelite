@@ -10,6 +10,7 @@ export { default as CoreValues } from "./CoreValues.jsx";
 export { default as Vision } from "./OurVision.jsx";
 export { default as WhyChooseUs } from "./WhyChooseUs.jsx";
 export { default as CeoComment } from "./CeoComment.jsx";
+export { default as ContactUs } from "./ContactUs";
 export { default as Gimp } from "./svgs/Gimp.jsx";
 export { default as Inkscape } from "./svgs/Inkscape.jsx";
 export { default as AiIllustrator } from "./svgs/AiIllustrator.jsx";

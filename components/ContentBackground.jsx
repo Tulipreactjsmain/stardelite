@@ -9,7 +9,7 @@ export default function ContentBackground() {
     "/path5597-1.svg",
   ];
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <div
         className="contentBackground d-flex flex-column align-items-center justify-content-between position-absolute explicitPosition"
         style={{ opacity: 0.06, zIndex: -1, height:"inherit" }}

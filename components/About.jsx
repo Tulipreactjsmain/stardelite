@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 export default function About() {
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <section
         className="about d-flex justify-content-between flex-column"
         id="about"

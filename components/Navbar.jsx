@@ -7,7 +7,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar({ heroBottomIsTop }) {
   const scrollToHome = () => {
-    scroll.scrollTo(0, {
+    scroll.scrollTo("contact", {
       delay: 0,
       spy: true,
       smooth: true,
@@ -64,6 +64,7 @@ export default function Navbar({ heroBottomIsTop }) {
         <div className="navBtnBorder">
           <Button
             type="button"
+            onClick={scrollToHome}
             className={`navBtn text-black ${
               heroBottomIsTop ? "update-btn" : ""
             }`}
@@ -71,6 +72,12 @@ export default function Navbar({ heroBottomIsTop }) {
           >
             Contact us
           </Button>
+          {/* <ScrollLink
+            to="contact"
+            className=" text-decoration-none text-black pointer-events-none"
+            smooth={true}
+            duration={700}
+          ></ScrollLink> */}
         </div>
       </div>
       <AiOutlineMenu

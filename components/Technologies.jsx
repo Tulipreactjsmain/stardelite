@@ -37,7 +37,7 @@ export default function Technologies() {
 
   // }
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <div
         className="d-flex justify-content-between flex-column"
         id="technologies"

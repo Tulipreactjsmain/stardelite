@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap";
 
 export default function OurVision() {
   return (
-    <Layout>
+    <Layout padding={`layout-padding`}>
       <section
         className="vision text-dark-custom d-flex justify-content-between flex-column"
         id="vision"

@@ -35,25 +35,33 @@ export default function BackgroundSlides() {
         <BgSlides.Item className="Hero-BG">
           <div
             className="Hero-BG"
-            style={{ backgroundImage: `url('${backgroundImage}')` }}
+            style={{
+              backgroundImage: `url('${backgroundImage}')`,
+            }}
           ></div>
         </BgSlides.Item>
         <BgSlides.Item className="Hero-BG">
           <div
             className="Hero-BG"
-            style={{ backgroundImage: `url('${images[2]}')` }}
+            style={{
+              backgroundImage: `url('${images[2]}')`,
+            }}
           ></div>
         </BgSlides.Item>
         <BgSlides.Item className="Hero-BG">
           <div
             className="Hero-BG"
-            style={{ backgroundImage: `url('${images[5]}')` }}
+            style={{
+              backgroundImage: `url('${images[5]}')`,
+            }}
           ></div>
         </BgSlides.Item>
         <BgSlides.Item className="Hero-BG">
           <div
             className="Hero-BG"
-            style={{ backgroundImage: `url('${images[4]}')` }}
+            style={{
+              backgroundImage: `url('${images[4]}')`,
+            }}
           ></div>
         </BgSlides.Item>
       </BgSlides>
