@@ -34,7 +34,7 @@ export default function CoreValues() {
           >
             CONTACT US
           </h5>
-        </div>
+        </div> 
         <div
           className="w-100"
           style={{
@@ -69,7 +69,6 @@ export default function CoreValues() {
                   type="text"
                   id="name"
                   name="name"
-                  autoFocus
                   {...register("name", { required: true })}
                   className="form-input centered-placeholder"
                   // style={{ height: "48px" }}
@@ -87,7 +86,6 @@ export default function CoreValues() {
                   type="text"
                   id="title"
                   name="title"
-                  autoFocus
                   {...register("title", { required: true })}
                   className="form-input centered-placeholder"
                   // style={{ height: "48px" }}
