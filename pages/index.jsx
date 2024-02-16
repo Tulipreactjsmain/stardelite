@@ -102,7 +102,7 @@ export default function Home() {
             <CoreValues />
             <Vision />
             {/* <WhyChooseUs /> */}
-            <ContactUs/>
+            {/* <ContactUs/> */}
           </div>
         </section>
       </main>
