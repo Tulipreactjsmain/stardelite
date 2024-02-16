@@ -45,7 +45,7 @@ export default function CoreValues() {
           }}
         >
           <div
-            className="layout-margin d-flex justify-content-between align-items-center px-5"
+            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-5 justify-content-between align-items-center px-5"
             style={{
               aspectRatio: aspectRatio.toFixed(2),
               backdropFilter: ` blur(6px)`,
@@ -55,12 +55,12 @@ export default function CoreValues() {
               borderRadius: "16px",
             }}
           >
-            <div>
+            <div className="my-5 order-2 order-lg-0 order-md-0">
               <ContactUSLogo />
               <div></div>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmitHandler)}>
+            <form onSubmit={handleSubmit(onSubmitHandler)} className="my-5">
               <div className="form-group position-relative d-flex flex-column">
                 <label className="form-label-top-left" htmlFor="title">
                   name
@@ -106,6 +106,7 @@ export default function CoreValues() {
                   name="description"
                   {...register("description", { required: true })}
                   className="form-input centered-placeholder w-100"
+                  style={{ height: "244px" }}
                   placeholder="type your message here"
                 ></textarea>
                 {errors.description && (
