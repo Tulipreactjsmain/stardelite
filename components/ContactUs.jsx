@@ -45,7 +45,7 @@ export default function CoreValues() {
           }}
         >
           <div
-            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-5 justify-content-between align-items-center px-5"
+            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between align-items-center px-5"
             style={{
               aspectRatio: aspectRatio.toFixed(2),
               backdropFilter: ` blur(6px)`,
@@ -62,7 +62,7 @@ export default function CoreValues() {
 
             <form onSubmit={handleSubmit(onSubmitHandler)} className="my-5">
               <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left" htmlFor="title">
+                <label className="form-label-top-left px-2" htmlFor="title">
                   name
                 </label>
                 <input
@@ -79,7 +79,7 @@ export default function CoreValues() {
                 )}
               </div>
               <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left" htmlFor="title">
+                <label className="form-label-top-left px-2" htmlFor="title">
                   e-mail
                 </label>
                 <input
@@ -96,7 +96,7 @@ export default function CoreValues() {
                 )}
               </div>
               <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left" htmlFor="description">
+                <label className="form-label-top-left px-2" htmlFor="description">
                   your message
                 </label>
                 <textarea

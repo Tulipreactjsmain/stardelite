@@ -4,6 +4,7 @@ export default function ContactUSLogo() {
   return (
     <svg
       width="249"
+      className="contactUsLogo"
       height="391"
       viewBox="0 0 249 391"
       fill="none"

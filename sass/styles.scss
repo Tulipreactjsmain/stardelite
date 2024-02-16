@@ -225,19 +225,27 @@ h1 {
 .form-label-top-left {
   position: absolute;
   top: 12px;
-  left: 20px;
+  left: 10px;
   color: #001a4d;
   font-weight: 400;
-  background-color: rgb(233, 233, 233);
+  // background-color: #E0E2E3;
+  background-color: transparent;
   transform: translateY(-100%) translateX(10px);
 }
 
 .form-input {
+  // background-color: #E0E2E3;
   background-color: transparent;
   width: 100%;
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid #001a4d;
   border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.form-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px transparent inset; 
+  -webkit-text-fill-color: var(--dark-custom-color);
 }
 
 .centered-placeholder::placeholder {
@@ -246,10 +254,15 @@ h1 {
   color: #aabbdd !important;
 }
 
+
 .form-group {
   margin-bottom: 30px;
 }
 
+.contactUsLogo {
+  width: 14.821428571428571vw;
+  height: auto;
+}
 .scroller {
   -webkit-mask: linear-gradient(
     90deg,
@@ -361,7 +374,13 @@ h1 {
     font-size: 1rem !important;
     text-align: center !important;
   }
+
+  .contact form {
+    aspect-ratio: 1 !important;
+    width: 100% !important;
+  }
 }
+
 
 // Ipad screens
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -409,6 +428,7 @@ h1 {
     font-size: 1.4rem !important;
     text-align: center !important;
   }
+
 }
 
 @media (min-width: 992px) {
