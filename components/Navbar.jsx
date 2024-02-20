@@ -1,8 +1,7 @@
 import { IoChevronDownSharp } from "react-icons/io5";
 import { Button } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
-import LogoWhite from "./LogoWhite";
-import LogoColored from "./LogoColored";
+import { LogoColored, LogoWhite } from ".";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 
@@ -19,7 +18,7 @@ export default function Navbar({ heroBottomIsTop }) {
       duration: 700,
     });
   };
-  
+
   return (
     <div
       className={`${

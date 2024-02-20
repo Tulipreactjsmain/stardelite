@@ -20,7 +20,7 @@ export default function CoreValues() {
       <section
         className="contact d-flex justify-content-between flex-column"
         id="contact"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>get in touch</p>
@@ -55,7 +55,7 @@ export default function CoreValues() {
               borderRadius: "16px",
             }}
           >
-            <div className="my-5 order-2 order-lg-0 order-md-0">
+            <div className="mb-5 order-2 order-lg-0 order-md-0">
               <ContactUSLogo />
               <div></div>
             </div>
@@ -71,7 +71,6 @@ export default function CoreValues() {
                   name="name"
                   {...register("name", { required: true })}
                   className="form-input centered-placeholder"
-                  // style={{ height: "48px" }}
                   placeholder="John Doe ..."
                 />
                 {errors.title && (
@@ -88,7 +87,6 @@ export default function CoreValues() {
                   name="title"
                   {...register("title", { required: true })}
                   className="form-input centered-placeholder"
-                  // style={{ height: "48px" }}
                   placeholder="example@mailservice.com"
                 />
                 {errors.title && (

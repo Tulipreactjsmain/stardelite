@@ -9,7 +9,7 @@ export default function AiIllustrator() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_191_2252)">
+          <g clipPath="url(#clip0_191_2252)">
             <path
               d="M91.6992 0H58.3008C53.7164 0 50 3.80558 50 8.5V41.42C50 46.1144 53.7164 49.92 58.3008 49.92H91.6992C96.2836 49.92 100 46.1144 100 41.42V8.5C100 3.80558 96.2836 0 91.6992 0Z"
               fill="#330000"

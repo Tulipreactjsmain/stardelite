@@ -12,16 +12,16 @@ export default function Expertise() {
       <path
         d="M64.4995 98.6667L48.4995 106.667L51.1662 88.0001L40.4995 77.3334L56.4995 74.6667L64.4995 58.6667L72.4995 74.6667L88.4995 77.3334L77.8328 88.0001L80.4995 106.667L64.4995 98.6667Z"
         stroke="#001A4D"
-        stroke-width="2.66667"
+        strokeWidth="2.66667"
       />
-      <g clip-path="url(#clip0_974_765)">
-        <path d="M43.5 21V53" stroke="#001A4D" stroke-width="2.66667" />
+      <g clipPath="url(#clip0_974_765)">
+        <path d="M43.5 21V53" stroke="#001A4D" strokeWidth="2.66667" />
       </g>
-      <g clip-path="url(#clip1_974_765)">
-        <path d="M85.5 21V53" stroke="#001A4D" stroke-width="2.66667" />
+      <g clipPath="url(#clip1_974_765)">
+        <path d="M85.5 21V53" stroke="#001A4D" strokeWidth="2.66667" />
       </g>
-      <g clip-path="url(#clip2_974_765)">
-        <path d="M64.5 21V37" stroke="#001A4D" stroke-width="2.66667" />
+      <g clipPath="url(#clip2_974_765)">
+        <path d="M64.5 21V37" stroke="#001A4D" strokeWidth="2.66667" />
       </g>
       <defs>
         <clipPath id="clip0_974_765">

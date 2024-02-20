@@ -19,7 +19,7 @@ export default function CoreValues() {
       <section
         className="core-values d-flex justify-content-between flex-column"
         id="core-values"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>what we believe</p>
@@ -41,7 +41,7 @@ export default function CoreValues() {
               sm={12}
               md={3}
               lg={6}
-              className={`d-flex align-items-center justify-content-center bg-white core-values-col core${index}`}
+              className={`d-flex align-items-center justify-content-center core-values-col core${index}`}
               style={{
                 aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",

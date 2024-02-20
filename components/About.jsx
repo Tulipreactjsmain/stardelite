@@ -5,7 +5,7 @@ export default function About() {
       <section
         className="about d-flex justify-content-between flex-column"
         id="about"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>who we are</p>

@@ -9,7 +9,7 @@ export default function Gimp() {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_191_2263)">
+    <g clipPath="url(#clip0_191_2263)">
       <path
         d="M94.274 32.0383C94.274 36.8105 85.3475 40.7 74.2994 40.7C63.2518 40.7 54.3252 36.8109 54.3252 32.0383C54.3252 27.2656 63.2518 23.377 74.299 23.377C85.3475 23.377 94.274 27.2656 94.274 32.0383Z"
         fill="url(#paint0_radial_191_2263)"
@@ -141,7 +141,7 @@ export default function Gimp() {
         gradientTransform="translate(74.3085 32.0524) scale(19.9558 8.68074)"
       >
         <stop />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint1_radial_191_2263"
@@ -151,8 +151,8 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(67.1509 21.508) scale(37.2803 27.2713)"
       >
-        <stop stop-color="#857C63" />
-        <stop offset="1" stop-color="#221F19" />
+        <stop stopColor="#857C63" />
+        <stop offset="1" stopColor="#221F19" />
       </radialGradient>
       <linearGradient
         id="paint2_linear_191_2263"
@@ -163,7 +163,7 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_191_2263"
@@ -173,8 +173,8 @@ export default function Gimp() {
         y2="44.2444"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint4_radial_191_2263"
@@ -184,8 +184,8 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(63.9725 17.3857) scale(6.47668 6.47668)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#B9B9B0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#B9B9B0" />
       </radialGradient>
       <radialGradient
         id="paint5_radial_191_2263"
@@ -195,8 +195,8 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(53.8352 22.6919) rotate(-29.9923) scale(4.86118 5.67756)"
       >
-        <stop stop-color="#5B676B" />
-        <stop offset="1" stop-color="#141718" />
+        <stop stopColor="#5B676B" />
+        <stop offset="1" stopColor="#141718" />
       </radialGradient>
       <linearGradient
         id="paint6_linear_191_2263"
@@ -206,8 +206,8 @@ export default function Gimp() {
         y2="28.3873"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint7_radial_191_2263"
@@ -217,8 +217,8 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(73.1528 17.324) scale(7.60293)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#B9B9B0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#B9B9B0" />
       </radialGradient>
       <linearGradient
         id="paint8_linear_191_2263"
@@ -228,10 +228,10 @@ export default function Gimp() {
         y2="32.7736"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#6E3D09" />
-        <stop offset="0.242" stop-color="#EA8113" />
-        <stop offset="0.621" stop-color="#5C3307" />
-        <stop offset="1" stop-color="#E07C12" />
+        <stop stopColor="#6E3D09" />
+        <stop offset="0.242" stopColor="#EA8113" />
+        <stop offset="0.621" stopColor="#5C3307" />
+        <stop offset="1" stopColor="#E07C12" />
       </linearGradient>
       <linearGradient
         id="paint9_linear_191_2263"
@@ -241,10 +241,10 @@ export default function Gimp() {
         y2="36.808"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#BDBDBD" />
-        <stop offset="0.333" stop-color="#E2E2E2" />
-        <stop offset="0.667" stop-color="#A3A3A3" />
-        <stop offset="1" stop-color="#DDDDDD" />
+        <stop stopColor="#BDBDBD" />
+        <stop offset="0.333" stopColor="#E2E2E2" />
+        <stop offset="0.667" stopColor="#A3A3A3" />
+        <stop offset="1" stopColor="#DDDDDD" />
       </linearGradient>
       <radialGradient
         id="paint10_radial_191_2263"
@@ -254,7 +254,7 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(94.0983 38.7635) rotate(0.410701) scale(2.10534 2.14885)"
       >
-        <stop stop-color="#696969" />
+        <stop stopColor="#696969" />
         <stop offset="1" />
       </radialGradient>
       <linearGradient
@@ -265,8 +265,8 @@ export default function Gimp() {
         y2="36.871"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint12_linear_191_2263"
@@ -277,7 +277,7 @@ export default function Gimp() {
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <clipPath id="clip0_191_2263">
         <rect

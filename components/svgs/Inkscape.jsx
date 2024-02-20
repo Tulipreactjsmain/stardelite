@@ -128,7 +128,7 @@ export default function Inkscape() {
     <path
       d="M74.7612 0.636108C73.3631 0.636108 72.0061 1.12848 71.0604 2.11323L52.6796 20.9054C50.9937 22.5877 50.5825 23.6956 50.7059 24.311C50.747 24.6393 50.9115 24.8855 51.2404 25.1727C51.5694 25.4599 52.0628 25.7471 52.6385 25.9933C53.831 26.4857 55.3936 26.896 56.9561 27.3063C58.5187 27.7166 60.0402 28.1679 61.1915 28.9065C61.356 29.0296 61.5205 29.1527 61.6438 29.3578C61.7672 29.563 61.8083 29.8092 61.7672 30.0554C61.685 30.5067 61.3971 30.7529 61.1093 30.958C60.5336 31.4094 59.7523 31.7376 58.971 32.1069C58.1898 32.4762 57.4085 32.8865 56.9973 33.1737C56.7917 33.3378 56.7094 33.4609 56.7505 33.4609C56.7505 33.4609 56.7094 33.3378 56.7917 33.4199C57.0384 33.6661 57.8197 34.1174 58.8066 34.4867C59.7934 34.856 60.9859 35.2663 62.1784 35.6356C63.3709 36.0459 64.6045 36.4152 65.6325 36.8255C66.6605 37.2358 67.524 37.6051 68.0586 38.1795C68.3464 38.4667 68.552 38.836 68.5932 39.1643C68.6343 39.5335 68.552 39.8618 68.3876 40.149C68.0997 40.7234 67.6474 41.1748 67.2773 41.5851C66.8661 41.9954 66.496 42.4057 66.3727 42.6929C66.2904 42.816 66.2904 42.8981 66.2904 42.9801C66.2904 43.0212 66.2904 43.1032 66.4138 43.2263C66.9483 43.8008 68.0997 43.8828 69.4156 44.17C70.0735 44.3342 70.7725 44.5393 71.3482 45.0727C71.9239 45.6061 72.3762 46.3447 72.5818 47.4115C72.6641 47.8628 72.9108 48.068 73.4453 48.2321C74.021 48.3962 74.8845 48.4373 75.8303 48.3142C77.7218 48.027 79.9834 47.1243 81.2582 46.0575L81.3404 45.9754C81.2582 45.8933 81.0526 45.7703 80.7236 45.6061C80.3124 45.401 79.8601 45.2369 79.49 44.7855C79.3255 44.5393 79.2022 44.2111 79.2433 43.8418C79.2844 43.4725 79.49 43.1853 79.7367 42.9391C81.875 40.8055 83.931 40.2721 85.4936 39.8618C86.2748 39.6566 86.9328 39.4515 87.4262 39.1643C87.9196 38.836 88.3308 38.4257 88.6598 37.6051C88.7009 37.523 88.7009 37.482 88.6598 37.3999C88.6187 37.2768 88.4953 37.1127 88.2897 36.9486C87.8785 36.5793 87.1795 36.21 86.4804 35.7997C85.7814 35.4304 85.1235 35.0612 84.63 34.6098C84.3833 34.3636 84.1366 34.1174 84.0955 33.6661C84.0543 33.2148 84.3422 32.8455 84.6711 32.5993C85.9048 31.7376 87.7552 31.0811 89.7701 30.3836C91.7849 29.6861 93.9643 28.9475 95.6914 28.1269C97.4595 27.3063 98.7342 26.3626 99.1454 25.4189C99.3511 24.9265 99.3922 24.4751 99.1866 23.8186C98.981 23.1622 98.4875 22.4236 97.5829 21.5619L78.5854 2.15426C77.5162 1.12848 76.1182 0.636108 74.7612 0.636108ZM95.239 36.2921C94.0465 36.3331 92.9774 36.8665 92.5251 37.7282C92.6485 37.7692 92.7718 37.8513 92.9774 37.8923C93.5942 38.0154 94.4578 38.1385 95.2802 38.1385C96.1026 38.1385 96.9661 38.0975 97.5006 37.9333C97.7062 37.8513 97.8296 37.8102 97.9118 37.7692C97.7885 37.2768 97.5418 36.9486 97.0483 36.7024C96.596 36.3741 95.897 36.2511 95.239 36.2921ZM63.7821 40.3131C62.8363 40.2311 61.685 40.6003 61.1093 41.0927C60.8214 41.3389 60.6981 41.5441 60.6981 41.6672C60.6981 41.7902 60.7392 41.9954 61.1093 42.3236C61.7261 42.857 62.384 42.775 63.1653 42.3647C63.8232 41.9954 64.3989 41.3389 64.769 40.6414C64.5223 40.4772 64.1933 40.3542 63.7821 40.3131ZM91.0037 40.6003C90.7981 40.8465 90.7158 41.0927 90.6747 41.2568C90.6747 41.503 90.7158 41.6672 90.8803 41.8313C91.2093 42.1595 91.9083 42.2826 92.6485 41.8723C92.6485 41.7902 92.6073 41.6671 92.484 41.503C92.3195 41.1748 91.7849 40.8055 91.0037 40.6003Z"
       stroke="url(#paint17_radial_191_2256)"
-      stroke-width="0.485072"
+      strokeWidth="0.485072"
     />
     <g opacity="0.325">
       <path
@@ -175,8 +175,8 @@ export default function Inkscape() {
         y2="22.7769"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C0CDF9" />
-        <stop offset="1" stop-color="#07092D" stop-opacity="0.288" />
+        <stop stopColor="#C0CDF9" />
+        <stop offset="1" stopColor="#07092D" stopOpacity="0.288" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_191_2256"
@@ -186,8 +186,8 @@ export default function Inkscape() {
         y2="21.7876"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_191_2256"
@@ -197,8 +197,8 @@ export default function Inkscape() {
         y2="21.8486"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint3_radial_191_2256"
@@ -208,8 +208,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(66.5418 46.9069) scale(11.2942 7.53586)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint4_radial_191_2256"
@@ -219,8 +219,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(72.5451 47.177) scale(14.408 9.62082)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint5_radial_191_2256"
@@ -230,8 +230,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(90.9233 29.6629) scale(8.04045 3.40139)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint6_radial_191_2256"
@@ -241,8 +241,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(92.6357 30.6071) scale(8.04045 3.40139)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint7_linear_191_2256"
@@ -252,8 +252,8 @@ export default function Inkscape() {
         y2="37.05"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint8_linear_191_2256"
@@ -263,8 +263,8 @@ export default function Inkscape() {
         y2="37.6227"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint9_radial_191_2256"
@@ -274,8 +274,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(95.167 38.0698) scale(3.30862 0.489568)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint10_linear_191_2256"
@@ -285,8 +285,8 @@ export default function Inkscape() {
         y2="41.4316"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint11_linear_191_2256"
@@ -296,8 +296,8 @@ export default function Inkscape() {
         y2="41.6821"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint12_radial_191_2256"
@@ -307,8 +307,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(92.0663 42.5967) rotate(-26.8526) scale(1.43123 0.485825)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint13_radial_191_2256"
@@ -318,8 +318,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(62.4911 35.2759) scale(5.34069 2.16812)"
       >
-        <stop stop-color="white" stop-opacity="0.33" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" stopOpacity="0.33" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint14_linear_191_2256"
@@ -329,8 +329,8 @@ export default function Inkscape() {
         y2="40.621"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint15_linear_191_2256"
@@ -340,8 +340,8 @@ export default function Inkscape() {
         y2="40.8484"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint16_radial_191_2256"
@@ -351,8 +351,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(62.5474 42.9579) rotate(-15.4637) scale(3.02514 1.12798)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint17_radial_191_2256"
@@ -362,8 +362,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(76.9931 5.83003) scale(41.8339 41.0848)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint18_linear_191_2256"
@@ -373,8 +373,8 @@ export default function Inkscape() {
         y2="39.1964"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint19_linear_191_2256"
@@ -384,8 +384,8 @@ export default function Inkscape() {
         y2="33.2131"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EEEEEC" />
-        <stop offset="1" stop-color="#EEEEEC" stop-opacity="0" />
+        <stop stopColor="#EEEEEC" />
+        <stop offset="1" stopColor="#EEEEEC" stopOpacity="0" />
       </linearGradient>
       <radialGradient
         id="paint20_radial_191_2256"
@@ -395,8 +395,8 @@ export default function Inkscape() {
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(83.347 39.3146) scale(6.57781 8.34452)"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint21_linear_191_2256"
@@ -406,8 +406,8 @@ export default function Inkscape() {
         y2="33.0073"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint22_linear_191_2256"
@@ -417,8 +417,8 @@ export default function Inkscape() {
         y2="22.811"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#729FCF" />
-        <stop offset="1" stop-color="#729FCF" stop-opacity="0" />
+        <stop stopColor="#729FCF" />
+        <stop offset="1" stopColor="#729FCF" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

@@ -9,7 +9,7 @@ export default function Azure() {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_191_2251)">
+    <g clipPath="url(#clip0_191_2251)">
       <path
         d="M66.6693 0.000619835H81.4649L66.1057 48.1405C65.9479 48.6352 65.6473 49.0651 65.2464 49.3696C64.8455 49.6741 64.3645 49.8379 63.8709 49.838H52.3563C51.9824 49.838 51.6138 49.7438 51.2812 49.5632C50.9485 49.3827 50.6613 49.1209 50.4432 48.7997C50.2251 48.4784 50.0824 48.1068 50.027 47.7157C49.9716 47.3245 50.005 46.925 50.1244 46.5502L64.434 1.69814C64.5918 1.20327 64.8924 0.77323 65.2934 0.468589C65.6944 0.163949 66.1756 5.86515e-05 66.6693 0V0.000619835Z"
         fill="url(#paint0_linear_191_2251)"
@@ -40,8 +40,8 @@ export default function Azure() {
         y2="4843.08"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#114A8B" />
-        <stop offset="1" stop-color="#0669BC" />
+        <stop stopColor="#114A8B" />
+        <stop offset="1" stopColor="#0669BC" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_191_2251"
@@ -51,11 +51,11 @@ export default function Azure() {
         y2="2708.38"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0.3" />
-        <stop offset="0.071" stop-opacity="0.2" />
-        <stop offset="0.321" stop-opacity="0.1" />
-        <stop offset="0.623" stop-opacity="0.05" />
-        <stop offset="1" stop-opacity="0" />
+        <stop stopOpacity="0.3" />
+        <stop offset="0.071" stopOpacity="0.2" />
+        <stop offset="0.321" stopOpacity="0.1" />
+        <stop offset="0.623" stopOpacity="0.05" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_191_2251"
@@ -65,8 +65,8 @@ export default function Azure() {
         y2="4621.92"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3CCBF4" />
-        <stop offset="1" stop-color="#2892DF" />
+        <stop stopColor="#3CCBF4" />
+        <stop offset="1" stopColor="#2892DF" />
       </linearGradient>
       <clipPath id="clip0_191_2251">
         <rect

@@ -9,7 +9,7 @@ export default function Tableu() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_191_2257)">
+      <g clipPath="url(#clip0_191_2257)">
         <path
           d="M74.2051 2.30936V4.62829H70.1387V6.13645H74.2051V10.7552H75.7947V6.13645H79.9629V4.62829H75.7947V0H74.2051V2.30936Z"
           fill="#7099A6"

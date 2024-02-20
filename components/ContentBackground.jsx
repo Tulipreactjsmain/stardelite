@@ -11,8 +11,8 @@ export default function ContentBackground() {
   return (
     <Layout padding={`layout-padding`}>
       <div
-        className="contentBackground d-flex flex-column align-items-center justify-content-between position-absolute explicitPosition"
-        style={{ opacity: 0.06, zIndex: -1, height:"inherit" }}
+        className="contentBackground d-flex flex-column align-items-center justify-content-between position-absolute w-100 explicitPosition"
+        style={{ opacity: 0.06, zIndex: -1, height:"500vh" }}
       >
         {images.map((img, index) => (
           <Image

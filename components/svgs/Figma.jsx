@@ -9,7 +9,7 @@ export default function Figma() {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_191_2258)">
+    <g clipPath="url(#clip0_191_2258)">
       <path
         d="M67.7734 50.3906C72.4219 50.3906 76.1719 46.6406 76.1719 41.9922V33.5938H67.7734C63.125 33.5938 59.375 37.3438 59.375 41.9922C59.375 46.6406 63.125 50.3906 67.7734 50.3906Z"
         fill="#0ACF83"

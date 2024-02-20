@@ -32,5 +32,8 @@ export { default as Collaboration } from "./svgs/Collaboration.jsx";
 export { default as Expertise } from "./svgs/Expertise.jsx";
 export { default as Innovation } from "./svgs/Innovation.jsx";
 export { default as ContactUSLogo } from "./svgs/ContactUSLogo.jsx";
+export { default as LogoColored } from "./svgs/LogoColored.jsx";
+export { default as LogoWhite} from "./svgs/LogoWhite.jsx";
+export { default as Faq } from "./Faq.jsx";
+export { default as FaqCarousel } from "./FaqCarousel.jsx";
 export { default as HeadMetaData } from "./HeadMetaData.jsx";
-

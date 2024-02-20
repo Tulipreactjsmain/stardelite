@@ -19,11 +19,9 @@
 body,
 html {
   max-width: 100vw;
-  position: relative;
   overscroll-behavior: none;
   overflow-x: hidden;
   overflow-y: auto;
-  position: relative;
   font-size: var(--root-fontSize);
 }
 
@@ -198,17 +196,14 @@ h1 {
   opacity: 1;
 }
 
-.contentBackground {
-  height: inherit !important;
-}
-
 .core-values .row {
   justify-content: center;
-  gap: 2rem;
+  gap: 15px;
 }
 
 .core-values-col {
-  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
+  background-color: white;
   transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -244,7 +239,7 @@ h1 {
 }
 
 .form-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px transparent inset; 
+  -webkit-box-shadow: 0 0 0 30px transparent inset;
   -webkit-text-fill-color: var(--dark-custom-color);
 }
 
@@ -253,7 +248,6 @@ h1 {
   padding-top: 20px;
   color: #aabbdd !important;
 }
-
 
 .form-group {
   margin-bottom: 30px;
@@ -284,6 +278,30 @@ h1 {
 .scroller-inner[data-direction="right"] {
   --_animation-direction: reverse;
 }
+.carousel-indicators {
+  position: relative !important;
+  order: 2;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #003399 !important;
+  border-radius: 100%;
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto !important;
+  position: relative !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/icons8-back-32.png") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("/icons8-forward-32.png") !important;
+}
 
 @media (max-width: 767px) {
   body,
@@ -299,8 +317,8 @@ h1 {
 
   h5 {
     font-size: 2rem !important;
-    word-break: break-word;
-    word-break: break-all;
+    // word-break: break-word;
+    // word-break: break-all;
   }
 
   .technology-icons svg {
@@ -344,23 +362,28 @@ h1 {
   .service-title {
     font-size: 1rem !important;
   }
-  .aboutUs-description {
+  .aboutUs-description,
+  .faq-description {
     max-width: 375px !important;
   }
-  .aboutUs-description section p {
+  .aboutUs-description section p,
+  .faq section p {
     font-size: 1rem;
     text-align: center;
   }
-  .aboutUs-description h5 {
+  .aboutUs-description h5,
+  .faq-description h5 {
     font-size: 1.5rem !important;
   }
 
-  .aboutUs-description header p {
+  .aboutUs-description header p,
+  .faq-description header p {
     font-size: 0.8rem !important;
   }
 
   .core-values-col {
     width: 50vw !important;
+    box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
   }
   .core-values span.title {
     font-size: 4vw;
@@ -381,9 +404,13 @@ h1 {
   }
 }
 
-
 // Ipad screens
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  body,
+  html {
+    --root-fontSize: max(0.125rem, min(1.3333vw + 0.1rem, 10rem)) !important;
+  }
+
   .layout-padding {
     padding-right: 2.7777777777777777vw !important;
     padding-left: 2.7777777777777777vw !important;
@@ -394,19 +421,21 @@ h1 {
     margin-left: 2.7777777777777777vw !important;
   }
 
-  body,
-  html {
-    --root-fontSize: max(0.125rem, min(1.3333vw + 0.1rem, 10rem)) !important;
+  .core-values-col {
+    box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
   }
+
   .service-title {
     font-size: 1.6rem !important;
   }
-  .aboutUs-description section p {
+  .aboutUs-description section p,
+  .faq-description section p {
     text-align: center;
     font-size: 1.4rem !important;
   }
 
-  .aboutUs-description {
+  .aboutUs-description,
+  .faq-description {
     max-width: 700px !important;
   }
 
@@ -428,7 +457,6 @@ h1 {
     font-size: 1.4rem !important;
     text-align: center !important;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -450,12 +478,13 @@ h1 {
     width: 20.357142857142858vw !important;
   }
 
-  .core-values .row {
-    justify-content: space-between !important;
-    gap: 0;
-  }
+  // .core-values .row {
+  //   justify-content: space-between !important;
+  //   gap: 0;
+  // }
   .core-values-col {
     margin: 0 !important;
+    flex: 1 !important;
   }
 
   .core-values-col:hover {
@@ -503,7 +532,7 @@ h1 {
     font-size: 1.9047619047619047vw !important;
   }
 
-  article picture {
+  .about article picture {
     width: 32.67857142857143vw !important;
     max-width: none !important;
   }

@@ -7,7 +7,7 @@ export default function OurVision() {
       <section
         className="vision text-dark-custom d-flex justify-content-between flex-column"
         id="vision"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-center">
           <p>what we want to do</p>

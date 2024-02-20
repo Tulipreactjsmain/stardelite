@@ -79,7 +79,7 @@ export default function Services() {
       <section
         className="services d-flex justify-content-between flex-column"
         id="services"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>what we do</p>

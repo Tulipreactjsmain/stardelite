@@ -41,7 +41,7 @@ export default function Technologies() {
       <div
         className="d-flex justify-content-between flex-column"
         id="technologies"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>what we work with</p>

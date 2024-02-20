@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRef, useEffect, useState } from "react";
-import { Inter } from "next/font/google";
 import styles from "@/sass/Home.module.scss";
 import {
   BackgroundSlides,
@@ -15,12 +14,11 @@ import {
   Vision,
   WhyChooseUs,
   ContactUs,
+  Faq,
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [heroBottomIsTop, setHeroBottomIsTop] = useState(false);
@@ -93,16 +91,19 @@ export default function Home() {
             </Layout>
           </div>
         </section>
-        <section className="w-100 position-relative" style={{ height: "100%" }}>
+        <section className="w-100" style={{ height: "100%" }}>
           <ContentBackground />
-          <div className="page-content  w-100">
+          <div
+            className="page-content  w-100 h-100 position-relative"
+            style={{ zIndex: "500" }}
+          >
             <Technologies />
             <Services />
             <About />
             <CoreValues />
             <Vision />
-            {/* <WhyChooseUs /> */}
-            <ContactUs/>
+            <Faq />
+            <ContactUs />
           </div>
         </section>
       </main>
