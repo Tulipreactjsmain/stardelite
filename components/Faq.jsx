@@ -6,7 +6,7 @@ export default function Faq() {
       <section
         className="faq d-flex justify-content-between flex-column"
         id="faq"
-        style={{ paddingTop: "9rem", gap: "13.25rem" }}
+        style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center">
           <p>just in case you were wondering</p>
@@ -31,10 +31,22 @@ export default function Faq() {
             <img
               src="./g3.png"
               alt="faq-image"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              style={{ width: "100%", objectFit: "cover" }}
             />
           </picture>
-          <FaqCarousel />
+          {/* <figure
+            className="d-flex justify-content-between"
+            style={{ maxWidth: "1082px", flex: "1" }}
+          >
+            <span className="my-auto mx-3 fs-1">
+              <HiChevronLeft color="#001a4d" />
+            </span>
+            <FaqCarousel />
+            <span className="my-auto mx-3 fs-1">
+              <HiChevronRight color="#001a4d" />
+            </span>
+          </figure> */}
+          <FaqCarousel/>
         </article>
       </section>
     </Layout>
