@@ -176,15 +176,13 @@ h1 {
 
 .hidden {
   opacity: 0 !important;
-  filter: blur(3px);
-  transform: translateY(50%);
+  transform: translateY(30%);
   transition: all 1s;
   transition-delay: 0.2s;
 }
 
 .show-hidden {
   opacity: 1 !important;
-  filter: blur(0);
   transform: translateY(0);
 }
 
@@ -229,6 +227,12 @@ h1 {
 .contact form {
   aspect-ratio: 1 !important;
   width: 25.178571428571427vw;
+}
+
+.contact a {
+  text-decoration: none !important;
+  color: var(--dark-custom-color);
+  cursor: pointer;
 }
 
 .form-label-top-left {

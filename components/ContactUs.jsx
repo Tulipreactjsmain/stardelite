@@ -1,19 +1,17 @@
-import { Layout, ContactUSLogo } from ".";
-import { useForm } from "react-hook-form";
-import { Button } from "react-bootstrap";
+import {
+  Layout,
+  ContactUSLogo,
+  ContactForm,
+  X,
+  Facebook,
+  LinkedIn,
+  Instagram,
+} from ".";
 
 export default function CoreValues() {
   const width = 1440;
   const height = 748;
   const aspectRatio = width / height;
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmitHandler = async (data) => {};
 
   return (
     <Layout>
@@ -34,7 +32,7 @@ export default function CoreValues() {
           >
             CONTACT US
           </h5>
-        </div> 
+        </div>
         <div
           className="w-100"
           style={{
@@ -55,72 +53,47 @@ export default function CoreValues() {
               borderRadius: "16px",
             }}
           >
-            <div className="mb-5 order-2 order-lg-0 order-md-0">
+            <div
+              className="mb-5 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
+              style={{ flex: "1" }}
+            >
               <ContactUSLogo />
-              <div></div>
-            </div>
-
-            <form onSubmit={handleSubmit(onSubmitHandler)} className="my-5">
-              <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left px-2" htmlFor="title">
-                  name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  {...register("name", { required: true })}
-                  className="form-input centered-placeholder"
-                  placeholder="John Doe ..."
-                />
-                {errors.title && (
-                  <span className="text-danger">Email is required</span>
-                )}
-              </div>
-              <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left px-2" htmlFor="title">
-                  e-mail
-                </label>
-                <input
-                  type="text"
-                  id="title"
-                  name="title"
-                  {...register("title", { required: true })}
-                  className="form-input centered-placeholder"
-                  placeholder="example@mailservice.com"
-                />
-                {errors.title && (
-                  <span className="text-danger">Email is required</span>
-                )}
-              </div>
-              <div className="form-group position-relative d-flex flex-column">
-                <label className="form-label-top-left px-2" htmlFor="description">
-                  your message
-                </label>
-                <textarea
-                  id="description"
-                  name="description"
-                  {...register("description", { required: true })}
-                  className="form-input centered-placeholder w-100"
-                  style={{ height: "244px" }}
-                  placeholder="type your message here"
-                ></textarea>
-                {errors.description && (
-                  <span className="text-danger">Description is required</span>
-                )}
-              </div>
-              <div className="w-100">
-                <div className="navBtnBorder position-relative ms-auto">
-                  <Button
-                    type="submit"
-                    className={`navBtn text-black`}
-                    style={{ fontSize: "0.85rem" }}
-                  >
-                    Get in touch
-                  </Button>
+              <section className="d-flex flex-column mx-auto gap-5 text-center text-dark-custom order-first order-md-last order-lg-last">
+                <div>
+                  <h3 style={{ color: "#8099CC" }}>Office Address</h3>
+                  <p>587 street, off Avenue, city.</p>
                 </div>
-              </div>
-            </form>
+                <div>
+                  <h3 style={{ color: "#8099CC" }}>Contact Details</h3>
+                  <p>
+                    <a href="mailto:info@stardelitesolutions.com">
+                      info@stardelitesolutions.com
+                    </a>
+                  </p>
+                  <p>
+                    <a href="tel:+15708244377">+1 (570) 824-4377</a>
+                  </p>
+                  <p>
+                    <a href="tel:+2348012345678">+234 (0) 801 234 5678</a>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 justify-content-center">
+                  <a href="">
+                    <X />
+                  </a>
+                  <a href="">
+                    <LinkedIn />
+                  </a>
+                  <a href="">
+                    <Facebook />
+                  </a>
+                  <a href="">
+                    <Instagram />
+                  </a>
+                </div>
+              </section>
+            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
