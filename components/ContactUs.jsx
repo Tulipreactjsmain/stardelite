@@ -22,7 +22,7 @@ export default function CoreValues() {
         id="contact"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden">
           <p>get in touch</p>
           <h5
             className="fw-semibold"

@@ -8,6 +8,16 @@ export default function gsapEffects(ref) {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-hidden");
+        } 
+      });
+    });
+    const hiddenElements = ref?.current?.querySelectorAll(".hidden");
+    hiddenElements?.forEach((el) => observer.observe(el));
 
     let ctx = gsap.context(() => {
       gsap.to(".textCursor", {
@@ -41,6 +51,9 @@ export default function gsapEffects(ref) {
         y: -40,
         x: 30,
         duration: 1,
+      });
+      gsap.to(".show-hidden", {
+        opacity: 1,
       });
     }, ref);
     return () => ctx.revert();

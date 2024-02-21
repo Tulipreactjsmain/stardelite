@@ -81,7 +81,7 @@ export default function Services() {
         id="services"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden">
           <p>what we do</p>
           <h5
             className="fw-semibold"
@@ -99,7 +99,7 @@ export default function Services() {
             <Col
               md={4}
               lg={3}
-              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-4"
+              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-4 hidden"
               style={{
                 height: "auto",
                 width: "33.3%",

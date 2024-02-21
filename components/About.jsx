@@ -7,7 +7,7 @@ export default function About() {
         id="about"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden">
           <p>who we are</p>
           <h5
             className="fw-semibold"
@@ -22,6 +22,7 @@ export default function About() {
         </div>
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
+          className="hidden"
             style={{
               maxWidth: "34.313rem",
               display: "block",
@@ -35,7 +36,7 @@ export default function About() {
           </picture>
 
           <div
-            className="aboutUs-description text-dark-custom d-flex flex-column my-4 gap-5"
+            className="aboutUs-description text-dark-custom d-flex flex-column my-4 gap-5 hidden"
             style={{ maxWidth: "42.142857142857146vw" }}
           >
             <header className="text-center mb-3">

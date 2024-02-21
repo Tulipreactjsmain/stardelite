@@ -21,7 +21,7 @@ export default function CoreValues() {
         id="core-values"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden">
           <p>what we believe</p>
           <h5
             className="fw-semibold"
@@ -41,7 +41,7 @@ export default function CoreValues() {
               sm={12}
               md={3}
               lg={6}
-              className={`d-flex align-items-center justify-content-center core-values-col core${index}`}
+              className={`d-flex align-items-center justify-content-center core-values-col hidden core${index}`}
               style={{
                 aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",

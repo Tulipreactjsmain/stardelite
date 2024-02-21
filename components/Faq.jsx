@@ -8,7 +8,7 @@ export default function Faq() {
         id="faq"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden">
           <p>just in case you were wondering</p>
           <h5
             className="fw-semibold"
@@ -23,6 +23,7 @@ export default function Faq() {
         </div>
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
+          className="hidden"
             style={{
               maxWidth: "21.785714285714285vw",
               display: "block",

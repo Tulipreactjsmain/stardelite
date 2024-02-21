@@ -9,7 +9,7 @@ export default function OurVision() {
         id="vision"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-center">
+        <div className="text-center hidden">
           <p>what we want to do</p>
           <h5
             className="fw-semibold"
@@ -24,6 +24,7 @@ export default function OurVision() {
         </div>
         <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-around">
           <figcaption
+          className="hidden"
             style={{
               textAlign: "justify",
               fontSize: "2.142857142857143vw",
@@ -32,7 +33,7 @@ export default function OurVision() {
             Empowering businesses to achieve their full potential through
             seamless integration of technology and strategic insights.
           </figcaption>
-          <picture style={{ width: "36.75059523809524vw" }}>
+          <picture className="hidden" style={{ width: "36.75059523809524vw" }}>
             <Image src="/quoteImage.png" width={`100%`} />
           </picture>
         </figure>

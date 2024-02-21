@@ -53,7 +53,7 @@ export default function FaqCarousel() {
 
   return (
     <figure
-      className="d-flex justify-content-between"
+      className="d-flex justify-content-between hidden"
       style={{ maxWidth: "1082px", flex: "1" }}
     >
       <span className="my-auto mx-3 fs-1" onClick={handlePrevClick}>
