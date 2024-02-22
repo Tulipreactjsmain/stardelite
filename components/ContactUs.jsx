@@ -3,7 +3,7 @@ import {
   ContactUSLogo,
   ContactForm,
   X,
-  Facebook,
+  Whatsapp,
   LinkedIn,
   Instagram,
 } from ".";
@@ -43,7 +43,7 @@ export default function CoreValues() {
           }}
         >
           <div
-            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between align-items-center px-5"
+            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-0 py-0 py-md-5 justify-content-between align-items-center px-5"
             style={{
               aspectRatio: aspectRatio.toFixed(2),
               backdropFilter: ` blur(6px)`,
@@ -54,7 +54,7 @@ export default function CoreValues() {
             }}
           >
             <div
-              className="mb-5 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
+              className="mb-5 mb-md-0 mb-lg-0 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
               style={{ flex: "1" }}
             >
               <ContactUSLogo />
@@ -74,22 +74,37 @@ export default function CoreValues() {
                     <a href="tel:+15708244377">+1 (570) 824-4377</a>
                   </p>
                   <p>
-                    <a href="tel:+2348012345678">+234 (0) 801 234 5678</a>
+                    <a href="tel:+2348012345678">+234 (0) 810 454 6828</a>
                   </p>
                 </div>
-                <div className="d-flex gap-3 justify-content-center">
-                  <a href="">
-                    <X />
-                  </a>
-                  <a href="">
-                    <LinkedIn />
-                  </a>
-                  <a href="">
-                    <Facebook />
-                  </a>
-                  <a href="">
-                    <Instagram />
-                  </a>
+                <div className="d-flex gap-3 flex-column">
+                  <p className="m-0">get in touch instantly</p>
+                  <div className="d-flex gap-3 justify-content-center">
+                    <a
+                      href={`https://twitter.com/stardeliteLtd`}
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <X />
+                    </a>
+                    <a
+                      href={`https://www.linkedin.com/company/stardelite/`}
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <LinkedIn />
+                    </a>
+                    <a href="#">
+                      <Whatsapp />
+                    </a>
+                    <a
+                      href={`https://instagram.com/stardelitesolutions`}
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <Instagram />
+                    </a>
+                  </div>
                 </div>
               </section>
             </div>

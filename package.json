@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material/textfield": "^14.0.0",
+    "@material/web": "^1.2.0",
     "@studio-freight/lenis": "^1.0.33",
     "@svgr/webpack": "^8.1.0",
     "animejs": "^3.2.1",

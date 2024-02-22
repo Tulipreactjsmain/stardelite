@@ -3,13 +3,6 @@ import React, { useEffect, useState } from "react";
 
 export default function BackgroundSlides() {
   const images = [
-    // "https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700832852/Frame_1_ryctrp.svg",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700739951/unsplash_Xk4hnBZHHZ0_azpwb1.svg",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700738619/unsplash_DBGb9u1Yf6Q_zham6v.svg",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700832853/Rectangle_3_gyva6x.svg",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700832855/Rectangle_4_nr5rqr.svg",
-    // "https://res.cloudinary.com/techbro/image/upload/v1700832824/Pexels_Photo_by_Gantas_Vaic%CC%8Ciule%CC%87nas_vkcm6c.svg",
     "/starsImage.png",
     "/heroImage1.webp",
     "/heroImage2.webp",

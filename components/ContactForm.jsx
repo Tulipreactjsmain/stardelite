@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Button } from "react-bootstrap";
+import { useEffect } from "react";
+import "@material/web/textfield/outlined-text-field.js";
 
 export default function ContactForm() {
   const {
@@ -8,50 +10,50 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
-  const onSubmitHandler = async (data) => {};
+  const onSubmitHandler = async (data) => {
+    // console.log("dataa", data);
+  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmitHandler)} className="my-5">
+    <form
+      onSubmit={handleSubmit(onSubmitHandler)}
+      className="my-5 my-lg-0 my-md-0"
+    >
       <div className="form-group position-relative d-flex flex-column">
-        <label className="form-label-top-left px-2" htmlFor="title">
-          name
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          {...register("name", { required: true })}
-          className="form-input centered-placeholder"
+        <md-outlined-text-field
           placeholder="John Doe ..."
-        />
-        {errors.title && <span className="text-danger">Email is required</span>}
+          label="name"
+          value="John Doe ..."
+          name="name"
+          id="name"
+          type="name"
+          {...register("name", { required: true })}
+        ></md-outlined-text-field>
+        {errors.title && <span className="text-danger">Name is required</span>}
       </div>
       <div className="form-group position-relative d-flex flex-column">
-        <label className="form-label-top-left px-2" htmlFor="title">
-          e-mail
-        </label>
-        <input
-          type="text"
-          id="title"
-          name="title"
-          {...register("title", { required: true })}
-          className="form-input centered-placeholder"
+        <md-outlined-text-field
           placeholder="example@mailservice.com"
-        />
+          label="e-mail"
+          type="email"
+          value="example@mailservice.com"
+          name="email"
+          id="email"
+          {...register("email", { required: true })}
+        ></md-outlined-text-field>
         {errors.title && <span className="text-danger">Email is required</span>}
       </div>
       <div className="form-group position-relative d-flex flex-column">
-        <label className="form-label-top-left px-2" htmlFor="description">
-          your message
-        </label>
-        <textarea
-          id="description"
-          name="description"
-          {...register("description", { required: true })}
-          className="form-input centered-placeholder w-100"
-          style={{ height: "244px" }}
-          placeholder="type your message here"
-        ></textarea>
+        <md-outlined-text-field
+          placeholder="How can we help you ?"
+          label="your message"
+          value="How can we help you ?"
+          name="message"
+          id="message"
+          type="textarea"
+          rows="7"
+          {...register("message", { required: true })}
+        ></md-outlined-text-field>
         {errors.description && (
           <span className="text-danger">Description is required</span>
         )}

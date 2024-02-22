@@ -1,21 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Layout } from ".";
 
 export default function CoreValues() {
   return (
-     <section
-      className="vision d-flex justify-content-between flex-column"
-      id="vision"
-      style={{ paddingTop: "9rem", gap: "4rem" }}
-    >
-      <div className="text-dark-custom text-center">
-        <p>what we believe</p>
-        <h5
-          className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
-        >
-         CORE VALUES
-        </h5>
-      </div>
-    </section>
-  )
+    <footer className="w-100" style={{backgroundColor:"#001133", height:"15.625rem"}}>
+      <Layout padding={"layout-padding"}>
+        
+      </Layout>
+    </footer>
+  );
 }
