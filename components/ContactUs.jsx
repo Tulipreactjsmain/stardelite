@@ -43,7 +43,7 @@ export default function CoreValues() {
           }}
         >
           <div
-            className="layout-margin d-flex flex-column flex-lg-row flex-md-row gap-0 py-0 py-md-5 justify-content-between align-items-center px-5"
+            className="layout-margin py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between align-items-center px-5"
             style={{
               aspectRatio: aspectRatio.toFixed(2),
               backdropFilter: ` blur(6px)`,
@@ -54,7 +54,7 @@ export default function CoreValues() {
             }}
           >
             <div
-              className="mb-5 mb-md-0 mb-lg-0 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
+              className="mb-5 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
               style={{ flex: "1" }}
             >
               <ContactUSLogo />

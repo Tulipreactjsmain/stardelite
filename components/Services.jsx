@@ -94,16 +94,12 @@ export default function Services() {
             OUR SERVICES
           </h5>
         </div>
-        <Row className="w-100 p-0 m-0 justify-content-evenly gap-2">
+        <div className="services-grid w-100 p-0 m-0">
           {services?.map((service, index) => (
-            <Col
-              md={4}
-              lg={3}
-              className="cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 mb-4 hidden"
+            <div
+              className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden service${index}`}
               style={{
                 height: "auto",
-                width: "33.3%",
-                maxWidth: "21.375rem",
                 cursor: "pointer",
                 borderRadius: "2px",
               }}
@@ -114,7 +110,7 @@ export default function Services() {
                 width={`100%`}
                 height={`100%`}
                 className=" object-fit-cover"
-                style={{objectPosition:"50% 50%"}}
+                style={{ objectPosition: "50% 50%" }}
               />
               <div
                 className="w-100 position-absolute top-0 h-100 text-center"
@@ -154,7 +150,10 @@ export default function Services() {
                         {service.summary}
                       </p>
                     </div>
-                    <div className="position-absolute bottom-0 end-0 p-4" style={{ fontSize: "0.7rem" }}>
+                    <div
+                      className="position-absolute bottom-0 end-0 p-4"
+                      style={{ fontSize: "0.7rem" }}
+                    >
                       <span className="me-2">See more</span>
                       <span>
                         <GoArrowRight />
@@ -175,9 +174,9 @@ export default function Services() {
                   </div>
                 )}
               </div>
-            </Col>
+            </div>
           ))}
-        </Row>
+        </div>
       </section>
     </Layout>
   );
