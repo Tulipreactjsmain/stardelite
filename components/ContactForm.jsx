@@ -17,6 +17,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmitHandler)}
+      className="mb-5 my-lg-0 my-md-0"
     >
       <div className="form-group position-relative d-flex flex-column">
         <md-outlined-text-field

@@ -37,6 +37,7 @@ export default function CoreValues() {
           className="w-100"
           style={{
             backgroundImage: "url('/contactUsImage.webp')",
+            backgroundColor: "#001133",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

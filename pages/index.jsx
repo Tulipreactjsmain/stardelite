@@ -13,6 +13,7 @@ import {
   CoreValues,
   Vision,
   WhyChooseUs,
+  Footer,
   ContactUs,
   Faq,
 } from "@/components";
@@ -91,7 +92,7 @@ export default function Home() {
             </Layout>
           </div>
         </section>
-        <section className="w-100" style={{ height: "100%" }}>
+        <section className="w-100 m-0 p-0" style={{ height: "100%" }}>
           <ContentBackground />
           <div
             className="page-content  w-100 h-100 position-relative"
@@ -104,6 +105,7 @@ export default function Home() {
             <Vision />
             <Faq />
             <ContactUs />
+            
           </div>
         </section>
       </main>

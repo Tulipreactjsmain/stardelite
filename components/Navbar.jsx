@@ -23,8 +23,8 @@ export default function Navbar({ heroBottomIsTop }) {
     <header
       className={`${
         heroBottomIsTop ? "update-navbar" : ""
-      } d-flex justify-content-between align-items-center w-100 position-fixed layout-padding pt-2 pt-md-4 pt-lg-4 navbar`}
-      style={{ zIndex: 5000 }}
+      } d-flex justify-content-between align-items-center w-100 position-fixed layout-padding py-2 pt-md-4 pt-lg-3 navbar`}
+      style={{ zIndex: 5000,}}
     >
       <Link
         className="fade-right-animation delay-1"

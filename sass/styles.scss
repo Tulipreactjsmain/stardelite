@@ -41,7 +41,7 @@ html {
 
 body {
   font-family: "Poppins" !important;
-  background-color: #fcfcfc;
+  background-color: #fcfcfc !important;
 }
 
 html.lenis {
@@ -84,11 +84,17 @@ h1 {
   border: solid 1px rgb(255, 255, 255) !important;
 }
 
+.navbar {
+  // transform: translateY(-20%) !important;
+  transition: transform 1s ease-in-out;
+}
+
 .update-navbar {
   background-color: #fcfcfc;
   box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -webkit-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
+  // transform: translateY(0) !important;
 }
 
 .black-text span {
@@ -204,7 +210,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 24px;
-
 }
 
 .explicitPosition {
@@ -236,7 +241,7 @@ h1 {
 
 .core-values-col {
   box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
-  background-color: white;
+  background-color: #fcfcfc;
   transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -342,8 +347,7 @@ md-outlined-text-field {
   }
 
   .layout-padding {
-    padding-right: 10px !important;
-    padding-left: 10px !important;
+    padding: 0 10px !important;
   }
   .layout-margin {
     margin-right: 10px !important;
@@ -371,9 +375,8 @@ md-outlined-text-field {
 
   .services-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 8.2rem ;
+    grid-auto-rows: 8.2rem;
     grid-gap: 24px;
-  
   }
   .service-title {
     font-size: 1rem !important;
@@ -436,8 +439,8 @@ md-outlined-text-field {
   }
 
   .layout-padding {
-    padding-right: 2.7777777777777777vw !important;
-    padding-left: 2.7777777777777777vw !important;
+    padding: 0 2.7777777777777777vw !important;
+    margin: 0 !important;
   }
 
   .layout-margin {
@@ -499,8 +502,7 @@ md-outlined-text-field {
     --root-fontSize: 16px !important;
   }
   .layout-padding {
-    padding-right: 8vw !important;
-    padding-left: 8vw !important;
+    padding: 0 8vw !important;
   }
 
   .layout-margin {
