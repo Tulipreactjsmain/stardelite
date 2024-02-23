@@ -20,7 +20,7 @@ export default function Navbar({ heroBottomIsTop }) {
   };
 
   return (
-    <div
+    <header
       className={`${
         heroBottomIsTop ? "update-navbar" : ""
       } d-flex justify-content-between align-items-center w-100 position-fixed layout-padding pt-2 pt-md-4 pt-lg-4 navbar`}
@@ -87,6 +87,6 @@ export default function Navbar({ heroBottomIsTop }) {
           heroBottomIsTop ? "text-black" : "text-white"
         }`}
       />
-    </div>
+    </header>
   );
 }

@@ -34,6 +34,7 @@ export { default as Innovation } from "./svgs/Innovation.jsx";
 export { default as Instagram } from "./svgs/Instagram.jsx";
 export { default as Whatsapp } from "./svgs/Whatsapp.jsx";
 export { default as X } from "./svgs/X.jsx";
+export { default as ColoredandWhitelogo } from "./svgs/ColoredandWhitelogo.jsx";
 export { default as LinkedIn } from "./svgs/LinkedIn.jsx";
 export { default as ContactUSLogo } from "./svgs/ContactUSLogo.jsx";
 export { default as LogoColored } from "./svgs/LogoColored.jsx";

@@ -60,8 +60,8 @@ export default function Home() {
           stars with Stardelite. We are more than a software development company; we're your partners in innovation. Transform your vision into reality through cutting-edge technology and personalized solutions. Join a community of dreamers and achievers. Let's propel your business to new heights together!"
         />
       </Head>
+      <Navbar heroBottomIsTop={heroBottomIsTop} />
       <main className={`${styles.main} `} ref={DOM_REF}>
-        <Navbar heroBottomIsTop={heroBottomIsTop} />
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
           <div className="heroContent text-white ">
