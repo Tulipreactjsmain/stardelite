@@ -107,6 +107,11 @@ h1 {
   border: solid rgb(255, 221, 86) !important;
   overflow: hidden;
 }
+
+.navBtnBorder:active {
+  transform: scale(0.95);
+}
+
 .navBtnBorder[data-animated="true"] {
   animation: glow 5s infinite;
 }
@@ -324,6 +329,10 @@ md-outlined-text-field {
   margin-bottom: 0 !important;
 }
 
+.Office-Address {
+  flex: 1;
+}
+
 @media (max-width: 767px) {
   body,
   html {
@@ -448,6 +457,9 @@ md-outlined-text-field {
     margin-left: 2.7777777777777777vw !important;
   }
 
+  .nav-links {
+    font-size: 1.2rem !important;
+  }
   .core-values-col {
     box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
   }
@@ -457,10 +469,6 @@ md-outlined-text-field {
     grid-gap: 24px;
     justify-content: space-evenly;
   }
-
-  // .service5 {
-  //   grid-column: span 2;
-  // }
 
   .service-title {
     font-size: 1.6rem !important;
@@ -494,6 +502,10 @@ md-outlined-text-field {
     font-size: 1.4rem !important;
     text-align: center !important;
   }
+
+  .contact form {
+    min-width: 18.875rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -515,27 +527,27 @@ md-outlined-text-field {
   }
 
   .service0 {
-    transition-delay: 100ms !important;
+    transition-delay: 50ms !important;
   }
 
   .service1 {
-    transition-delay: 200ms !important;
+    transition-delay: 100ms !important;
   }
 
   .service2 {
-    transition-delay: 300ms !important;
+    transition-delay: 150ms !important;
   }
 
   .service3 {
-    transition-delay: 400ms !important;
+    transition-delay: 200ms !important;
   }
 
   .service4 {
-    transition-delay: 500ms !important;
+    transition-delay: 250ms !important;
   }
 
   .service5 {
-    transition-delay: 600ms !important;
+    transition-delay: 300ms !important;
   }
 
   .core-values-col {

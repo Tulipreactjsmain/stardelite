@@ -36,7 +36,11 @@ export default function CoreValues() {
               >
                 <LinkedIn />
               </a>
-              <a href="#">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://wa.me/2348104546828"
+              >
                 <Whatsapp />
               </a>
               <a

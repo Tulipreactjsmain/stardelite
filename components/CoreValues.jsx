@@ -12,7 +12,6 @@ export default function CoreValues() {
   const height = 342;
   const aspectRatio = width / height;
 
-  function addCustomClass(value) {}
 
   return (
     <Layout padding={`layout-padding`}>

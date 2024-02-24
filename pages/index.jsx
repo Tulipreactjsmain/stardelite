@@ -13,7 +13,6 @@ import {
   CoreValues,
   Vision,
   WhyChooseUs,
-  Footer,
   ContactUs,
   Faq,
 } from "@/components";

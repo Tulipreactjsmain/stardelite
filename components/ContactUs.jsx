@@ -7,12 +7,11 @@ import {
   LinkedIn,
   Instagram,
 } from ".";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { MdOutlineLocalPhone } from "react-icons/md";
 
-export default function CoreValues() {
-  const width = 1440;
-  const height = 748;
-  const aspectRatio = width / height;
-
+export default function ContactUs() {
   return (
     <Layout>
       <section
@@ -44,9 +43,8 @@ export default function CoreValues() {
           }}
         >
           <div
-            className="layout-margin py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between align-items-center px-5"
+            className="layout-margin py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between  px-4 px-md-5 px-lg-5"
             style={{
-              aspectRatio: aspectRatio.toFixed(2),
               backdropFilter: ` blur(6px)`,
               backgroundColor: "rgb(255, 255, 255, 0.7)",
               marginTop: "80px",
@@ -59,53 +57,68 @@ export default function CoreValues() {
               style={{ flex: "1" }}
             >
               <ContactUSLogo />
-              <section className="d-flex flex-column mx-auto gap-5 text-center text-dark-custom order-first order-md-last order-lg-last">
-                <div>
+              <section className="d-flex flex-column h-100 mx-auto gap-5 text-center text-dark-custom order-first order-md-last order-lg-last">
+                <div className="d-flex Office-Address flex-column gap-2">
                   <h3 style={{ color: "#8099CC" }}>Office Address</h3>
-                  <p>587 street, off Avenue, city.</p>
+                  <div>
+                    <span className="me-2 fs-4">
+                      <CiLocationOn />
+                    </span>
+                    <span>587 street, off Avenue, city.</span>
+                  </div>
                 </div>
-                <div>
+                <div className="d-flex flex-column gap-2">
                   <h3 style={{ color: "#8099CC" }}>Contact Details</h3>
-                  <p>
+                  <div>
+                    <span className="me-2 fs-4">
+                      <MdOutlineMailOutline />
+                    </span>
                     <a href="mailto:info@stardelitesolutions.com">
                       info@stardelitesolutions.com
                     </a>
-                  </p>
-                  <p>
-                    <a href="tel:+15708244377">+1 (570) 824-4377</a>
-                  </p>
-                  <p>
-                    <a href="tel:+2348012345678">+234 (0) 810 454 6828</a>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 flex-column">
-                  <p className="m-0">get in touch instantly</p>
-                  <div className="d-flex gap-3 justify-content-center">
-                    <a
-                      href={`https://twitter.com/stardeliteLtd`}
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <X />
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/company/stardelite/`}
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <LinkedIn />
-                    </a>
-                    <a href="#">
-                      <Whatsapp />
-                    </a>
-                    <a
-                      href={`https://instagram.com/stardelitesolutions`}
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <Instagram />
-                    </a>
                   </div>
+                  <div>
+                    <span className="me-2 fs-4">
+                      <MdOutlineLocalPhone />
+                    </span>
+                    <a href="tel:+15708244377">+1 (570) 824-4377</a>
+                  </div>
+                  <div>
+                    <span className="me-2 fs-4">
+                      <MdOutlineLocalPhone />
+                    </span>
+                    <a href="tel:+2348012345678">+234 (0) 810 454 6828</a>
+                  </div>
+                </div>
+                <div className="d-flex gap-3 justify-content-center">
+                  <a
+                    href={`https://twitter.com/stardeliteLtd`}
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <X />
+                  </a>
+                  <a
+                    href={`https://www.linkedin.com/company/stardelite/`}
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <LinkedIn />
+                  </a>
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://wa.me/2348104546828"
+                  >
+                    <Whatsapp />
+                  </a>
+                  <a
+                    href={`https://instagram.com/stardelitesolutions`}
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <Instagram />
+                  </a>
                 </div>
               </section>
             </div>

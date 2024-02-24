@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { Button } from "react-bootstrap";
-import { useEffect } from "react";
 import "@material/web/textfield/outlined-text-field.js";
 
 export default function ContactForm() {
@@ -8,10 +7,12 @@ export default function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmitHandler = async (data) => {
     // console.log("dataa", data);
+    reset();
   };
 
   return (
