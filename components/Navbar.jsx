@@ -1,11 +1,15 @@
 import { IoChevronDownSharp } from "react-icons/io5";
 import { Button } from "react-bootstrap";
-import { AiOutlineMenu } from "react-icons/ai";
-import { LogoColored, LogoWhite } from ".";
+import { LogoColored, LogoWhite, Modal } from ".";
+import { useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 
 export default function Navbar({ heroBottomIsTop }) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const scrollToHome = () => {
     if (window.scrollY === 0) {
       return;
@@ -83,10 +87,13 @@ export default function Navbar({ heroBottomIsTop }) {
           </Button>
         </div>
       </div>
-      <AiOutlineMenu
-        className={`fs-1 d-md-none d-lg-none ${
-          heroBottomIsTop ? "text-black" : "text-white"
-        }`}
+      <Modal
+        handleShow={handleShow}
+        handleClose={handleClose}
+        heroBottomIsTop={heroBottomIsTop}
+        show={show}
+        setShow={setShow}
+        scrollToContact={scrollToContact}
       />
     </header>
   );

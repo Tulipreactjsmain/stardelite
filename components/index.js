@@ -43,4 +43,5 @@ export { default as Faq } from "./Faq.jsx";
 export { default as FaqCarousel } from "./FaqCarousel.jsx";
 export { default as ContactForm } from "./ContactForm.jsx";
 export { default as HeadMetaData } from "./HeadMetaData.jsx";
+export { default as Modal } from "./Modal.jsx";
 export { default as Footer} from "./Footer.jsx";
