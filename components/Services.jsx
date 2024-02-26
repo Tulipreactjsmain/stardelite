@@ -144,8 +144,8 @@ export default function Services() {
                         style={{
                           lineHeight: "28px",
                           fontWeight: "300",
-                          fontSize: "1.0714285714285714vw",
-                          textAlign:"justify",
+                          fontSize: "1.125rem",
+                          textAlign: "justify",
                         }}
                       >
                         {service.summary}

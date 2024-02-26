@@ -137,9 +137,7 @@ function NavbarModal({
                   handleClose();
                 }}
                 type="button"
-                className={`navBtn text-black ${
-                  heroBottomIsTop ? "update-btn" : ""
-                }`}
+                className={`navBtn text-black update-btn `}
                 style={{ fontSize: "0.85rem" }}
               >
                 CONTACT US
@@ -169,7 +167,6 @@ function NavbarModal({
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer></Modal.Footer>
       </Modal>
     </>
   );
