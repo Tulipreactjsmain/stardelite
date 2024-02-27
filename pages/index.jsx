@@ -49,7 +49,6 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    
   }, []);
   return (
     <>
@@ -93,7 +92,9 @@ export default function Home() {
           </div>
         </section>
         <section className="w-100 m-0 p-0" style={{ height: "100%" }}>
-          <ContentBackground />
+          {/* <ContentBackground>
+            
+          </ContentBackground> */}
           <div
             className="page-content  w-100 h-100 position-relative"
             style={{ zIndex: "500" }}
@@ -105,7 +106,6 @@ export default function Home() {
             <Vision />
             <Faq />
             <ContactUs />
-            
           </div>
         </section>
       </main>
