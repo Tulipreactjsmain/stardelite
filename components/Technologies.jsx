@@ -32,10 +32,6 @@ export default function Technologies() {
       });
     });
   }, []);
-
-  // function addAnimation () {
-
-  // }
   return (
     <Layout padding={`layout-padding`}>
       <div

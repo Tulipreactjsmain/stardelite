@@ -2,7 +2,6 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoChevronDownSharp } from "react-icons/io5";
-import { useRef, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";
@@ -14,12 +13,6 @@ function NavbarModal({
   show,
   scrollToContact,
 }) {
-  const modalRef = useRef();
-  useEffect(() => {
-    console.log("modalref", modalRef?.current.dialog);
-    const modalDialogElement = document.querySelector(".modal-dialog");
-    console.log("modal dialog element", modalDialogElement);
-  }, []);
 
   return (
     <>
@@ -34,8 +27,7 @@ function NavbarModal({
         show={show}
         onHide={handleClose}
         backdrop="static"
-        keyboard={false}
-        ref={modalRef}
+        data-lenis-prevent={true}
       >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
