@@ -26,7 +26,7 @@ export default function CoreValues() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3.75rem",
+              fontSize: "3.5rem",
               lineHeight: "72px",
             }}
           >

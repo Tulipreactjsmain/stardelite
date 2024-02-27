@@ -399,18 +399,18 @@ md-outlined-text-field {
       .buttons-container {
         display: flex;
         flex-direction: column;
-        gap: 10.48px;
         align-items: flex-end;
-        padding: 8.375rem 0 8.375rem 0;
+        padding: 8.375rem 0 0 0;
       }
       button {
         width: 70%;
         border-top-left-radius: 20.96px;
         border-bottom-left-radius: 20.96px;
+        padding-left: 5px;
         height: 5.875rem;
         color: var(--light-blue) !important;
-        font-weight: 400;
-        font-size: 1.5rem;
+        font-weight: 500;
+        font-size: 1.2rem;
         border: none;
         background-color: transparent !important;
         transition: all 0.3s ease-in;
@@ -423,7 +423,7 @@ md-outlined-text-field {
     }
 
     figure {
-      margin: 8.375rem 3.563rem 8.375rem 7.563rem;
+      margin: 8.375rem 3.563rem 3.375rem 7.563rem;
       max-width: 898px;
     }
   }
@@ -725,9 +725,9 @@ md-outlined-text-field {
   //   max-width: none !important;
   // }
 
-  .service-title {
-    font-size: 1.9047619047619047vw !important;
-  }
+  // .service-title {
+  //   font-size: 1.9047619047619047vw !important;
+  // }
 
   .about article picture {
     width: 32.67857142857143vw !important;

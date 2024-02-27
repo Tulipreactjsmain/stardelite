@@ -33,7 +33,7 @@ const servicesModalData = [
     title: "IT Consulting",
     image: "/IT-Consulting.png",
     summary:
-      "At the heart of every successful digital product is a seamless user experience and an intuitive interface. Our product design services combine user research, prototyping, and iterative testing to create captivating and user-friendly experiences. We collaborate closely with stakeholders to understand user personas, pain points, and desired outcomes. Through wireframing, user flows, and interactive prototypes, we validate design concepts before moving into full-scale development. Our focus on usability, accessibility, and aesthetics ensures that your digital products not only meet user expectations but also differentiate your brand in the marketplace, leading to increased user satisfaction and loyalty.",
+      "Navigating the ever-evolving landscape of software development can be daunting, especially for businesses with limited technical expertise. Our software consulting service provides expert guidance and support to help you navigate the complexities of software development and make informed decisions that drive business success. Whether you're looking to develop a new software product, optimize an existing system, or scale your development team, our seasoned consultants leverage their deep industry knowledge and technical expertise to provide strategic advice and actionable recommendations tailored to your unique needs and objectives. From project planning and technology selection to process optimization and team augmentation, we're here to partner with you every step of the way, empowering you to achieve your business goals effectively and efficiently.",
   },
   {
     title: "Graphic Design",
@@ -45,7 +45,7 @@ const servicesModalData = [
     title: "Online Education",
     image: "/online-education.jpg",
     summary:
-      "We create immersive educational experiences that drive meaningful learning outcomes.",
+      "Our Online Education feature revolutionizes learning by providing immersive educational experiences that go beyond traditional methods. With a focus on engagement and interaction, we empower learners to explore and master topics at their own pace. Through cutting-edge technologies and innovative pedagogical approaches, we create dynamic virtual classrooms where students can collaborate, experiment, and learn from anywhere in the world. Our platform is designed to cater to diverse learning styles, offering rich multimedia content, interactive exercises, and personalized feedback to ensure meaningful learning outcomes. Whether you're a student seeking to expand your knowledge or an organization aiming to enhance employee skills, our Online Education feature is your gateway to a world of limitless learning possibilities.",
   },
 ];
 

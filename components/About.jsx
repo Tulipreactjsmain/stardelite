@@ -13,7 +13,7 @@ export default function About() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3.75rem",
+              fontSize: "3.5rem",
               lineHeight: "72px",
             }}
           >
@@ -40,7 +40,7 @@ export default function About() {
             style={{ maxWidth: "42.142857142857146vw" }}
           >
             <header className="text-center mb-3">
-              <h5 className="fw-semibold" style={{ fontSize: "3.25rem" }}>
+              <h5 className="fw-semibold" style={{ fontSize: "3rem" }}>
                 Welcome to Stardelite
               </h5>
               <p style={{ fontSize: "1.1rem", fontWeight: "300" }}>

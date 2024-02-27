@@ -49,6 +49,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    
   }, []);
   return (
     <>

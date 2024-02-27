@@ -11,7 +11,7 @@ export default function CoreValues() {
         <p>what we believe</p>
         <h5
           className="fw-semibold"
-          style={{ color: "#8099CC", fontSize: "3.75rem", lineHeight: "72px" }}
+          style={{ color: "#8099CC", fontSize: "3.5rem", lineHeight: "72px" }}
         >
          CORE VALUES
         </h5>

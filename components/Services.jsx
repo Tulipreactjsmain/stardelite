@@ -46,7 +46,7 @@ export default function Services() {
               className="fw-semibold"
               style={{
                 color: "#8099CC",
-                fontSize: "3.75rem",
+                fontSize: "3.5rem",
                 lineHeight: "72px",
               }}
             >
@@ -107,7 +107,7 @@ export default function Services() {
                             lineHeight: "28px",
                             fontWeight: "300",
                             fontSize: "1.125rem",
-                            textAlign: "justify",
+                            textAlign: "center",
                           }}
                         >
                           {service.summary}
@@ -126,7 +126,7 @@ export default function Services() {
                   ) : (
                     <div className="w-100 h-100 d-flex align-items-center justify-content-center position-relative">
                       <p
-                        className="text-center service-title  fw-medium"
+                        className="text-center service-title fw-medium"
                         style={{ fontSize: "1.8rem", color: "#FFCC00" }}
                       >
                         {getTitleWithBreaks(service.title)}

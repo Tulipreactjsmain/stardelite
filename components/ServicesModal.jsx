@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import servicesModalData from "@/pages/api/servicesModalData";
 import Modal from "react-bootstrap/Modal";
 
@@ -13,7 +12,6 @@ function ServicesModal({
       <Modal
         show={show}
         onHide={handleClose}
-        backdrop="static"
         className="services-modal"
         data-lenis-prevent={true}
       >
@@ -36,15 +34,12 @@ function ServicesModal({
                     }`}
                   >
                     {service.title}
-                    {console.log(
-                      "currentServiceIndex ",
-                      currentServiceIndex === index
-                    )}
+                    
                   </button>
                 ))}
               </div>
             </div>
-            <div style={{ backgroundColor: "rgb(255, 255, 255, 0.9)" }}>
+            <div style={{ backgroundColor: "rgb(255, 255, 255, 0.9)" , height:"fit-content"}}>
               <figure>
                 <p
                   className="text-dark-custom"
