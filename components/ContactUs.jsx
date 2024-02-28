@@ -33,7 +33,7 @@ export default function ContactUs() {
           </h5>
         </div>
         <div
-          className="w-100"
+          className="w-100 cta-section"
           style={{
             backgroundImage: "url('/contactUsImage.webp')",
             backgroundColor: "#001133",

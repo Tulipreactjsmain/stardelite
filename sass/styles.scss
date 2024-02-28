@@ -67,6 +67,18 @@ html.lenis {
   pointer-events: none;
 }
 
+.layout-padding {
+  max-width: 195rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.layout-margin {
+  max-width: 195rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hero-section {
   height: 100vh !important;
   position: sticky;
@@ -89,7 +101,10 @@ h1 {
 
 .navbar {
   // transform: translateY(-20%) !important;
-  transition: transform 1s ease-in-out;
+  // transition: transform 1s ease-in-out;
+  max-width: 195rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .update-navbar {
@@ -97,6 +112,7 @@ h1 {
   box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -webkit-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
+  width: 100% !important;
   // transform: translateY(0) !important;
 }
 
@@ -705,9 +721,19 @@ md-outlined-text-field {
   }
 
   .core0 .bulb-bottom {
-    fill: white;
+    fill: var(--background-white);
     transition: fill 0.8s ease;
   }
+
+  .core0 .bulb-stroke {
+    stroke: var(--background-white);
+    transition: stroke 0.8s ease;
+  }
+
+  .core0:hover .bulb-stroke {
+    stroke: #001133;
+  }
+
   .core0:hover .bulb-bottom {
     fill: var(--dark-custom-color) !important;
   }
@@ -718,6 +744,17 @@ md-outlined-text-field {
     transition: fill 0.8s ease, stroke 0.8s ease;
   }
   .core0:hover .bulb-top {
+    stroke: transparent;
+    fill: #ffd42b !important;
+  }
+
+  .core1 .bulb-top {
+    fill: transparent;
+    stroke: "#001133";
+    transition: fill 0.8s ease, stroke 0.8s ease;
+  }
+
+  .core1:hover .bulb-top {
     stroke: transparent;
     fill: #ffd42b !important;
   }
@@ -745,10 +782,10 @@ md-outlined-text-field {
   //   font-size: 1.9047619047619047vw !important;
   // }
 
-  .about article picture {
-    width: 32.67857142857143vw !important;
-    max-width: none !important;
-  }
+  // .about article picture {
+  //   width: 32.67857142857143vw !important;
+  //   max-width: none !important;
+  // }
 }
 
 @media (prefers-reduced-motion) {

@@ -92,10 +92,10 @@ export default function Services() {
                 >
                   {isMouseIn === index ? (
                     <div
-                      className="w-100 text-dark-custom h-100 d-flex flex-column"
-                      style={{ padding: "1.125rem 2.313rem" }}
+                      className="w-100 text-dark-custom h-100 d-flex flex-column justify-content-between"
+                      style={{ padding: "1.125rem 5px" }}
                     >
-                      <div className="d-flex flex-column pb-4">
+                      <div className="d-flex flex-column">
                         <p
                           className="text-center service-title p-2"
                           style={{ fontSize: "1.8rem" }}
@@ -114,8 +114,8 @@ export default function Services() {
                         </p>
                       </div>
                       <div
-                        className="position-absolute bottom-0 end-0 p-4"
-                        style={{ fontSize: "0.7rem" }}
+                        className="d-flex justify-content-end me-2"
+                        style={{ fontSize: "0.8rem" }}
                       >
                         <span className="me-2">See more</span>
                         <span>

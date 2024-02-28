@@ -141,7 +141,7 @@ function NavbarModal({
                   <MdOutlineMailOutline />
                 </span>
                 <a href="mailto:info@stardelitesolutions.com">
-                  info@stardelitesolutions.com
+                  hello@stardelitesolutions.com
                 </a>
               </div>
               <div>
