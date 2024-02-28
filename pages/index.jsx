@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 import { useRef, useEffect, useState } from "react";
 import styles from "@/sass/Home.module.scss";
 import {
@@ -52,6 +53,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Toaster />
       <Head>
         <title>Stardelite- Elevate Your Ideas, Reach for the Stars</title>
         <meta

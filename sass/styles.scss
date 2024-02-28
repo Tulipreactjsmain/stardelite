@@ -439,6 +439,18 @@ md-outlined-text-field {
   transition: transform 0.3s ease-out !important;
   transform: translateX(0%) !important;
 }
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+}
 
 @media (max-width: 767px) {
   body,
