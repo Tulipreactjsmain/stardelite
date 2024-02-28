@@ -8,7 +8,7 @@ import ReactDOMServer from "react-dom/server";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
-  const [initialValues, setInitialValues] = useState(null); 
+  const [initialValues, setInitialValues] = useState(null);
   const {
     register,
     handleSubmit,
@@ -17,17 +17,19 @@ export default function ContactForm() {
     reset,
   } = useForm();
 
-  const defaultValues = { 
-    name: 'John Doe',
-    email: 'example@mailservice.com',
-    message: 'How can we help you?'
+  const defaultValues = {
+    name: "John Doe",
+    email: "example@mailservice.com",
+    message: "How can we help you?",
   };
 
   const onSubmitHandler = async (data) => {
-    const formChanged = Object.keys(data).some(key => data[key] !== initialValues[key]);
+    const formChanged = Object.keys(data).some(
+      (key) => data[key] !== initialValues[key]
+    );
     if (!formChanged) {
-      toast.error('Please update at least one field before submitting.');
-      return; 
+      toast.error("Please update at least one field before submitting.");
+      return;
     }
     try {
       setLoading(true);
@@ -39,24 +41,23 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       });
       if (response.ok) {
-        toast("Email sent successfully");
+        toast("Message sent successfully");
         setTimeout(() => {
           setLoading(false);
         }, 2000);
 
         reset();
       } else {
-        console.error("Error sending email");
         toast.error("Error sending email");
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
       }
     } catch (error) {
-      console.error("Error sending email:", error);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
+      console.error("Error sending message:", error);
+      
     }
   };
-
 
   useEffect(() => {
     setInitialValues(getValues());
@@ -116,7 +117,7 @@ export default function ContactForm() {
             <span className="text-danger">Email is required</span>
           )}
         </div>
-        <div className="form-group position-relative d-flex flex-column">
+        <div className="form-group position-relative d-flex flex-column gap-2">
           <md-outlined-text-field
             placeholder="How can we help you ?"
             label="your message"
@@ -127,6 +128,9 @@ export default function ContactForm() {
             rows="7"
             {...register("message", { required: true })}
           ></md-outlined-text-field>
+          {/* <div>
+            <span className="text-dark-custom" style={{fontSize:"0.8rem"}}>Drag and drop or browse to upload your file(s)</span>
+          </div> */}
           {errors.description && (
             <span className="text-danger">Description is required</span>
           )}

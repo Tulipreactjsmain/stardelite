@@ -379,6 +379,10 @@ md-outlined-text-field {
     right: 0;
     border: none !important;
     z-index: 5000;
+
+    .btn-close {
+      background-size: cover !important;
+    }
   }
 
   .modal-content {
@@ -576,8 +580,8 @@ md-outlined-text-field {
   }
 
   .services-modal figure {
-    margin-right: 10px !important;
-    margin-left: 10px !important;
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
   }
 }
 

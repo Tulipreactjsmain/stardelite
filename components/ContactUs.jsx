@@ -64,7 +64,7 @@ export default function ContactUs() {
                     <span className="me-2 fs-4">
                       <CiLocationOn />
                     </span>
-                    <span>587 street, off Avenue, city.</span>
+                    <span>10 Murphy Agungi, Lekki, Lagos.</span>
                   </div>
                 </div>
                 <div className="d-flex flex-column gap-2">
@@ -74,7 +74,7 @@ export default function ContactUs() {
                       <MdOutlineMailOutline />
                     </span>
                     <a href="mailto:info@stardelitesolutions.com">
-                      info@stardelitesolutions.com
+                      hello@stardelitesolutions.com
                     </a>
                   </div>
                   <div>
