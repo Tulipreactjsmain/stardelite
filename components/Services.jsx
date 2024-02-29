@@ -78,9 +78,10 @@ export default function Services() {
                   className="w-100 position-absolute top-0 h-100 text-center"
                   style={{
                     backgroundColor: `${
-                      isMouseIn === index ? "white" : "#002266CC"
+                      isMouseIn === index
+                        ? "#fcfcfc"
+                        : "#002266CC"
                     }`,
-                    opacity: 0.9,
                     transition: "background-color 0.3s ease-in-out",
                   }}
                   onMouseOver={() => {
@@ -92,10 +93,13 @@ export default function Services() {
                 >
                   {isMouseIn === index ? (
                     <div
-                      className="w-100 text-dark-custom h-100 d-flex flex-column justify-content-between"
+                      className="w-100 text-dark-custom h-100 d-flex flex-column justify-content-between align-items-center"
                       style={{ padding: "1.125rem 5px" }}
                     >
-                      <div className="d-flex flex-column">
+                      <div
+                        className="d-flex flex-column"
+                        style={{ maxWidth: "287px" }}
+                      >
                         <p
                           className="text-center service-title p-2"
                           style={{ fontSize: "1.8rem" }}
@@ -114,7 +118,7 @@ export default function Services() {
                         </p>
                       </div>
                       <div
-                        className="d-flex justify-content-end me-2"
+                        className="d-flex justify-content-end me-4 w-100"
                         style={{ fontSize: "0.8rem" }}
                       >
                         <span className="me-2">See more</span>

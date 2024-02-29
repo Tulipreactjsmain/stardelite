@@ -81,7 +81,7 @@ export default function ContactUs() {
                     <span className="me-2 fs-4">
                       <MdOutlineLocalPhone />
                     </span>
-                    <a href="tel:+15708244377">+1 (570) 824-4377</a>
+                    <a href="tel:+15708244377">+1 (805) 703-4030</a>
                   </div>
                   <div>
                     <span className="me-2 fs-4">

@@ -30,10 +30,10 @@ const servicesModalData = [
       "In today's data-driven world, extracting actionable insights from your data is crucial for making informed business decisions and gaining a competitive edge. Our data analytics service empowers businesses to harness the full potential of their data through advanced analytics, predictive modeling, and data visualization. Using state-of-the-art tools and techniques, we analyze your data to uncover hidden patterns, trends, and correlations that can inform strategic decision-making and drive business growth. Whether you need help with data collection, cleansing, analysis, or visualization, our team of data experts will work closely with you to develop customized analytics solutions that address your specific business challenges and objectives.",
   },
   {
-    title: "IT Consulting",
-    image: "/IT-Consulting.png",
+    title: "Social Advertising",
+    image: "/social-advertising.webp",
     summary:
-      "Navigating the ever-evolving landscape of software development can be daunting, especially for businesses with limited technical expertise. Our software consulting service provides expert guidance and support to help you navigate the complexities of software development and make informed decisions that drive business success. Whether you're looking to develop a new software product, optimize an existing system, or scale your development team, our seasoned consultants leverage their deep industry knowledge and technical expertise to provide strategic advice and actionable recommendations tailored to your unique needs and objectives. From project planning and technology selection to process optimization and team augmentation, we're here to partner with you every step of the way, empowering you to achieve your business goals effectively and efficiently.",
+      "Crafting effective social advertising campaigns can be a daunting task, especially for businesses seeking to maximize their online presence. At our agency, we offer a comprehensive social advertising service designed to provide expert guidance and support every step of the way. Whether you're aiming to increase brand awareness, drive website traffic, or boost sales, our team of experienced professionals is here to help. From strategic campaign planning to precise audience targeting, we leverage our industry knowledge and expertise to deliver tailored solutions that align with your unique goals and objectives. Let us partner with you to navigate the complexities of social media advertising and empower your brand to succeed in the digital landscape.",
   },
   {
     title: "Graphic Design",

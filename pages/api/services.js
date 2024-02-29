@@ -25,9 +25,9 @@ const services = [
     summary: "Extract actionable insights from your data.",
   },
   {
-    title: "IT Consulting",
-    image: "/IT-Consulting.png",
-    summary: "Provide strategic IT guidance tailored to your challenges.",
+    title: "Social Advertising",
+    image: "social-advertising.webp",
+    summary: "Boost brand reach and engagement with targeted social ads.",
   },
   {
     title: "Graphic Design",

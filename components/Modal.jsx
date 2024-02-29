@@ -13,7 +13,6 @@ function NavbarModal({
   show,
   scrollToContact,
 }) {
-
   return (
     <>
       <AiOutlineMenu
@@ -148,7 +147,7 @@ function NavbarModal({
                 <span className="me-2">
                   <MdOutlineLocalPhone />
                 </span>
-                <a href="tel:+15708244377">+1 (570) 824-4377</a>
+                <a href="tel:+15708244377">+1 (805) 703-4030</a>
               </div>
               <div>
                 <span className="me-2">
