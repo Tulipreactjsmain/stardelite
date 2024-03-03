@@ -69,6 +69,7 @@ export default function Services() {
               >
                 <Image
                   src={service.image}
+                  loading="lazy"
                   width={`100%`}
                   height={`100%`}
                   className=" object-fit-cover"
@@ -118,7 +119,7 @@ export default function Services() {
                         </p>
                       </div>
                       <div
-                        className="d-flex justify-content-end me-4 w-100"
+                        className="d-flex justify-content-end me-5 w-100"
                         style={{ fontSize: "0.8rem" }}
                       >
                         <span className="me-2">See more</span>

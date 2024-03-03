@@ -22,13 +22,14 @@ export default function About() {
         </div>
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
-          className="hidden"
+            className="hidden"
             style={{
               maxWidth: "34.313rem",
               display: "block",
             }}
           >
             <img
+              loading="lazy"
               src="./AboutUs.png"
               alt="about-us-image"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}

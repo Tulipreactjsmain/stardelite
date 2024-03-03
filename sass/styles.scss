@@ -304,6 +304,72 @@ md-outlined-text-field {
 .form-group {
   margin-bottom: 30px;
 }
+.input-container input,
+.input-container textarea {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 32px);
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: text;
+  overflow-x: hidden;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    margin: 0;
+    font-size: 14px;
+    color: var(--light-blue);
+  }
+}
+.input-container textarea{
+  height: 80%;
+}
+
+.input-container:hover input::placeholder,
+.input-container:hover textarea::placeholder {
+  color: var(--dark-custom-color);
+}
+
+.absolute-lablel-input,
+.absolute-lablel-textarea {
+  display: grid;
+  grid-template-columns: 16px max-content auto;
+}
+
+.absolute-lablel-input div {
+  height: 56px;
+}
+.absolute-lablel-textarea div {
+  min-height: 200px;
+}
+
+.absolute-lablel-input div:nth-of-type(1),
+.absolute-lablel-textarea div:nth-of-type(1) {
+  border: solid #001a4d 1px;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.absolute-lablel-input div:nth-of-type(2),
+.absolute-lablel-textarea div:nth-of-type(2) {
+  border: solid #001a4d 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.absolute-lablel-input div:nth-of-type(3),
+.absolute-lablel-textarea div:nth-of-type(3) {
+  border: solid #001a4d 1px;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 .contactUsLogo {
   width: 14.821428571428571vw;

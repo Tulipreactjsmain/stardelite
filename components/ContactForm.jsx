@@ -8,29 +8,14 @@ import ReactDOMServer from "react-dom/server";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
-  const [initialValues, setInitialValues] = useState(null);
   const {
     register,
     handleSubmit,
     formState: { errors },
-    getValues,
     reset,
   } = useForm();
 
-  const defaultValues = {
-    name: "John Doe",
-    email: "example@mailservice.com",
-    message: "How can we help you?",
-  };
-
   const onSubmitHandler = async (data) => {
-    const formChanged = Object.keys(data).some(
-      (key) => data[key] !== initialValues[key]
-    );
-    if (!formChanged) {
-      toast.error("Please update at least one field before submitting.");
-      return;
-    }
     try {
       setLoading(true);
       const response = await fetch("/api/send-email", {
@@ -55,12 +40,10 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      
     }
   };
 
   useEffect(() => {
-    setInitialValues(getValues());
     if (loading) {
       const overlay = document.createElement("div");
       overlay.className = "overlay";
@@ -87,52 +70,99 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit(onSubmitHandler)}
-        className="mb-5 my-lg-0 my-md-0"
+        className="mb-5 my-lg-0 my-md-0 text-dark-custom"
       >
-        <div className="form-group position-relative d-flex flex-column">
-          <md-outlined-text-field
-            placeholder="John Doe ..."
-            label="name"
-            value={defaultValues.name}
-            name="name"
-            id="name"
-            type="name"
-            {...register("name", { required: true })}
-          ></md-outlined-text-field>
-          {errors.title && (
-            <span className="text-danger">Name is required</span>
+        <div className="form-group d-flex flex-column">
+          <div className="input-container position-relative">
+            <div className="absolute-lablel-input">
+              <div></div>
+              <div className="position-relative">
+                <label
+                  className="position-relative top-0 mx-1"
+                  htmlFor="name"
+                  style={{ transform: "translateY(-50%)" }}
+                >
+                  name
+                </label>
+              </div>
+              <div></div>
+            </div>
+            <input
+              className="position-absolute"
+              placeholder="John Doe ..."
+              label="name"
+              name="name"
+              id="name"
+              type="name"
+              {...register("name", { required: true })}
+            />
+          </div>
+          {errors.name && (
+            <span className="text-danger" style={{ fontSize: "14px" }}>
+              Name is required
+            </span>
           )}
         </div>
-        <div className="form-group position-relative d-flex flex-column">
-          <md-outlined-text-field
-            placeholder="example@mailservice.com"
-            label="e-mail"
-            type="email"
-            value={defaultValues.email}
-            name="email"
-            id="email"
-            {...register("email", { required: true })}
-          ></md-outlined-text-field>
-          {errors.title && (
-            <span className="text-danger">Email is required</span>
+        <div className="form-group d-flex flex-column">
+          <div className="input-container position-relative">
+            <div className="absolute-lablel-input">
+              <div></div>
+              <div className="position-relative">
+                <label
+                  className="position-relative top-0 mx-1"
+                  htmlFor="name"
+                  style={{ transform: "translateY(-50%)" }}
+                >
+                  e-mail
+                </label>
+              </div>
+              <div></div>
+            </div>
+            <input
+              className="position-absolute"
+              placeholder="example@gmail.com"
+              label="name"
+              name="email"
+              id="email"
+              type="email"
+              {...register("email", { required: true })}
+            />
+          </div>
+          {errors.email && (
+            <span className="text-danger" style={{ fontSize: "14px" }}>
+              Email is required
+            </span>
           )}
         </div>
-        <div className="form-group position-relative d-flex flex-column gap-2">
-          <md-outlined-text-field
-            placeholder="How can we help you ?"
-            label="your message"
-            value={defaultValues.message}
-            name="message"
-            id="message"
-            type="textarea"
-            rows="7"
-            {...register("message", { required: true })}
-          ></md-outlined-text-field>
-          {/* <div>
-            <span className="text-dark-custom" style={{fontSize:"0.8rem"}}>Drag and drop or browse to upload your file(s)</span>
-          </div> */}
-          {errors.description && (
-            <span className="text-danger">Description is required</span>
+        <div className="form-group d-flex flex-column gap-2">
+          <div className="input-container position-relative">
+            <div className="absolute-lablel-textarea">
+              <div></div>
+              <div className="position-relative">
+                <label
+                  className="position-relative top-0 mx-1"
+                  htmlFor="name"
+                  style={{ transform: "translateY(-50%)" }}
+                >
+                  message
+                </label>
+              </div>
+              <div></div>
+            </div>
+            <textarea
+              className="position-absolute"
+              placeholder="How can we help you ?"
+              label="your message"
+              name="message"
+              id="message"
+              type="textarea"
+              {...register("message", { required: true })}
+            ></textarea>
+          </div>
+          {errors.message && (
+            <span className="text-danger" style={{ fontSize: "14px" }}>
+              Description is required
+            </span>
           )}
         </div>
         <div className="w-100">

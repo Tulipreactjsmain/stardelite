@@ -34,7 +34,7 @@ export default function OurVision() {
             seamless integration of technology and strategic insights.
           </figcaption>
           <picture className="hidden" style={{ width: "36.75059523809524vw" }}>
-            <Image src="/quoteImage.png" width={`100%`} />
+            <Image src="/quoteImage.png"  loading="lazy"  width={`100%`} />
           </picture>
         </figure>
       </section>

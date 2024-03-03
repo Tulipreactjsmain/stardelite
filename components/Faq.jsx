@@ -31,6 +31,7 @@ export default function Faq() {
           >
             <img
               src="./g3.png"
+              loading="lazy"
               alt="faq-image"
               style={{ width: "100%", objectFit: "cover" }}
             />
