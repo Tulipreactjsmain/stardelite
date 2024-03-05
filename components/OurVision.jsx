@@ -10,7 +10,7 @@ export default function OurVision() {
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-center hidden">
-          <p>what we want to do</p>
+          <p className="m-0">what we want to do</p>
           <h5
             className="fw-semibold"
             style={{

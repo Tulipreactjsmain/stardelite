@@ -41,7 +41,7 @@ export default function Services() {
           style={{ paddingTop: "9rem", gap: "4rem" }}
         >
           <div className="text-dark-custom text-center hidden">
-            <p>what we do</p>
+            <p className="m-0">what we do</p>
             <h5
               className="fw-semibold"
               style={{

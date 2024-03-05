@@ -26,24 +26,13 @@ export default function HeadMetaData() {
         content="We are your partners in innovation, transforming visions into reality through cutting-edge technology and personalized solutions. Join our community of dreamers and achievers. Let's propel your business to new heights together!"
       />
       <meta name="twitter:image" content="/coverImage.webp" />
+      
+      <link rel="icon" type="image/x-icon" href="/iconJPEG.ico" />
       <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="/iconJPEG.ico"
       />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
-      <link rel="manifest" href="/site.webmanifest" />
     </Head>
   );
 }

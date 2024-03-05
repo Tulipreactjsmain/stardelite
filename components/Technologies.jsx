@@ -40,7 +40,7 @@ export default function Technologies() {
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center hidden">
-          <p>what we work with</p>
+          <p className="m-0">what we work with</p>
           <h5
             className="fw-semibold"
             style={{

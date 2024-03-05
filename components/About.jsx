@@ -8,7 +8,7 @@ export default function About() {
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <div className="text-dark-custom text-center hidden">
-          <p>who we are</p>
+          <p className="m-0">who we are</p>
           <h5
             className="fw-semibold"
             style={{

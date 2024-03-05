@@ -100,8 +100,6 @@ h1 {
 }
 
 .navbar {
-  // transform: translateY(-20%) !important;
-  // transition: transform 1s ease-in-out;
   max-width: 195rem;
   left: 50%;
   transform: translateX(-50%);
@@ -113,7 +111,6 @@ h1 {
   -webkit-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px 1px 15px 0px rgba(0, 0, 0, 0.06);
   width: 100% !important;
-  // transform: translateY(0) !important;
 }
 
 .black-text span {
@@ -226,6 +223,13 @@ h1 {
   color: #ffcc00 !important;
 }
 
+.page-content {
+  background-image: url("/bgIcons.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hidden {
   opacity: 0 !important;
   transform: translateY(30%);
@@ -325,7 +329,7 @@ md-outlined-text-field {
     color: var(--light-blue);
   }
 }
-.input-container textarea{
+.input-container textarea {
   height: 80%;
 }
 
