@@ -44,4 +44,5 @@ export { default as ContactForm } from "./ContactForm.jsx";
 export { default as HeadMetaData } from "./HeadMetaData.jsx";
 export { default as Modal } from "./Modal.jsx";
 export { default as ServicesModal } from "./ServicesModal.jsx";
+export { default as TrustBox} from "./TrustBox.jsx";
 export { default as Footer} from "./Footer.jsx";

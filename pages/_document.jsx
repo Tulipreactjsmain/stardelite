@@ -7,11 +7,16 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script
+          type="text/javascript"
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          async
+        ></script>
+        <script
+          src="//code.tidio.co/rfolckocnwnyxjflakkycystx7kbt7rk.js"
+          async
+        ></script>
       </body>
-      <script
-        src="//code.tidio.co/rfolckocnwnyxjflakkycystx7kbt7rk.js"
-        async
-      ></script>
     </Html>
   );
 }
