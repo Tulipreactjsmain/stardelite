@@ -68,20 +68,22 @@ export default function Services() {
                 }}
               >
                 <Image
-                  src={service.image}
+                  src=""
+                  data-src={service.image}
                   loading="lazy"
-                  width={`100%`}
-                  height={`100%`}
-                  className=" object-fit-cover"
-                  style={{ objectPosition: "50% 50%" }}
+                  decoding="async"
+                  className=" object-fit-cover lazy-load"
+                  style={{
+                    objectPosition: "50% 50%",
+                    width: "100%",
+                    height: "100%",
+                  }}
                 />
                 <div
                   className="w-100 position-absolute top-0 h-100 text-center"
                   style={{
                     backgroundColor: `${
-                      isMouseIn === index
-                        ? "#fcfcfc"
-                        : "#002266CC"
+                      isMouseIn === index ? "#fcfcfc" : "#002266CC"
                     }`,
                     transition: "background-color 0.3s ease-in-out",
                   }}

@@ -1,4 +1,5 @@
 import { Layout, FaqCarousel } from ".";
+import { Image } from "react-bootstrap";
 
 export default function Faq() {
   return (
@@ -23,17 +24,20 @@ export default function Faq() {
         </div>
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
-          className="hidden"
+            className="hidden"
             style={{
               maxWidth: "21.785714285714285vw",
               display: "block",
             }}
           >
-            <img
-              src="./g3.png"
+            <Image
+              data-src="./g3.png"
+              src=""
               loading="lazy"
+              decoding="async"
               alt="faq-image"
-              style={{ width: "100%", objectFit: "cover" }}
+              className="lazy-load"
+              style={{ objectFit: "cover", width: "100%", height: "100"}}
             />
           </picture>
           {/* <figure
@@ -48,7 +52,7 @@ export default function Faq() {
               <HiChevronRight color="#001a4d" />
             </span>
           </figure> */}
-          <FaqCarousel/>
+          <FaqCarousel />
         </article>
       </section>
     </Layout>

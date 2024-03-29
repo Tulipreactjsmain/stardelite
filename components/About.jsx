@@ -1,4 +1,5 @@
 import Layout from "./Layout";
+import { Image } from "react-bootstrap";
 export default function About() {
   return (
     <Layout padding={`layout-padding`}>
@@ -28,10 +29,13 @@ export default function About() {
               display: "block",
             }}
           >
-            <img
+            <Image
+              className="lazy-load"
               loading="lazy"
-              src="./AboutUs.png"
+              data-src="./AboutUs.png"
+              src=""
               alt="about-us-image"
+              decoding="async"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </picture>

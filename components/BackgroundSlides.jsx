@@ -14,6 +14,7 @@ export default function BackgroundSlides() {
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
   useEffect(() => {
     const image = new Image();
+    image.classList.add("lazy-load");
     image.src = images[1];
     image.onload = () => {
       setBackgroundImage(image.src);
@@ -27,31 +28,31 @@ export default function BackgroundSlides() {
       <BgSlides fade controls={false} indicators={false} className="Hero-BG">
         <BgSlides.Item className="Hero-BG">
           <div
-            className="Hero-BG"
+            className="Hero-BG background"
             style={{
               backgroundImage: `url('${backgroundImage}')`,
             }}
           ></div>
         </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG">
+        <BgSlides.Item className="Hero-BG background">
           <div
-            className="Hero-BG"
+            className="Hero-BG background"
             style={{
               backgroundImage: `url('${images[2]}')`,
             }}
           ></div>
         </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG">
+        <BgSlides.Item className="Hero-BG background">
           <div
-            className="Hero-BG"
+            className="Hero-BG background"
             style={{
               backgroundImage: `url('${images[5]}')`,
             }}
           ></div>
         </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG">
+        <BgSlides.Item className="Hero-BG background">
           <div
-            className="Hero-BG"
+            className="Hero-BG background"
             style={{
               backgroundImage: `url('${images[4]}')`,
             }}

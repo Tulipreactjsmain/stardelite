@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import { useRef, useEffect, useState } from "react";
 import styles from "@/sass/Home.module.scss";
+import lazyLoadBg from "@/utils/lazyLoadBg";
 import {
   BackgroundSlides,
   MediaIcons,
@@ -24,6 +25,7 @@ export default function Home() {
   const [heroBottomIsTop, setHeroBottomIsTop] = useState(false);
   const DOM_REF = useRef(null);
   gsapEffects(DOM_REF);
+  lazyLoadBg(DOM_REF)
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -83,7 +85,7 @@ export default function Home() {
                   className="fs-6 mt-4 text-md-center typing-texts"
                   style={{ maxWidth: "40rem" }}
                 >
-                  "Reach for the stars with Stardelite – your innovation
+                  Reach for the stars with Stardelite – your innovation
                   partners.<span className="heroDescription"></span>
                   <span className="textCursor">|</span>
                 </p>
@@ -94,7 +96,7 @@ export default function Home() {
         </section>
         <section className="w-100 m-0 p-0" style={{ height: "100%" }}>
           <div
-            className="page-content  w-100 h-100 position-relative"
+            className="page-content background w-100 h-100 position-relative"
             style={{ zIndex: "500" }}
           >
             <Technologies />

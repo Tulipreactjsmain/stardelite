@@ -24,7 +24,7 @@ export default function OurVision() {
         </div>
         <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-around">
           <figcaption
-          className="hidden"
+            className="hidden"
             style={{
               textAlign: "justify",
               fontSize: "2.142857142857143vw",
@@ -34,7 +34,15 @@ export default function OurVision() {
             seamless integration of technology and strategic insights.
           </figcaption>
           <picture className="hidden" style={{ width: "36.75059523809524vw" }}>
-            <Image src="/quoteImage.png"  loading="lazy"  width={`100%`} />
+            <Image
+              src=""
+              data-src="/quoteImage.png"
+              loading="lazy"
+              className="lazy-load"
+              alt="vision-image"
+              decoding="async"
+              style={{ width: "100%", height: "100%" }}
+            />
           </picture>
         </figure>
       </section>

@@ -150,6 +150,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover !important;
+  transition: background-image 1s ease-in-out;;
 }
 
 .carousel-inner {
@@ -228,6 +229,10 @@ h1 {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.background {
+  background: none !important;
 }
 
 .hidden {
