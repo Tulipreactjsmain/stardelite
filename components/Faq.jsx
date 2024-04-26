@@ -31,7 +31,7 @@ export default function Faq() {
             }}
           >
             <Image
-              data-src="./g3.png"
+              data-src="/g3.png"
               src=""
               loading="lazy"
               decoding="async"

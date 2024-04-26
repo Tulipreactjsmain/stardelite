@@ -150,7 +150,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover !important;
-  transition: background-image 1s ease-in-out;;
+  transition: background-image 1s ease-in-out;
 }
 
 .carousel-inner {
@@ -229,10 +229,6 @@ h1 {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.background {
-  background: none !important;
 }
 
 .hidden {
@@ -462,7 +458,10 @@ md-outlined-text-field {
 
 .services-modal .modal-dialog {
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 80% !important;
+  height: 70% !important;
+  margin: none !important;
+  padding: none !important;
   background-color: transparent !important;
 
   .modal-header {
@@ -476,9 +475,9 @@ md-outlined-text-field {
     }
   }
 
-  .modal-content {
-    background-color: transparent !important;
-  }
+  // .modal-content {
+  //   background-color: transparent !important;
+  // }
   .modal-body {
     padding: 0 !important;
     background-color: transparent !important;
@@ -495,14 +494,19 @@ md-outlined-text-field {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 8.375rem 0 0 0;
+        padding: 1.375rem 0;
+        // margin: 2rem 0;
       }
       button {
         width: 70%;
         border-top-left-radius: 20.96px;
         border-bottom-left-radius: 20.96px;
         padding-left: 5px;
-        height: 5.875rem;
+        // height: 5.875rem;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
         color: var(--light-blue) !important;
         font-weight: 500;
         font-size: 1.2rem;
@@ -625,6 +629,12 @@ md-outlined-text-field {
   .service-title {
     font-size: 1rem !important;
   }
+
+  .services-modal .modal-dialog {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
   .aboutUs-description,
   .faq-description {
     max-width: 375px !important;
@@ -708,6 +718,15 @@ md-outlined-text-field {
 
   .service-title {
     font-size: 1.6rem !important;
+  }
+
+  .services-modal .modal-dialog {
+    max-width: 700px !important;
+    height: 55% !important;
+
+    figure {
+      margin: 8.375rem 3.563rem 3.375rem 3.563rem !important; 
+    }
   }
   .aboutUs-description section p,
   .faq-description section p {
