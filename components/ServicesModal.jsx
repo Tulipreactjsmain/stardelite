@@ -12,7 +12,7 @@ function ServicesModal({
       <Modal
         show={show}
         onHide={handleClose}
-        className="services-modal"
+        className="services-modal d-flex justify-content-center align-items-center"
         data-lenis-prevent={true}
       >
         <Modal.Header closeButton></Modal.Header>
@@ -39,7 +39,7 @@ function ServicesModal({
                 ))}
               </div>
             </div>
-            <div style={{ backgroundColor: "rgb(255, 255, 255, 0.9)" , height:"fit-content"}}>
+            <div style={{ backgroundColor: "rgb(255, 255, 255, 0.9)" , height:""}}>
               <figure>
                 <p
                   className="text-dark-custom"
