@@ -32,7 +32,7 @@ export default function About() {
             <Image
               className="lazy-load"
               loading="lazy"
-              data-src="./AboutUs.png"
+              data-src="/AboutUs.png"
               src=""
               alt="about-us-image"
               decoding="async"

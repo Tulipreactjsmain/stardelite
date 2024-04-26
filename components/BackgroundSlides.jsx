@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 export default function BackgroundSlides() {
   const images = [
-    "/starsImage.png",
     "/heroImage1.webp",
     "/heroImage2.webp",
     "/heroImage3.webp",
@@ -11,53 +10,42 @@ export default function BackgroundSlides() {
     "/heroImage5.webp",
   ];
 
-  const [backgroundImage, setBackgroundImage] = useState(images[0]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
   useEffect(() => {
-    const image = new Image();
-    image.classList.add("lazy-load");
-    image.src = images[1];
-    image.onload = () => {
-      setBackgroundImage(image.src);
+    const preloadImages = () => {
+      const imagePromises = images.map((imageUrl) => {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.src = imageUrl;
+          image.onload = resolve;
+          image.onerror = reject;
+        });
+      });
+
+      Promise.all(imagePromises)
+        .then(() => setImagesLoaded(true))
+        .catch((error) => console.error("Failed to preload images:", error));
     };
-    return () => {
-      image.onload = null;
-    };
+
+    preloadImages();
   }, []);
+
   return (
     <>
       <BgSlides fade controls={false} indicators={false} className="Hero-BG">
-        <BgSlides.Item className="Hero-BG">
-          <div
-            className="Hero-BG background"
-            style={{
-              backgroundImage: `url('${backgroundImage}')`,
-            }}
-          ></div>
-        </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG background">
-          <div
-            className="Hero-BG background"
-            style={{
-              backgroundImage: `url('${images[2]}')`,
-            }}
-          ></div>
-        </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG background">
-          <div
-            className="Hero-BG background"
-            style={{
-              backgroundImage: `url('${images[5]}')`,
-            }}
-          ></div>
-        </BgSlides.Item>
-        <BgSlides.Item className="Hero-BG background">
-          <div
-            className="Hero-BG background"
-            style={{
-              backgroundImage: `url('${images[4]}')`,
-            }}
-          ></div>
-        </BgSlides.Item>
+        {images.map((imageUrl, index) => (
+          <BgSlides.Item key={index} className="Hero-BG">
+            <div
+              className="Hero-BG"
+              style={{
+                backgroundImage: `url('${
+                  imagesLoaded ? imageUrl : "/starsImage.png"
+                }')`,
+              }}
+            ></div>
+          </BgSlides.Item>
+        ))}
       </BgSlides>
     </>
   );

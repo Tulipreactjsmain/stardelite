@@ -16,6 +16,7 @@ import {
   WhyChooseUs,
   ContactUs,
   Faq,
+  Preloader
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -64,6 +65,7 @@ export default function Home() {
         />
       </Head>
       <Navbar heroBottomIsTop={heroBottomIsTop} />
+      <Preloader>
       <main className={`${styles.main} `} ref={DOM_REF}>
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
@@ -109,6 +111,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      </Preloader>
     </>
   );
 }

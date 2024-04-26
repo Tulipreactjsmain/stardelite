@@ -6,7 +6,7 @@ export default function lazyLoadBg(ref) {
     function lazyLoadImages() {
       if ("IntersectionObserver" in window) {
         lazyImages = ref?.current?.querySelectorAll(
-          "img.lazy-load, .background"
+          "img.lazy-load"
         );
         let bgObserver = new IntersectionObserver(function (entries, observer) {
           entries.forEach(function (entry) {
@@ -16,7 +16,6 @@ export default function lazyLoadBg(ref) {
                 target.setAttribute("src", target.getAttribute("data-src"));
                 target.removeAttribute("data-src");
               }
-              target.classList.remove("background");
               bgObserver.unobserve(target);
             }
           });
