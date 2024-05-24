@@ -26,7 +26,8 @@ export default function Faq() {
           <picture
             className="hidden"
             style={{
-              maxWidth: "21.785714285714285vw",
+              width:"26%",
+              maxWidth: "22.875rem",
               display: "block",
             }}
           >
@@ -36,7 +37,7 @@ export default function Faq() {
               loading="lazy"
               decoding="async"
               alt="faq-image"
-              className="lazy-load"
+              className="lazy-load w-100"
               style={{ objectFit: "cover", width: "100%", height: "100"}}
             />
           </picture>

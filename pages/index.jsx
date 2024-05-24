@@ -72,7 +72,7 @@ export default function Home() {
           <div className="heroContent text-white ">
             <Layout padding={`layout-padding`}>
               <div
-                className="d-flex flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 px-2 px-md-5 px-lg-5 heroH1 w-100"
+                className="d-flex flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 heroH1 w-100"
                 style={{ flexWrap: "wrap" }}
               >
                 <h1

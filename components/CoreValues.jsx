@@ -37,19 +37,19 @@ export default function CoreValues() {
           {coreValues.map((value, index) => (
             <Col
               key={index}
-              sm={12}
-              md={3}
-              lg={6}
-              className={`d-flex align-items-center justify-content-center core-values-col hidden core${index}`}
+              // sm={12}
+              // md={3}
+              // lg={6}
+              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden core${index}`}
               style={{
-                aspectRatio: aspectRatio.toFixed(2),
+                // aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",
               }}
             >
               <div
                 className="text-center text-dark-custom d-flex flex-column gap-4 justify-content-center align-items-center"
                 style={{
-                  fontSize: "1.9047619047619047vw",
+                  fontSize: "1.6rem",
                 }}
               >
                 <span>{value.logo}</span>

@@ -27,18 +27,21 @@ export default function OurVision() {
             className="hidden"
             style={{
               textAlign: "justify",
-              fontSize: "2.142857142857143vw",
+              fontSize: "2.25rem",
             }}
           >
             Empowering businesses to achieve their full potential through
             seamless integration of technology and strategic insights.
           </figcaption>
-          <picture className="hidden" style={{ width: "36.75059523809524vw" }}>
+          <picture
+            className="hidden"
+            style={{ width: "44%", maxWidth: "38.588rem" }}
+          >
             <Image
               src=""
               data-src="/quoteImage.png"
               loading="lazy"
-              className="lazy-load"
+              className="lazy-load w-100"
               alt="vision-image"
               decoding="async"
               style={{ width: "100%", height: "100%" }}

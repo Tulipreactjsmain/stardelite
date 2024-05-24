@@ -37,64 +37,66 @@ export default function Navbar({ heroBottomIsTop }) {
     <header
       className={`${
         heroBottomIsTop ? "update-navbar" : ""
-      } d-flex justify-content-between align-items-center w-100 position-fixed layout-padding py-2 pt-md-4 pt-lg-3 navbar`}
+      }  w-100 position-fixed py-2 pt-md-4 pt-lg-3 navbar`}
       style={{ zIndex: 5000 }}
     >
-      <Link
-        className="fade-right-animation delay-1"
-        href={`/`}
-        onClick={scrollToHome}
-        style={{ cursor: "pointer" }}
-      >
-        {heroBottomIsTop ? <LogoColored /> : <LogoWhite />}
-      </Link>
-      <div
-        className={`
+      <div className="d-flex w-100  justify-content-between align-items-center layout-padding ">
+        <Link
+          className="fade-right-animation delay-1"
+          href={`/`}
+          onClick={scrollToHome}
+          style={{ cursor: "pointer" }}
+        >
+          {heroBottomIsTop ? <LogoColored /> : <LogoWhite />}
+        </Link>
+        <div
+          className={`
        nav-links text-white d-none d-md-flex d-lg-flex gap-5 text-black justify-content-center align-items-center cursor-pointer
        ${heroBottomIsTop ? "black-text" : "text-white"}
      `}
-        style={{ cursor: "pointer", fontSize: "0.85rem" }}
-      >
-        <ScrollLink to="services" smooth={true} duration={700}>
-          <span>Services</span>
-          <span>
-            <IoChevronDownSharp color="#ffcc00" />
-          </span>
-        </ScrollLink>
+          style={{ cursor: "pointer", fontSize: "0.85rem" }}
+        >
+          <ScrollLink to="services" smooth={true} duration={700}>
+            <span>Services</span>
+            <span>
+              <IoChevronDownSharp color="#ffcc00" />
+            </span>
+          </ScrollLink>
 
-        <ScrollLink to="technologies" smooth={true} duration={700}>
-          <span> Technologies </span>
-          <span>
-            <IoChevronDownSharp color="#ffcc00" />
-          </span>
-        </ScrollLink>
-        <ScrollLink to="about" smooth={true} duration={700}>
-          <span>About</span>
-          <span>
-            <IoChevronDownSharp color="#ffcc00" />
-          </span>
-        </ScrollLink>
-        <div className="navBtnBorder" data-animated={true}>
-          <Button
-            onClick={scrollToContact}
-            type="button"
-            className={`navBtn text-black ${
-              heroBottomIsTop ? "update-btn" : ""
-            }`}
-            style={{ fontSize: "0.85rem" }}
-          >
-            Contact us
-          </Button>
+          <ScrollLink to="technologies" smooth={true} duration={700}>
+            <span> Technologies </span>
+            <span>
+              <IoChevronDownSharp color="#ffcc00" />
+            </span>
+          </ScrollLink>
+          <ScrollLink to="about" smooth={true} duration={700}>
+            <span>About</span>
+            <span>
+              <IoChevronDownSharp color="#ffcc00" />
+            </span>
+          </ScrollLink>
+          <div className="navBtnBorder" data-animated={true}>
+            <Button
+              onClick={scrollToContact}
+              type="button"
+              className={`navBtn text-black ${
+                heroBottomIsTop ? "update-btn" : ""
+              }`}
+              style={{ fontSize: "0.85rem" }}
+            >
+              Contact us
+            </Button>
+          </div>
         </div>
+        <Modal
+          handleShow={handleShow}
+          handleClose={handleClose}
+          heroBottomIsTop={heroBottomIsTop}
+          show={show}
+          setShow={setShow}
+          scrollToContact={scrollToContact}
+        />
       </div>
-      <Modal
-        handleShow={handleShow}
-        handleClose={handleClose}
-        heroBottomIsTop={heroBottomIsTop}
-        show={show}
-        setShow={setShow}
-        scrollToContact={scrollToContact}
-      />
     </header>
   );
 }

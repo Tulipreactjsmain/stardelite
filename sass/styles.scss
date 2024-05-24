@@ -68,13 +68,7 @@ html.lenis {
 }
 
 .layout-padding {
-  max-width: 195rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.layout-margin {
-  max-width: 195rem;
+  max-width: 1368px !important;
   margin-right: auto;
   margin-left: auto;
 }
@@ -100,7 +94,6 @@ h1 {
 }
 
 .navbar {
-  max-width: 195rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -226,6 +219,7 @@ h1 {
 
 .page-content {
   background-image: url("/bgIcons.webp");
+  background-color: rgb(252, 252, 252);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,18 +271,24 @@ h1 {
 }
 
 .core-values-col {
+  flex: none !important;
+  // flex-basis: calc(25% - 26.25px) !important;
+  // flex: none !important;
+  width: 18rem !important;
+  // max-width: 21.375rem !important;
   box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
   background-color: #fcfcfc;
   transition: box-shadow 0.5s ease-in-out;
 }
 
 .core-values svg {
-  width: 7.619047619047619vw;
+  max-width: 7.837rem;
   height: auto;
 }
 
 .contact form {
-  width: 25.178571428571427vw;
+  width: 32.8% !important;
+  max-width: 26.438rem !important;
 }
 
 .contact a {
@@ -297,7 +297,7 @@ h1 {
   cursor: pointer;
 }
 
-.contact .layout-margin {
+.contact .layout-padding {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px) !important;
 }
@@ -377,7 +377,9 @@ md-outlined-text-field {
 }
 
 .contactUsLogo {
-  width: 14.821428571428571vw;
+  width: 28.5%;
+  max-width: 15.248rem;
+
   height: auto;
 }
 .scroller {
@@ -438,6 +440,10 @@ md-outlined-text-field {
 
 .modal {
   scroll-behavior: smooth !important;
+  max-width: 1536px !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 }
 
 .modal,
@@ -551,156 +557,16 @@ md-outlined-text-field {
   z-index: 5000;
 }
 
-@media (max-width: 767px) {
-  body,
-  html {
-    --root-fontSize: 1rem !important;
-  }
-
-  .logo {
-    width: 100%;
-    max-width: 7rem;
-    height: auto;
-  }
-
-  .nav-links a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-links a span svg {
-    color: #001a4d !important;
-  }
-
-  a.active {
-    color: var(--light-blue) !important;
-  }
-
-  h5 {
-    font-size: 2rem !important;
-    // word-break: break-word;
-    // word-break: break-all;
-  }
-
-  .technology-icons svg {
-    max-width: 6.125rem !important;
-  }
-
-  .layout-padding {
-    padding: 0 10px !important;
-  }
-  .layout-margin {
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-  }
-
-  .heroH1 {
-    top: 50%;
-    left: 0 !important;
-    transform: translate(0, -50%) !important;
-    flex-wrap: wrap;
-
-    h1 {
-      font-size: 2.8rem !important;
-    }
-    p {
-      font-size: 0.7rem !important;
-      max-width: 80% !important;
-    }
-  }
-
-  .media-icons {
-    position: static;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 8.2rem;
-    grid-gap: 24px;
-  }
-
-  .modal-body > div {
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 100% !important;
-  }
-
-  .service-title {
-    font-size: 1rem !important;
-  }
-
-  .services-modal .modal-dialog {
-    height: 100% !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .aboutUs-description,
-  .faq-description {
-    max-width: 375px !important;
-  }
-  .aboutUs-description section p,
-  .faq section p {
-    font-size: 1rem;
-    text-align: center;
-  }
-  .aboutUs-description h5,
-  .faq-description h5 {
-    font-size: 1.5rem !important;
-  }
-
-  .aboutUs-description header p,
-  .faq-description header p {
-    font-size: 0.8rem !important;
-  }
-
-  .core-values-col {
-    width: 50vw !important;
-    box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
-  }
-  .core-values span.title {
-    font-size: 4vw;
-  }
-  .core-values svg {
-    width: 17.619047619047619vw;
-  }
-
-  .vision figcaption {
-    max-width: 350px !important;
-    font-size: 1rem !important;
-    text-align: center !important;
-  }
-
-  .contact form {
-    width: 100% !important;
-  }
-
-  .faq figure span {
-    margin-left: 3px !important;
-    margin-right: 3px !important;
-  }
-
-  .services-modal figure {
-    margin-right: 2rem !important;
-    margin-left: 2rem !important;
-  }
-}
-
 // Ipad screens
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body,
   html {
     --root-fontSize: max(0.125rem, min(1.3333vw + 0.1rem, 10rem)) !important;
   }
 
   .layout-padding {
-    padding: 0 2.7777777777777777vw !important;
-    margin: 0 !important;
-  }
-
-  .layout-margin {
-    margin-right: 2.7777777777777777vw !important;
-    margin-left: 2.7777777777777777vw !important;
+    margin: 0 auto 0 auto !important;
+    max-width: calc(100vw - 32px) !important;
   }
 
   .nav-links {
@@ -725,7 +591,7 @@ md-outlined-text-field {
     height: 55% !important;
 
     figure {
-      margin: 8.375rem 3.563rem 3.375rem 3.563rem !important; 
+      margin: 8.375rem 3.563rem 3.375rem 3.563rem !important;
     }
   }
   .aboutUs-description section p,
@@ -739,10 +605,10 @@ md-outlined-text-field {
     max-width: 700px !important;
   }
 
-  .col-md-4 {
-    flex: 0 0 auto !important;
-    width: 33.33333333% !important;
-  }
+  // .col-md-4 {
+  //   flex: 0 0 auto !important;
+  //   width: 33.33333333% !important;
+  // }
 
   .core-values-col {
     margin: auto !important;
@@ -768,18 +634,10 @@ md-outlined-text-field {
   html {
     --root-fontSize: 16px !important;
   }
-  .layout-padding {
-    padding: 0 8vw !important;
-  }
 
-  .layout-margin {
-    margin-right: 8vw !important;
-    margin-left: 8vw !important;
-  }
-
-  .col-lg-6 {
-    width: 20.357142857142858vw !important;
-  }
+  // .col-lg-6 {
+  //   width: 20.357142857142858vw !important;
+  // }
 
   .service0 {
     transition-delay: 50ms !important;
@@ -807,7 +665,7 @@ md-outlined-text-field {
 
   .core-values-col {
     margin: 0 !important;
-    flex: 1 !important;
+    // flex: 1 !important;
   }
 
   .core-values-col:hover {
@@ -858,6 +716,38 @@ md-outlined-text-field {
   }
 }
 
+@media (max-width: 1599px) {
+  .layout-padding {
+    max-width: calc(100vw - 270px) !important;
+  }
+}
+
+@media (max-width: 1439px) {
+  .layout-padding {
+    max-width: 1170px !important;
+  }
+}
+
+@media (max-width: 1223px) {
+  .layout-padding {
+    max-width: calc(100vw - 54px) !important;
+  }
+}
+
+@media (max-width: 1272px) {
+  .about picture {
+    height: 775px !important;
+  }
+}
+@media (max-width: 1023px) {
+  .layout-padding {
+    max-width: calc(100vw - 32px) !important;
+  }
+  .about picture {
+    height: inherit !important;
+  }
+}
+
 // Desktop Screens
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .service-title {
@@ -865,21 +755,137 @@ md-outlined-text-field {
   }
 }
 
-// TV screens or Desktop screens and beyond
-@media screen and (min-width: 1401px) {
-  // .service-box {
-  //   width: 20.357142857142858vw !important;
-  //   max-width: none !important;
-  // }
+@media (max-width: 767px) {
+  body,
+  html {
+    --root-fontSize: 16px !important;
+  }
 
-  // .service-title {
-  //   font-size: 1.9047619047619047vw !important;
-  // }
+  .logo {
+    width: 100%;
+    max-width: 7rem;
+    height: auto;
+  }
 
-  // .about article picture {
-  //   width: 32.67857142857143vw !important;
-  //   max-width: none !important;
-  // }
+  .nav-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links a span svg {
+    color: #001a4d !important;
+  }
+
+  a.active {
+    color: var(--light-blue) !important;
+  }
+
+  h5 {
+    font-size: 2rem !important;
+    // word-break: break-word;
+    // word-break: break-all;
+  }
+
+  .technology-icons svg {
+    max-width: 6.125rem !important;
+  }
+
+  .heroH1 {
+    top: 50%;
+    left: 0 !important;
+    transform: translate(0, -50%) !important;
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 2.8rem !important;
+    }
+    p {
+      font-size: 0.7rem !important;
+      max-width: 80% !important;
+    }
+  }
+
+  .media-icons {
+    position: static;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 8.2rem;
+    grid-gap: 24px;
+  }
+
+  .modal-body > div {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100% !important;
+  }
+
+  .service-title {
+    font-size: 1rem !important;
+  }
+
+  .services-modal .modal-dialog {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .about picture {
+    height: inherit !important;
+  }
+
+  .aboutUs-description,
+  .faq-description {
+    max-width: 375px !important;
+  }
+  .aboutUs-description section p,
+  .faq section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .aboutUs-description h5,
+  .faq-description h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .aboutUs-description header p,
+  .faq-description header p {
+    font-size: 0.8rem !important;
+  }
+
+  .core-values-col {
+    width: 15rem!important;
+    box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
+  }
+  .core-values span.title {
+    font-size: 1rem;
+  }
+  .core-values svg {
+    width: 17.619047619047619vw;
+  }
+
+  .vision figcaption {
+    max-width: 350px !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  .contact form {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .faq figure span {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
+
+  .services-modal figure {
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+  }
 }
 
 @media (prefers-reduced-motion) {
