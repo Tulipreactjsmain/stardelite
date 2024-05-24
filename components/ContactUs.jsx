@@ -33,7 +33,7 @@ export default function ContactUs() {
           </h5>
         </div>
         <div
-          className="w-100 cta-section background"
+          className="w-100 cta-section background py-5"
           style={{
             backgroundImage: "url('/contactUsImage.webp')",
             backgroundColor: "#001133",
@@ -43,7 +43,7 @@ export default function ContactUs() {
           }}
         >
           <div
-            className="layout-margin py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between  px-4 px-md-5 px-lg-5"
+            className="layout-padding py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between  px-4 px-md-5 px-lg-5"
             style={{
               backdropFilter: ` blur(6px)`,
               backgroundColor: "rgb(255, 255, 255, 0.7)",

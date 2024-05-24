@@ -75,7 +75,7 @@ export default function FaqCarousel() {
             <section
               className="d-flex justify-content-center mt-5"
               style={{
-                fontSize: "1.4285714285714286vw",
+                fontSize: "1.5rem",
                 textAlign: "justify",
                 fontWeight: "300",
               }}

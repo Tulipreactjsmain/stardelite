@@ -21,28 +21,34 @@ export default function About() {
             ABOUT US
           </h5>
         </div>
-        <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
+        <article
+          className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between"
+          y
+          // style={{ maxWidth: "1440px" }}
+        >
           <picture
             className="hidden"
             style={{
+              width: "50%",
               maxWidth: "34.313rem",
+              height: "inherit",
               display: "block",
             }}
           >
             <Image
-              className="lazy-load"
+              className="lazy-load w-100"
               loading="lazy"
               data-src="/AboutUs.png"
               src=""
               alt="about-us-image"
               decoding="async"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              style={{ height: "100%", objectFit: "cover" }}
             />
           </picture>
 
           <div
-            className="aboutUs-description text-dark-custom d-flex flex-column my-4 gap-5 hidden"
-            style={{ maxWidth: "42.142857142857146vw" }}
+            className="aboutUs-description text-dark-custom d-flex flex-column gap-5 hidden"
+            style={{ maxWidth: "50%" }}
           >
             <header className="text-center mb-3">
               <h5 className="fw-semibold" style={{ fontSize: "3rem" }}>
@@ -55,9 +61,10 @@ export default function About() {
             <section
               className=""
               style={{
-                fontSize: "1.4285714285714286vw",
+                fontSize: "24px",
                 textAlign: "justify",
                 fontWeight: "300",
+                maxWidth: "708px",
               }}
             >
               <p className="mb-5">
