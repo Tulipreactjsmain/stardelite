@@ -2,8 +2,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import { useRef, useEffect, useState } from "react";
 import styles from "@/sass/Home.module.scss";
-import lazyLoadBg from "@/utils/lazyLoadBg";
-import cacheImages from "@/utils/cacheImages";
+import {lazyLoadBg, cacheImages} from "@/utils";
 import {
   BackgroundSlides,
   MediaIcons,

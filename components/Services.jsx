@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
-import { ServicesModal, Layout } from ".";
+import { ServicesModal, Layout, CachedImage } from ".";
 import services from "@/pages/api/services";
 import { mapImagePathToCacheKey } from "../utils";
-import CachedImage from "./cachedImage";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
