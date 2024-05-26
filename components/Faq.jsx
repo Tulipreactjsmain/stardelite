@@ -15,7 +15,7 @@ export default function Faq() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3.5rem",
+              fontSize: "3rem",
               lineHeight: "72px",
             }}
           >

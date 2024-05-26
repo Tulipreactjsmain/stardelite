@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: "Social Advertising",
-    image: "social-advertising.webp",
+    image: "/social-advertising.webp",
     summary: "Boost brand reach and engagement with targeted social ads.",
   },
   {

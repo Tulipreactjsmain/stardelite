@@ -3,6 +3,8 @@ import { Image } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { ServicesModal, Layout } from ".";
 import services from "@/pages/api/services";
+import { mapImagePathToCacheKey } from "../utils";
+import CachedImage from "./cachedImage";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
@@ -46,7 +48,7 @@ export default function Services() {
               className="fw-semibold"
               style={{
                 color: "#8099CC",
-                fontSize: "3.5rem",
+                fontSize: "3rem",
                 lineHeight: "72px",
               }}
             >
@@ -67,9 +69,25 @@ export default function Services() {
                   handleShow(index);
                 }}
               >
-                <Image
+                {/* <Image
+                  sizes=""
+                  data-sizes="auto"
                   src=""
                   data-src={service.image}
+                  loading="lazy"
+                  decoding="async"
+                  className=" object-fit-cover lazy-load"
+                  style={{
+                    objectPosition: "50% 50%",
+                    width: "100%",
+                    height: "100%",
+                  }}
+                /> */}
+                <CachedImage
+                  cacheKey={mapImagePathToCacheKey(service.image)}
+                  // fallbackSrc={service.image}
+                  sizes=""
+                  dataSizes="auto"
                   loading="lazy"
                   decoding="async"
                   className=" object-fit-cover lazy-load"
@@ -96,7 +114,7 @@ export default function Services() {
                 >
                   {isMouseIn === index ? (
                     <div
-                      className="w-100 text-dark-custom h-100 d-flex flex-column justify-content-between align-items-center"
+                      className="w-100 animate-onhover text-dark-custom h-100 d-flex flex-column justify-content-between align-items-center"
                       style={{ padding: "1.125rem 5px" }}
                     >
                       <div

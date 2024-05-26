@@ -229,10 +229,14 @@ h1 {
   opacity: 0 !important;
   transform: translateY(30%);
   transition: all 1s;
-  transition-delay: 0;
+  transition-delay: 0.3s;
 }
 
-.show-hidden {
+.animate-onhover {
+  animation: slideUp 0.7s forwards;
+}
+
+.show-hidden  {
   opacity: 1 !important;
   transform: translateY(0);
 }
@@ -833,6 +837,7 @@ md-outlined-text-field {
   }
   .about picture {
     height: inherit !important;
+    width: 70% !important;
   }
 
   .aboutUs-description,
@@ -855,7 +860,7 @@ md-outlined-text-field {
   }
 
   .core-values-col {
-    width: 15rem!important;
+    width: 14rem!important;
     box-shadow: rgba(100, 100, 111, 0.09) 0px 7px 29px 0px;
   }
   .core-values span.title {
@@ -949,5 +954,14 @@ md-outlined-text-field {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
