@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import { useRef, useEffect, useState } from "react";
 import styles from "@/sass/Home.module.scss";
-import lazyLoadBg from "@/utils/lazyLoadBg";
+import {lazyLoadBg, cacheImages} from "@/utils";
 import {
   BackgroundSlides,
   MediaIcons,
@@ -16,7 +16,6 @@ import {
   WhyChooseUs,
   ContactUs,
   Faq,
-  Preloader
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -26,7 +25,8 @@ export default function Home() {
   const [heroBottomIsTop, setHeroBottomIsTop] = useState(false);
   const DOM_REF = useRef(null);
   gsapEffects(DOM_REF);
-  lazyLoadBg(DOM_REF)
+  lazyLoadBg(DOM_REF);
+  cacheImages();
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -65,19 +65,18 @@ export default function Home() {
         />
       </Head>
       <Navbar heroBottomIsTop={heroBottomIsTop} />
-      <Preloader>
       <main className={`${styles.main} `} ref={DOM_REF}>
         <section className="w-100 bg-black position-relative hero-section">
           <BackgroundSlides />
           <div className="heroContent text-white ">
             <Layout padding={`layout-padding`}>
               <div
-                className="d-flex flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 heroH1 w-100"
-                style={{ flexWrap: "wrap" }}
+                className="d-flex onRenderOpacity flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 heroH1 w-100"
+                style={{ flexWrap: "wrap", opacity:0 }}
               >
                 <h1
                   className="text-md-center text-lg-center"
-                  style={{ fontSize: "3.125rem", fontWeight: "bold" }}
+                  style={{ fontSize: "3rem", fontWeight: "bold" }}
                 >
                   Software <span className="shining-text">Solutions</span> and{" "}
                   <br />
@@ -111,7 +110,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      </Preloader>
     </>
   );
 }

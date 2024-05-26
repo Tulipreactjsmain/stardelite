@@ -51,6 +51,11 @@ export default function gsapEffects(ref) {
         x: 30,
         duration: 1,
       });
+      gsap.to(".onRenderOpacity", {
+        opacity: 1,
+        delay: 1,
+        duration: 1,
+      });
     }, ref);
     return () => ctx.revert();
   }, []);
