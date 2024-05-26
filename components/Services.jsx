@@ -68,7 +68,7 @@ export default function Services() {
                   handleShow(index);
                 }}
               >
-                {/* <Image
+                <Image
                   sizes=""
                   data-sizes="auto"
                   src=""
@@ -81,8 +81,8 @@ export default function Services() {
                     width: "100%",
                     height: "100%",
                   }}
-                /> */}
-                <CachedImage
+                />
+                {/* <CachedImage
                   cacheKey={mapImagePathToCacheKey(service.image)}
                   // fallbackSrc={service.image}
                   sizes=""
@@ -95,7 +95,7 @@ export default function Services() {
                     width: "100%",
                     height: "100%",
                   }}
-                />
+                /> */}
                 <div
                   className="w-100 position-absolute top-0 h-100 text-center"
                   style={{
