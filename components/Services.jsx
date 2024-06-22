@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 import { ServicesModal, Layout, CachedImage } from ".";
 import services from "@/pages/api/services";
-import { mapImagePathToCacheKey } from "../utils";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
@@ -47,7 +46,7 @@ export default function Services() {
               className="fw-semibold"
               style={{
                 color: "#8099CC",
-                fontSize: "3rem",
+                fontSize: "2.5rem",
                 lineHeight: "72px",
               }}
             >
@@ -59,7 +58,8 @@ export default function Services() {
               <div
                 className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden service${index}`}
                 style={{
-                  height: "auto",
+                  // height: "auto",
+                  height:"342px",
                   cursor: "pointer",
                   borderRadius: "2px",
                 }}
@@ -69,18 +69,24 @@ export default function Services() {
                 }}
               >
                 <Image
-                  sizes=""
+                  sizes="auto"
+                  // width={342}
+                  // height={310}
+                  alt="service-image"
+                  objectFit="cover"
+                  objectPosition="center"
+                  layout="fill"
                   data-sizes="auto"
-                  src=""
+                  src={service.image}
                   data-src={service.image}
                   loading="lazy"
                   decoding="async"
                   className=" object-fit-cover lazy-load"
-                  style={{
-                    objectPosition: "50% 50%",
-                    width: "100%",
-                    height: "100%",
-                  }}
+                  // style={{
+                  //   objectPosition: "50% 50%",
+                  //   width: "100%",
+                  //   height: "100%",
+                  // }}
                 />
                 {/* <CachedImage
                   cacheKey={mapImagePathToCacheKey(service.image)}
