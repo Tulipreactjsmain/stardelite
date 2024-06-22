@@ -37,13 +37,14 @@ export default function BackgroundSlides() {
     preloadImages();
   }, []);
 
-
   return (
     <>
       <BgSlides fade controls={false} indicators={false} className="Hero-BG">
         {images.map((imageUrl, index) => (
           <BgSlides.Item key={index} className="Hero-BG">
             <NextImage
+              priority={true}
+              loading={"eager"}
               className={`image-transition ${
                 loadedImages[imageUrl] ? "loaded" : ""
               }`}
