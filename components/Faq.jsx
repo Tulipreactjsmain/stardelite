@@ -1,5 +1,5 @@
 import { Layout, FaqCarousel } from ".";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 
 export default function Faq() {
   return (
@@ -15,44 +15,37 @@ export default function Faq() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               lineHeight: "72px",
             }}
           >
             FAQ
           </h5>
         </div>
-        <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
+        <article className="d-flex flex-lg-row gap-5 mt-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
             className="hidden"
             style={{
-              width:"26%",
-              maxWidth: "22.875rem",
+              width: "26%",
+              maxWidth: "20.875rem",
               display: "block",
             }}
           >
             <Image
+              objectFit="cover"
+              objectPosition="center"
+              width={366}
+              height={93}
+              layout="responsive"
               data-src="/g3.png"
-              src=""
+              src="/g3.png"
               loading="lazy"
               decoding="async"
               alt="faq-image"
               className="lazy-load w-100"
-              style={{ objectFit: "cover", width: "100%", height: "100"}}
+              style={{ objectFit: "cover", width: "100%", height: "100" }}
             />
           </picture>
-          {/* <figure
-            className="d-flex justify-content-between"
-            style={{ maxWidth: "1082px", flex: "1" }}
-          >
-            <span className="my-auto mx-3 fs-1">
-              <HiChevronLeft color="#001a4d" />
-            </span>
-            <FaqCarousel />
-            <span className="my-auto mx-3 fs-1">
-              <HiChevronRight color="#001a4d" />
-            </span>
-          </figure> */}
           <FaqCarousel />
         </article>
       </section>

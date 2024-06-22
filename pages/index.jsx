@@ -16,6 +16,7 @@ import {
   WhyChooseUs,
   ContactUs,
   Faq,
+  Academy
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -100,8 +101,10 @@ export default function Home() {
             className="page-content background w-100 h-100 position-relative"
             style={{ zIndex: "500" }}
           >
-            <Technologies />
+            <WhyChooseUs />
             <Services />
+            <Academy />
+            <Technologies />
             <About />
             <CoreValues />
             <Vision />

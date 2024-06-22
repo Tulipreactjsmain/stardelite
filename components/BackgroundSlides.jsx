@@ -1,5 +1,6 @@
 import BgSlides from "react-bootstrap/Carousel";
 import React, { useEffect, useState } from "react";
+import NextImage from "next/image";
 
 export default function BackgroundSlides() {
   const images = [
@@ -10,40 +11,50 @@ export default function BackgroundSlides() {
     "/heroImage5.webp",
   ];
 
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [loadedImages, setLoadedImages] = useState({});
 
   useEffect(() => {
-    const preloadImages = () => {
-      const imagePromises = images.map((imageUrl) => {
-        return new Promise((resolve, reject) => {
-          const image = new Image();
-          image.src = imageUrl;
-          image.onload = resolve;
-          image.onerror = reject;
+    const preloadImages = async () => {
+      try {
+        const imagePromises = images.map((imageUrl) => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => resolve(imageUrl);
+            img.onerror = reject;
+          });
         });
-      });
 
-      Promise.all(imagePromises)
-        .then(() => setImagesLoaded(true))
-        .catch((error) => console.error("Failed to preload images:", error));
+        await Promise.all(imagePromises);
+        setLoadedImages(
+          images.reduce((acc, url) => ({ ...acc, [url]: true }), {})
+        );
+      } catch (error) {
+        console.error("Failed to preload images:", error);
+      }
     };
 
     preloadImages();
   }, []);
+
 
   return (
     <>
       <BgSlides fade controls={false} indicators={false} className="Hero-BG">
         {images.map((imageUrl, index) => (
           <BgSlides.Item key={index} className="Hero-BG">
-            <div
-              className="Hero-BG"
-              style={{
-                backgroundImage: `url('${
-                  imagesLoaded ? imageUrl : "/starsImage.png"
-                }')`,
-              }}
-            ></div>
+            <NextImage
+              className={`image-transition ${
+                loadedImages[imageUrl] ? "loaded" : ""
+              }`}
+              src={imageUrl}
+              // placeholder="blur"
+              layout="fill"
+              alt="Hero background image"
+              // blurDataURL="/starsImage.png"
+              objectFit="cover"
+              objectPosition="center"
+            />
           </BgSlides.Item>
         ))}
       </BgSlides>

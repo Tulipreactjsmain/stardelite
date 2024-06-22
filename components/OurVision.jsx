@@ -1,5 +1,5 @@
 import { Layout } from ".";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 
 export default function OurVision() {
   return (
@@ -15,7 +15,7 @@ export default function OurVision() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               lineHeight: "72px",
             }}
           >
@@ -35,16 +35,20 @@ export default function OurVision() {
           </figcaption>
           <picture
             className="hidden"
-            style={{ width: "44%", maxWidth: "38.588rem" }}
+            style={{ width: "44%", maxWidth: "34.741rem" }}
           >
             <Image
-              src=""
+              src="/quoteImage.png"
+              objectFit="cover"
+              objectPosition="center"
+              width={535.85}
+              height={420.44}
+              layout="responsive"
               data-src="/quoteImage.png"
               loading="lazy"
-              className="lazy-load w-100"
+              className="lazy-load"
               alt="vision-image"
               decoding="async"
-              style={{ width: "100%", height: "100%" }}
             />
           </picture>
         </figure>

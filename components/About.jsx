@@ -1,5 +1,5 @@
 import Layout from "./Layout";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 export default function About() {
   return (
     <Layout padding={`layout-padding`}>
@@ -14,7 +14,7 @@ export default function About() {
             className="fw-semibold"
             style={{
               color: "#8099CC",
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               lineHeight: "72px",
             }}
           >
@@ -36,13 +36,17 @@ export default function About() {
             }}
           >
             <Image
-              className="lazy-load w-100"
+              width={549}
+              height={600}
+              layout="responsive"
+              className="lazy-load"
               loading="lazy"
+              src="/AboutUs.png"
+              objectFit="cover"
+              objectPosition="center"
               data-src="/AboutUs.png"
-              src=""
               alt="about-us-image"
-              decoding="async"
-              style={{ height: "100%", objectFit: "cover" }}
+              decoding="async" 
             />
           </picture>
 
@@ -51,17 +55,17 @@ export default function About() {
             style={{ maxWidth: "50%" }}
           >
             <header className="text-center mb-3">
-              <h5 className="fw-semibold" style={{ fontSize: "2.5rem" }}>
+              <h5 className="fw-semibold" style={{ fontSize: "2.25rem" }}>
                 Welcome to Stardelite
               </h5>
               <p style={{ fontSize: "1.1rem", fontWeight: "300" }}>
-                where innovation meets expertise
+                [where innovation meets expertise]
               </p>
             </header>
             <section
               className=""
               style={{
-                fontSize: "24px",
+                fontSize: "1.2rem",
                 textAlign: "justify",
                 fontWeight: "300",
                 maxWidth: "708px",
