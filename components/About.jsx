@@ -8,7 +8,7 @@ export default function About() {
         id="about"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden">
+        <div className="text-dark-custom text-center hidden hidden-bottom">
           <p className="m-0">who we are</p>
           <h5
             className="fw-semibold"
@@ -27,34 +27,36 @@ export default function About() {
           // style={{ maxWidth: "1440px" }}
         >
           <picture
-            className="hidden"
+            className="hidden hidden-left"
             style={{
               width: "50%",
               maxWidth: "34.313rem",
-              height: "inherit",
+              height: "auto",
               display: "block",
             }}
           >
             <Image
-              width={549}
-              height={600}
-              layout="responsive"
+              width={649}
+              height={500}
+              layout="intrinsic"
               className="lazy-load"
               loading="lazy"
-              src="/AboutUs.png"
+              src="/groupPhoto.webp"
+              blurDataURL="/groupPhoto.webp"
+              placeholder="blur"
               objectFit="cover"
               objectPosition="center"
-              data-src="/AboutUs.png"
+              data-src="/groupPhoto.webp"
               alt="about-us-image"
-              decoding="async" 
+              decoding="async"
             />
           </picture>
 
           <div
-            className="aboutUs-description text-dark-custom d-flex flex-column gap-5 hidden"
+            className="aboutUs-description text-dark-custom d-flex flex-column gap-5 hidden hidden-right"
             style={{ maxWidth: "50%" }}
           >
-            <header className="text-center mb-3">
+            <header className="text-center">
               <h5 className="fw-semibold" style={{ fontSize: "2.25rem" }}>
                 Welcome to Stardelite
               </h5>
@@ -72,19 +74,20 @@ export default function About() {
               }}
             >
               <p className="mb-5">
-                At Stardelite, we believe in the transformative power of
+                {/* At Stardelite, we believe in the transformative power of
                 technology to shape a better future. As a cutting-edge tech
                 consulting firm, we specialize in providing strategic guidance
                 and innovative solutions to help businesses thrive in the
-                digital age.
+                digital age. */}
+                We are a collective of creative minds and technical experts with
+                a relentless focus on excellence, dedicated to delivering
+                software and products that transform how brands and companies
+                operate.
               </p>
               <p>
                 Stardelite is more than just a consultancy – we are your
                 dedicated partners in navigating the complex landscape of modern
-                technology. Our team of seasoned experts bring together a wealth
-                of experience and a passion for innovation. We are committed to
-                delivering customized solutions that not only meet your current
-                needs but also future-proof your business.
+                technology.
               </p>
             </section>
           </div>

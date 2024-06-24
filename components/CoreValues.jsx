@@ -20,7 +20,7 @@ export default function CoreValues() {
         id="core-values"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden">
+        <div className="text-dark-custom text-center hidden hidden-bottom">
           <p className="m-0">what we believe</p>
           <h5
             className="fw-semibold"
@@ -40,7 +40,7 @@ export default function CoreValues() {
               // sm={12}
               // md={3}
               // lg={6}
-              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden core${index}`}
+              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden hidden-bottom core${index}`}
               style={{
                 // aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",
