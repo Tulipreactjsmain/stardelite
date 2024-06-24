@@ -40,7 +40,7 @@ export default function Services() {
           id="services"
           style={{ paddingTop: "9rem", gap: "4rem" }}
         >
-          <div className="text-dark-custom text-center hidden">
+          <div className="text-dark-custom text-center hidden hidden-bottom">
             <p className="m-0">what we do</p>
             <h5
               className="fw-semibold"
@@ -56,10 +56,10 @@ export default function Services() {
           <div className="services-grid w-100 p-0 m-0">
             {services?.map((service, index) => (
               <div
-                className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden service${index}`}
+                className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden hidden-bottom service${index}`}
                 style={{
                   // height: "auto",
-                  height:"342px",
+                  height:"21rem",
                   cursor: "pointer",
                   borderRadius: "2px",
                 }}

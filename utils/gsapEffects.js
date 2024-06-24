@@ -7,16 +7,49 @@ export default function gsapEffects(ref) {
   gsap.registerPlugin(TextPlugin);
   gsap.registerPlugin(ScrollTrigger);
 
+  const showHiddenStyles = {
+    opacity: "1",
+    transform: "translate(0)",
+  };
+  const hiddenRightStyles = {
+    opacity: " 0",
+    transform: "translateX(30%)",
+    transition: "all 0.8s",
+    transitionDelay: "0s",
+  };
+
+  const hiddenLeftStyles = {
+    opacity: " 0",
+    transform: "translateX(-30%)",
+    transition: "all 0.8s",
+    transitionDelay: "0s",
+  };
+
+  const hiddenBottomStyles = {
+    opacity: "0",
+    transform: "translateY(30%)",
+    transition: "all 0.8s",
+    transitionDelay: "0s",
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show-hidden");
-        }
+        } 
       });
     });
     const hiddenElements = ref?.current?.querySelectorAll(".hidden");
-    hiddenElements?.forEach((el) => observer.observe(el));
+    hiddenElements?.forEach((el) => {
+      el.classList.contains("hidden-right") &&
+        Object.assign(el.style, hiddenRightStyles);
+        el.classList.contains("hidden-left") &&
+        Object.assign(el.style, hiddenLeftStyles);
+        el.classList.contains("hidden-bottom") &&
+        Object.assign(el.style, hiddenBottomStyles);
+      observer.observe(el);
+    });
 
     let ctx = gsap.context(() => {
       gsap.to(".textCursor", {

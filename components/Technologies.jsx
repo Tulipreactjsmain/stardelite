@@ -39,7 +39,7 @@ export default function Technologies() {
         id="technologies"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden">
+        <div className="text-dark-custom text-center hidden hidden-bottom">
           <p className="m-0">what we work with</p>
           <h5
             className="fw-semibold"
@@ -53,7 +53,7 @@ export default function Technologies() {
           </h5>
         </div>
         <div
-          className="scroller overflow-hidden d-flex flex-column hidden"
+          className="scroller overflow-hidden d-flex flex-column hidden hidden-bottom"
           data-animated="true"
           style={{ gap: "3.5rem" }}
         >

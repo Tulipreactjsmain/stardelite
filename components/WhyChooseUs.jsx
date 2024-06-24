@@ -28,7 +28,7 @@ export default function CoreValues() {
         id="why-us"
         style={{ paddingTop: "8.5rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center">
+        <div className="text-dark-custom text-center hidden hidden-bottom">
           <p>why you should trust us</p>
           <h5
             className="fw-semibold"
@@ -42,12 +42,13 @@ export default function CoreValues() {
           </h5>
         </div>
 
-        <article className="d-flex flex-lg-row gap-5 flex-column flex-md-column align-items-lg-stretch justify-content-between hidden">
+        <article className="d-flex flex-lg-row gap-5 flex-column flex-md-row align-items-lg-stretch justify-content-between">
           <figure style={{ width: "50%" }}>
             <figcaption
-              className="mb-5 w-100 text-md-center text-dark-custom small-screen-p"
+              className="mb-5 mx-auto w-100 text-md-center text-dark-custom small-screen-p hidden hidden-left"
               style={{
                 width: "100%",
+                maxWidth: "508px",
                 fontSize: "1.125rem",
                 textAlign: "justify",
                 fontWeight: "300",
@@ -59,7 +60,7 @@ export default function CoreValues() {
               technology services.
             </figcaption>
             <picture
-              className="hidden"
+              className="hidden hidden-bottom"
               style={{
                 height: "inherit",
                 display: "block",
@@ -83,25 +84,34 @@ export default function CoreValues() {
           </figure>
 
           <div
-            className="why-us-desc text-dark-custom d-flex flex-column gap-4 hidden"
-            style={{ width: "50%" }}
+            className="why-us-desc mx-auto text-dark-custom d-flex flex-column gap-4"
+            style={{ width: "50%", maxWidth: "508px" }}
           >
             {whyUsDetails.map((details, index) => (
               <div
-                className="d-flex flex-column gap-2 hidden"
+                className="d-flex flex-column gap-2 hidden hidden-right"
                 style={{
                   textAlign: "justify",
                 }}
               >
-                <div className="d-flex gap-3 align-items-center">
+                <div className="d-flex gap-2 align-items-center">
                   <span>
                     <WhyUs />
                   </span>
-                  <span className="small-screen-t" style={{ fontSize: "1.55rem", fontWeight: "400" }}>
+                  <span
+                    className="small-screen-t"
+                    style={{ fontSize: "1.25rem", fontWeight: "400" }}
+                  >
                     {details.title}
                   </span>
                 </div>
-                <p className="small-screen-p" style={{ fontSize: "1.125rem", fontWeight: "300" }}>
+                <p
+                  className="small-screen-p"
+                  style={{
+                    fontSize: "1.125rem",
+                    fontWeight: "300",
+                  }}
+                >
                   {details.desc}
                 </p>
               </div>

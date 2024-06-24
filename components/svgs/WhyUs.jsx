@@ -3,7 +3,7 @@ import React from "react";
 export default function WhyUs() {
   return (
     <svg
-      width="30"
+      width="23"
       height="31"
       viewBox="0 0 30 31"
       fill="none"

@@ -13,7 +13,7 @@ export default function Academy() {
         <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-between">
           <div className="d-flex flex-column align-items-center">
             <h3
-              className="hidden small-screen-t"
+              className="hidden small-screen-t hidden-left"
               style={{
                 maxWidth: "30.688rem",
                 textAlign: "center",
@@ -44,7 +44,7 @@ export default function Academy() {
             </div>
           </div>
           <picture
-            className="hidden"
+            className="hidden hidden-right"
             style={{ width: "70%", maxWidth: "40.693rem" }}
           >
             <Image
