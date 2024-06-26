@@ -3,6 +3,7 @@ import React from 'react'
 export default function Blockchain() {
   return (
     <svg
+    className='hidden zoom-out'
     width="150"
     height="83"
     viewBox="0 0 150 83"

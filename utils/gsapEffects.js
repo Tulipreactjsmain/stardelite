@@ -7,10 +7,13 @@ export default function gsapEffects(ref) {
   gsap.registerPlugin(TextPlugin);
   gsap.registerPlugin(ScrollTrigger);
 
-  const showHiddenStyles = {
-    opacity: "1",
-    transform: "translate(0)",
+  const zoomOutStyles = {
+    opacity: "0",
+    transform: "scale(0.5)",
+    transition: "all 0.5s",
+    transitionDelay: "0s",
   };
+
   const hiddenRightStyles = {
     opacity: " 0",
     transform: "translateX(30%)",
@@ -37,16 +40,20 @@ export default function gsapEffects(ref) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show-hidden");
-        } 
+        } else {
+          entry.target.classList.remove("show-hidden");
+        }
       });
     });
     const hiddenElements = ref?.current?.querySelectorAll(".hidden");
     hiddenElements?.forEach((el) => {
+      el.classList.contains("zoom-out") &&
+        Object.assign(el.style, zoomOutStyles);
       el.classList.contains("hidden-right") &&
         Object.assign(el.style, hiddenRightStyles);
-        el.classList.contains("hidden-left") &&
+      el.classList.contains("hidden-left") &&
         Object.assign(el.style, hiddenLeftStyles);
-        el.classList.contains("hidden-bottom") &&
+      el.classList.contains("hidden-bottom") &&
         Object.assign(el.style, hiddenBottomStyles);
       observer.observe(el);
     });

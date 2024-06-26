@@ -24,7 +24,7 @@ export default function Faq() {
         </div>
         <article className="d-flex flex-lg-row gap-5 mt-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
           <picture
-            className="hidden hidden-left"
+            className="hidden zoom-out"
             style={{
               width: "26%",
               maxWidth: "20.875rem",
