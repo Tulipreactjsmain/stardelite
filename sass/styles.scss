@@ -289,12 +289,12 @@ h1 {
 .technology-icons svg {
   filter: grayscale(100%);
   max-width: 8rem;
-  opacity: 50%;
+  opacity: 50% !important;
 }
 
 .technology-icons svg:hover {
   filter: grayscale(0);
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .core-values .row {

@@ -20,6 +20,39 @@ import {
 } from ".";
 
 export default function Technologies() {
+  const technologyIcons = [
+    <AiIllustrator />,
+
+    <Aws />,
+
+    <Blockchain />,
+
+    <Azure />,
+
+    <Javascript />,
+
+    <Gimp />,
+
+    <MsOffice />,
+
+    <Photoshop />,
+
+    <Sql />,
+
+    <Inkscape />,
+
+    <PowerBi />,
+
+    <Tableu />,
+
+    <Figma />,
+
+    <Python />,
+
+    <ReactIcon />,
+
+    <Vue />,
+  ];
   useEffect(() => {
     const scroller = document.querySelector(".scroller");
     const scrollerInner = scroller.querySelectorAll(".scroller-inner");
@@ -53,78 +86,18 @@ export default function Technologies() {
           </h5>
         </div>
         <div
-          className="scroller overflow-hidden d-flex flex-column hidden hidden-bottom"
+          className="scroller overflow-hidden d-flex flex-column"
           data-animated="true"
           style={{ gap: "3.5rem" }}
         >
           <div className="technology-icons scroller-inner d-flex justify-content-between align-items-center">
-            <AiIllustrator />
-
-            <Aws />
-
-            <Blockchain />
-
-            <Azure />
-
-            <Javascript />
-
-            <Gimp />
-
-            <MsOffice />
-
-            <Photoshop />
-
-            <Sql />
-
-            <Inkscape />
-
-            <PowerBi />
-
-            <Tableu />
-
-            <Figma />
-
-            <Python />
-
-            <ReactIcon />
-
-            <Vue />
+            {technologyIcons}
           </div>
           <div
             className="technology-icons scroller-inner d-flex justify-content-between align-items-center"
             data-direction="right"
           >
-            <AiIllustrator />
-
-            <Aws />
-
-            <Blockchain />
-
-            <Azure />
-
-            <Javascript />
-
-            <Gimp />
-
-            <MsOffice />
-
-            <Photoshop />
-
-            <Sql />
-
-            <Inkscape />
-
-            <PowerBi />
-
-            <Tableu />
-
-            <Figma />
-
-            <Python />
-
-            <ReactIcon />
-
-            <Vue />
+            {technologyIcons}
           </div>
         </div>
       </div>

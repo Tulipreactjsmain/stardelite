@@ -56,7 +56,7 @@ export default function Services() {
           <div className="services-grid w-100 p-0 m-0">
             {services?.map((service, index) => (
               <div
-                className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden hidden-bottom service${index}`}
+                className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden zoom-out service${index}`}
                 style={{
                   // height: "auto",
                   height:"21rem",

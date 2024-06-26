@@ -3,6 +3,7 @@ import React from "react";
 export default function Tableu() {
   return (
     <svg
+    className="hidden zoom-out"
       width="150"
       height="82"
       viewBox="0 0 150 82"

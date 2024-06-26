@@ -40,7 +40,7 @@ export default function CoreValues() {
               // sm={12}
               // md={3}
               // lg={6}
-              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden hidden-bottom core${index}`}
+              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden zoom-out core${index}`}
               style={{
                 // aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",
