@@ -16,6 +16,10 @@ export default function Document() {
           src="//code.tidio.co/rfolckocnwnyxjflakkycystx7kbt7rk.js"
           async
         ></script>
+        <script
+          src="https://kit.fontawesome.com/88a0bf72ce.js"
+          crossorigin="anonymous"
+        ></script>
       </body>
     </Html>
   );

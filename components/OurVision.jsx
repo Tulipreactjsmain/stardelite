@@ -1,4 +1,4 @@
-import { Layout } from ".";
+import { Layout, SectionHeader } from ".";
 import Image from "next/image";
 
 export default function OurVision() {
@@ -9,19 +9,7 @@ export default function OurVision() {
         id="vision"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-center hidden hidden-bottom">
-          <p className="m-0">what we want to do</p>
-          <h5
-            className="fw-semibold"
-            style={{
-              color: "#8099CC",
-              fontSize: "2.5rem",
-              lineHeight: "72px",
-            }}
-          >
-            OUR VISION
-          </h5>
-        </div>
+        <SectionHeader subTitle={'what we want to do'} title={'OUR VISION'}/>
         <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-around">
           <figcaption
             className="hidden hidden-left"

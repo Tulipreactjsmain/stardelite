@@ -40,9 +40,7 @@ export default function gsapEffects(ref) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show-hidden");
-        } else {
-          entry.target.classList.remove("show-hidden");
-        }
+        } 
       });
     });
     const hiddenElements = ref?.current?.querySelectorAll(".hidden");

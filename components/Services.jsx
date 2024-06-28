@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
-import { ServicesModal, Layout, CachedImage } from ".";
+import { ServicesModal, Layout, CachedImage, SectionHeader } from ".";
 import services from "@/pages/api/services";
 
 export default function Services() {
@@ -40,26 +40,14 @@ export default function Services() {
           id="services"
           style={{ paddingTop: "9rem", gap: "4rem" }}
         >
-          <div className="text-dark-custom text-center hidden hidden-bottom">
-            <p className="m-0">what we do</p>
-            <h5
-              className="fw-semibold"
-              style={{
-                color: "#8099CC",
-                fontSize: "2.5rem",
-                lineHeight: "72px",
-              }}
-            >
-              OUR SERVICES
-            </h5>
-          </div>
+          <SectionHeader subTitle={"what we do"} title={"OUR SERVICES"} />
           <div className="services-grid w-100 p-0 m-0">
             {services?.map((service, index) => (
               <div
                 className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden zoom-out service${index}`}
                 style={{
                   // height: "auto",
-                  height:"21rem",
+                  height: "21rem",
                   cursor: "pointer",
                   borderRadius: "2px",
                 }}

@@ -17,6 +17,7 @@ import {
   Sql,
   MsOffice,
   Layout,
+  SectionHeader
 } from ".";
 
 export default function Technologies() {
@@ -72,19 +73,7 @@ export default function Technologies() {
         id="technologies"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden hidden-bottom">
-          <p className="m-0">what we work with</p>
-          <h5
-            className="fw-semibold"
-            style={{
-              color: "#8099CC",
-              fontSize: "2.5rem",
-              lineHeight: "72px",
-            }}
-          >
-            TECHNOLOGIES
-          </h5>
-        </div>
+        <SectionHeader subTitle={"what we work with"} title={"TECHNOLOGIES"} />
         <div
           className="scroller overflow-hidden d-flex flex-column"
           data-animated="true"
