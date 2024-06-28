@@ -70,7 +70,7 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit(onSubmitHandler)}
-        className="mb-5 my-lg-0 my-md-0 text-dark-custom"
+        className="mb-5 mx-auto my-lg-0 my-md-0 text-dark-custom"
       >
         <div className="form-group d-flex flex-column">
           <div className="input-container position-relative">
@@ -78,7 +78,7 @@ export default function ContactForm() {
               <div></div>
               <div className="position-relative">
                 <label
-                  className="position-relative top-0 mx-1"
+                  className="position-relative top-0 mx-1 text-white"
                   htmlFor="name"
                   style={{ transform: "translateY(-50%)" }}
                 >
@@ -109,7 +109,7 @@ export default function ContactForm() {
               <div></div>
               <div className="position-relative">
                 <label
-                  className="position-relative top-0 mx-1"
+                  className="position-relative top-0 mx-1 text-white"
                   htmlFor="name"
                   style={{ transform: "translateY(-50%)" }}
                 >
@@ -140,7 +140,7 @@ export default function ContactForm() {
               <div></div>
               <div className="position-relative">
                 <label
-                  className="position-relative top-0 mx-1"
+                  className="position-relative top-0 mx-1 text-white"
                   htmlFor="name"
                   style={{ transform: "translateY(-50%)" }}
                 >
@@ -166,7 +166,7 @@ export default function ContactForm() {
           )}
         </div>
         <div className="w-100">
-          <div className="navBtnBorder position-relative ms-auto">
+          <div className="navBtnBorder position-relative mx-auto">
             <Button
               type="submit"
               className={`navBtn text-black`}

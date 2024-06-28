@@ -1,4 +1,4 @@
-import { Layout } from ".";
+import { Layout, SectionHeader } from ".";
 import Image from "next/image";
 import WhyUs from "./svgs/WhyUs";
 
@@ -28,24 +28,14 @@ export default function CoreValues() {
         id="why-us"
         style={{ paddingTop: "8.5rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden hidden-bottom">
-          <p>why you should trust us</p>
-          <h5
-            className="fw-semibold"
-            style={{
-              color: "#8099CC",
-              fontSize: "2.5rem",
-              lineHeight: "72px",
-            }}
-          >
-            WHY CHOOSE US?
-          </h5>
-        </div>
-
+        <SectionHeader
+          subTitle={"why you should trust us"}
+          title={"WHY CHOOSE US?"}
+        />
         <article className="d-flex flex-lg-row gap-5 flex-column flex-md-row align-items-lg-stretch justify-content-between">
           <figure style={{ width: "50%" }}>
             <figcaption
-              className="mb-5 mx-auto w-100 text-md-center text-dark-custom small-screen-p hidden hidden-left"
+              className="mb-5 mx-auto w-100 text-dark-custom small-screen-p hidden hidden-left"
               style={{
                 width: "100%",
                 maxWidth: "508px",

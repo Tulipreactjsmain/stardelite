@@ -6,10 +6,15 @@ import {
   Whatsapp,
   LinkedIn,
   Instagram,
+  SectionHeader,
 } from ".";
 import { CiLocationOn } from "react-icons/ci";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { MdOutlineLocalPhone } from "react-icons/md";
+
+import {
+  MdOutlineLocalPhone,
+  MdOutlineMailOutline,
+  MdWhatsapp,
+} from "react-icons/md";
 
 export default function ContactUs() {
   return (
@@ -19,110 +24,82 @@ export default function ContactUs() {
         id="contact"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden hidden-bottom">
-          <p className="m-0">get in touch</p>
-          <h5
-            className="fw-semibold"
-            style={{
-              color: "#8099CC",
-              fontSize: "2.5rem",
-              lineHeight: "72px",
-            }}
-          >
-            CONTACT US
-          </h5>
-        </div>
+        <SectionHeader subTitle={"get in touch"} title={"CONTACT US"} />
         <div
-          className="w-100 cta-section background py-5"
+          className="w-100 cta-section background" 
           style={{
             backgroundImage: "url('/contactUsImage.webp')",
             backgroundColor: "#001133",
-            backgroundPosition: "center",
+            backgroundPosition: "100% 55%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >
           <div
-            className="layout-padding py-5 d-flex flex-column flex-lg-row flex-md-row gap-0 justify-content-between  px-4 px-md-5 px-lg-5"
-            style={{
-              backdropFilter: ` blur(6px)`,
-              backgroundColor: "rgb(255, 255, 255, 0.7)",
-              marginTop: "80px",
-              marginBottom: "80px",
-              borderRadius: "16px",
-            }}
+            className="w-100 h-100 py-5 px-3"
+            style={{ backgroundColor: "rgb(0, 14, 41, 0.4)" }}
           >
             <div
-              className="mb-5 d-flex flex-column flex-lg-row flex-md-row justify-content-between gap-4 gap-md-0 gap-lg-0 order-2 order-lg-0 order-md-0 align-items-center"
-              style={{ flex: "1" }}
+              className="layout-padding blur-bg d-flex flex-column flex-lg-row flex-md-row"
+              style={{
+                backdropFilter: ` blur(6px)`,
+                marginTop: "80px",
+                marginBottom: "80px",
+                border: "solid #E0E0E0",
+                borderRadius: "16px",
+                maxWidth: "66.813rem",
+              }}
             >
-              <ContactUSLogo />
-              <section className="d-flex flex-column h-100 mx-auto gap-5 text-center text-dark-custom order-first order-md-last order-lg-last">
-                <div className="d-flex Office-Address flex-column gap-2">
-                  <h3 style={{ color: "#8099CC" }}>Office Address</h3>
-                  <div>
-                    <span className="me-2 fs-4">
-                      <CiLocationOn />
-                    </span>
-                    <span>10 Murphy Agungi, Lekki, Lagos.</span>
-                  </div>
-                </div>
-                <div className="d-flex flex-column gap-2">
-                  <h3 style={{ color: "#8099CC" }}>Contact Details</h3>
-                  <div>
-                    <span className="me-2 fs-4">
-                      <MdOutlineMailOutline />
-                    </span>
+              
+              <div
+                className=" w-100 py-5 px-3"
+                style={{ maxWidth: "47rem", backgroundColor: "#6B6B6B4D" }}
+              >
+                <ContactForm />
+              </div>
+              <div
+                className=" w-100 py-5 px-3 d-flex flex-column justify-content-center align-items-start align-items-md-center align-items-lg-center"
+                style={{
+                  maxWidth: "19.813em",
+                  backgroundColor: "rgb(255, 255, 255, 0.1)",
+                }}
+              >
+                <div className="text-white">
+                  <div
+                    className="d-flex flex-column gap-2"
+                    style={{ width: "fit-content" }}
+                  >
+                    <text className="fs-5 fw-semibold text-start">
+                      Get in touch instantly
+                    </text>
+
                     <a href="mailto:info@stardelitesolutions.com">
-                      hello@stardelitesolutions.com
+                      <span className="me-2 fs-4">
+                        <MdOutlineMailOutline />
+                      </span>
+                      <span>Email us</span>
+                    </a>
+
+                    <a href="tel:+15708244377">
+                      <span className="me-2 fs-4">
+                        <MdOutlineLocalPhone />
+                      </span>
+                      <span>Call us</span>
+                    </a>
+                    <a
+                      rel="noopener"
+                      target="_blank"
+                      href="https://wa.me/2348104546828"
+                    >
+                      <span className="me-2 fs-4">
+                        <MdWhatsapp />
+                      </span>
+                      <span>WhatsApp</span>
                     </a>
                   </div>
-                  <div>
-                    <span className="me-2 fs-4">
-                      <MdOutlineLocalPhone />
-                    </span>
-                    <a href="tel:+15708244377">+1 (805) 703-4030</a>
-                  </div>
-                  <div>
-                    <span className="me-2 fs-4">
-                      <MdOutlineLocalPhone />
-                    </span>
-                    <a href="tel:+2348012345678">+234 (0) 810 454 6828</a>
-                  </div>
                 </div>
-                <div className="d-flex gap-3 justify-content-center">
-                  <a
-                    href={`https://twitter.com/stardeliteLtd`}
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    <X />
-                  </a>
-                  <a
-                    href={`https://www.linkedin.com/company/stardelite/`}
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    <LinkedIn />
-                  </a>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://wa.me/2348104546828"
-                  >
-                    <Whatsapp />
-                  </a>
-                  <a
-                    href={`https://instagram.com/stardelitesolutions`}
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    <Instagram />
-                  </a>
-                </div>
-              </section>
+              </div>
             </div>
-            <ContactForm />
           </div>
         </div>
       </section>

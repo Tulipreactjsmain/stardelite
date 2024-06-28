@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import { useRef, useEffect, useState } from "react";
 import styles from "@/sass/Home.module.scss";
-import {lazyLoadBg, cacheImages} from "@/utils";
+import { lazyLoadBg, cacheImages } from "@/utils";
 import {
   BackgroundSlides,
   MediaIcons,
@@ -16,7 +16,8 @@ import {
   WhyChooseUs,
   ContactUs,
   Faq,
-  Academy
+  Academy,
+  TrustedBy,
 } from "@/components";
 import gsapEffects from "@/utils/gsapEffects";
 import Lenis from "@studio-freight/lenis";
@@ -73,7 +74,7 @@ export default function Home() {
             <Layout padding={`layout-padding`}>
               <div
                 className="d-flex onRenderOpacity flex-column justify-content-md-center align-items-md-center align-items-lg-center fs-1 heroH1 w-100"
-                style={{ flexWrap: "wrap", opacity:0 }}
+                style={{ flexWrap: "wrap", opacity: 0 }}
               >
                 <h1
                   className="text-md-center text-lg-center"
@@ -101,6 +102,7 @@ export default function Home() {
             className="page-content background w-100 h-100 position-relative"
             style={{ zIndex: "500" }}
           >
+            <TrustedBy />
             <WhyChooseUs />
             <Services />
             <Academy />

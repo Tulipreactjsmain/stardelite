@@ -1,4 +1,11 @@
-import { Adaptability, Layout, Collaboration, Expertise, Innovation } from ".";
+import {
+  Adaptability,
+  Layout,
+  Collaboration,
+  Expertise,
+  Innovation,
+  SectionHeader,
+} from ".";
 import { Row, Col } from "react-bootstrap";
 
 export default function CoreValues() {
@@ -12,7 +19,6 @@ export default function CoreValues() {
   const height = 342;
   const aspectRatio = width / height;
 
-
   return (
     <Layout padding={`layout-padding`}>
       <section
@@ -20,19 +26,7 @@ export default function CoreValues() {
         id="core-values"
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
-        <div className="text-dark-custom text-center hidden hidden-bottom">
-          <p className="m-0">what we believe</p>
-          <h5
-            className="fw-semibold"
-            style={{
-              color: "#8099CC",
-              fontSize: "2.5rem",
-              lineHeight: "72px",
-            }}
-          >
-            CORE VALUES
-          </h5>
-        </div>
+        <SectionHeader subTitle={"what we believe"} title={"CORE VALUES"} />
         <Row className="w-100 p-0 m-0">
           {coreValues.map((value, index) => (
             <Col
