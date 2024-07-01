@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Clutch, TechImply, Google, TrustPilot } from ".";
+import { Layout, Clutch, TechImply, Google, TrustPilot, Unstop } from ".";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -24,23 +24,24 @@ export default function TrustedBy() {
     <Clutch />,
     <TechImply />,
     <TrustPilot />,
-    <picture className="mt-3 w-25">
-      <Image
-        sizes="auto"
-        width={342}
-        height={310}
-        alt="service-image"
-        objectFit="cover"
-        objectPosition="center"
-        layout="responsive"
-        data-sizes="auto"
-        data-src={"/Eco.png"}
-        loading="lazy"
-        decoding="async"
-        className=" object-fit-cover lazy-load hidden zoom-out"
-        src={"/Eco.png"}
-      />
-    </picture>,
+    <Unstop />,
+    // <picture className="mt-3 w-25">
+    //   <Image
+    //     sizes="auto"
+    //     width={342}
+    //     height={310}
+    //     alt="service-image"
+    //     objectFit="cover"
+    //     objectPosition="center"
+    //     layout="responsive"
+    //     data-sizes="auto"
+    //     data-src={"/Eco.png"}
+    //     loading="lazy"
+    //     decoding="async"
+    //     className=" object-fit-cover lazy-load hidden zoom-out"
+    //     src={"/Eco.png"}
+    //   />
+    // </picture>,
   ];
 
   return (
