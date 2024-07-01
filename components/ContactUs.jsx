@@ -58,7 +58,7 @@ export default function ContactUs() {
                 <ContactForm />
               </div>
               <div
-                className=" w-100 py-5 px-3 d-flex flex-column justify-content-center align-items-start align-items-md-center align-items-lg-center"
+                className="intouch-instantly w-100 py-5 px-3 d-flex flex-column justify-content-center align-items-start align-items-md-center align-items-lg-center"
                 style={{
                   maxWidth: "19.813em",
                   backgroundColor: "rgb(255, 255, 255, 0.1)",

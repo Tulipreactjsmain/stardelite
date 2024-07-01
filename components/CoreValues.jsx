@@ -15,9 +15,6 @@ export default function CoreValues() {
     { title: "COLLABORATION", logo: <Collaboration /> },
     { title: "ADAPTABILITY", logo: <Adaptability /> },
   ];
-  const width = 342;
-  const height = 342;
-  const aspectRatio = width / height;
 
   return (
     <Layout padding={`layout-padding`}>
@@ -34,19 +31,22 @@ export default function CoreValues() {
               // sm={12}
               // md={3}
               // lg={6}
-              className={`d-flex py-5 align-items-center justify-content-center core-values-col hidden zoom-out core${index}`}
+              // hidden zoom-out
+              className={`d-flex align-items-center position-relative justify-content-center  core-values-col core${index}`}
               style={{
-                // aspectRatio: aspectRatio.toFixed(2),
                 borderRadius: "12px",
               }}
             >
               <div
-                className="text-center text-dark-custom d-flex flex-column gap-4 justify-content-center align-items-center"
-                style={{
-                  fontSize: "1.6rem",
-                }}
+                className="text-center text-dark-custom w-100 h-100 d-flex position-absolute top-0 flex-column gap-3 justify-content-center align-items-center"
+                style={
+                  {
+                    // marginTop:"15%",
+                    // fontSize: "1.3rem",
+                  }
+                }
               >
-                <span>{value.logo}</span>
+                <span className="w-100">{value.logo}</span>
                 <span className="title">{value.title}</span>
               </div>
             </Col>

@@ -10,7 +10,7 @@ export default function Academy() {
         id="academy"
         style={{ paddingTop: "9rem" }}
       >
-        <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-between">
+        <figure className="d-flex flex-column flex-md-row fw-medium flex-lg-row gap-5 align-items-center justify-content-between">
           <div className="d-flex flex-column align-items-center">
             <h3
               className="hidden small-screen-t hidden-left"
@@ -45,7 +45,7 @@ export default function Academy() {
           </div>
           <picture
             className="hidden hidden-right"
-            style={{ width: "70%", maxWidth: "40.693rem" }}
+            style={{ width: "70%", maxWidth: "35.693rem" }}
           >
             <Image
               src="/academyHighlight.webp"

@@ -54,19 +54,20 @@ export default function FaqCarousel() {
   return (
     <figure
       className="d-flex justify-content-between hidden hidden-right"
-      style={{ maxWidth: "1082px", flex: "1" }}
+      style={{maxWidth: "55.875rem", flex: "1" }}
     >
       <span className="my-auto mx-3 fs-1" onClick={handlePrevClick}>
         <HiChevronLeft color="#001a4d" />
       </span>
       <Carousel
+        indicators={false}
         controls={false}
         activeIndex={currentIndex}
         onSelect={(index) => setCurrentIndex(index)}
         className="faq-description text-dark-custom d-flex flex-column my-0 gap-0"
       >
         {faq.map((faq, index) => (
-          <Carousel.Item key={index} className="" style={{ height: "400px" }}>
+          <Carousel.Item key={index} className="" style={{ }}>
             <header className="text-center mb-3 d-flex justify-content-center">
               <h5 style={{ fontSize: "1.75rem", maxWidth: "750px" }}>
                 {faq.title}

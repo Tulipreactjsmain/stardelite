@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { Layout, X, Whatsapp, LinkedIn, Instagram, LogoWhite } from ".";
+import { Layout } from ".";
+import services from "@/pages/api/services";
 
-export default function CoreValues() {
+export default function Footer() {
+  const handleSmoothScroll = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <footer
       className="w-100 m-0 pt-5"
@@ -47,24 +54,13 @@ export default function CoreValues() {
           <section class="footer-column">
             <h5 className="fs-5">Services</h5>
             <ul>
-              <li>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <a href="#">IT Consulting</a>
-              </li>
-              <li>
-                <a href="tel:(123) 456-7890">UI/UX Design</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">Data Analytics</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">Graphic Design</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">Online Education</a>
-              </li>
+              {services.map((service, index) => (
+                <li key={index}>
+                  <a href="#services" onClick={handleSmoothScroll}>
+                    {service.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </section>
           <section class="footer-column">
@@ -74,10 +70,12 @@ export default function CoreValues() {
                 <a href="#">Help Center</a>
               </li>
               <li>
-                <a href="tel:(123) 456-7890">Account</a>
+                <a href="#">Account</a>
               </li>
               <li>
-                <a href="mailto:info@example.com">Talk to Support</a>
+                <a href="#contact" onClick={handleSmoothScroll}>
+                  Talk to Support
+                </a>
               </li>
             </ul>
           </section>
@@ -88,27 +86,35 @@ export default function CoreValues() {
                 <a href="#">Blog</a>
               </li>
               <li>
-                <a href="tel:(123) 456-7890">Academy</a>
+                <a href="#academy" onClick={handleSmoothScroll}>
+                  Academy
+                </a>
               </li>
               <li>
-                <a href="mailto:info@example.com">Newsletter</a>
+                <a href="#">Newsletter</a>
               </li>
             </ul>
           </section>
           <section class="footer-column">
             <h5 className="fs-5">Company</h5>
             <ul>
-              <li>About Us</li>
+              <li>
+                <a href="#about" onClick={handleSmoothScroll}>
+                  About Us
+                </a>
+              </li>
             </ul>
             <ul>
               <li>
                 <a href="#">Events</a>
               </li>
               <li>
-                <a href="tel:(123) 456-7890">Careers</a>
+                <a href="#">Careers</a>
               </li>
               <li>
-                <a href="mailto:info@example.com">Team</a>
+                <a href="#about" onClick={handleSmoothScroll}>
+                  Team
+                </a>
               </li>
             </ul>
           </section>

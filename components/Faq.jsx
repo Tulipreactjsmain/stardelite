@@ -13,12 +13,12 @@ export default function Faq() {
           subTitle={"just in case you were wondering"}
           title={"FAQ"}
         />
-        <article className="d-flex flex-lg-row gap-5 mt-5 flex-column flex-md-column align-items-center align-items-lg-stretch justify-content-between">
+        <article className="d-flex flex-lg-row gap-5 mt-5 flex-column flex-md-row align-items-center align-items-md-center align-items-lg-center justify-content-between">
           <picture
             className="hidden zoom-out"
             style={{
               width: "26%",
-              maxWidth: "20.875rem",
+              maxWidth: "17.875rem",
               display: "block",
             }}
           >
