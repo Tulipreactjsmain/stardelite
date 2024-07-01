@@ -291,10 +291,10 @@ h1 {
   picture {
     margin: auto !important;
     display: block !important;
-    filter: grayscale(100%);
+    // filter: grayscale(100%);
     width: 10% !important;
-    opacity: 70% !important;
-    mix-blend-mode: luminosity !important;
+    // opacity: 70% !important;
+    // mix-blend-mode: luminosity !important;
     // max-width: 12rem !important;
     .st3 {
       fill: #34a853 !important;

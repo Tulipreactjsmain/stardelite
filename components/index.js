@@ -29,6 +29,7 @@ export { default as PowerBi } from "./svgs/PowerBi.jsx";
 export { default as Python } from "./svgs/Python.jsx";
 export { default as ReactIcon } from "./svgs/ReactIcon.jsx";
 export { default as Sql } from "./svgs/Sql.jsx";
+export { default as Unstop } from "./svgs/Unstop.jsx";
 export { default as Vue } from "./svgs/Vue.jsx";
 export { default as Tableu } from "./svgs/Tablue.jsx";
 export { default as Adaptability } from "./svgs/Adaptability.jsx";
