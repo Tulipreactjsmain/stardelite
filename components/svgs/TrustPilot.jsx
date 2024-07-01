@@ -3,8 +3,8 @@ import React from "react";
 export default function TrustPilot() {
   return (
     <svg
-    //   width="1696"
-    //   height="419"
+      width="605"
+      height="115"
       viewBox="0 0 1696 419"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -3,9 +3,9 @@ import React from "react";
 export default function TechImply() {
   return (
     <svg
-    className="hidden zoom-out"
-      // width="300"
-      // height="69"
+      className="hidden zoom-out tech-imply"
+      width="605"
+      height="115"
       viewBox="0 0 300 69"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

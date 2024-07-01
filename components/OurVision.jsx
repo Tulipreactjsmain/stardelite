@@ -10,12 +10,13 @@ export default function OurVision() {
         style={{ paddingTop: "9rem", gap: "4rem" }}
       >
         <SectionHeader subTitle={'what we want to do'} title={'OUR VISION'}/>
-        <figure className="d-flex flex-column flex-md-column fw-medium flex-lg-row gap-5 align-items-center justify-content-around">
+        <figure className="d-flex flex-column flex-md-row fw-medium flex-lg-row gap-5 align-items-center justify-content-between">
           <figcaption
             className="hidden hidden-left"
             style={{
               textAlign: "justify",
               fontSize: "2rem",
+              maxWidth:"43.313rem"
             }}
           >
             Empowering businesses to achieve their full potential through
@@ -23,7 +24,7 @@ export default function OurVision() {
           </figcaption>
           <picture
             className="hidden hidden-right"
-            style={{ width: "44%", maxWidth: "34.741rem" }}
+            style={{ width: "44%", maxWidth: "28.741rem" }}
           >
             <Image
               src="/quoteImage.png"

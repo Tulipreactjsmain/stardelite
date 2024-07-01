@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
-import { ServicesModal, Layout, CachedImage, SectionHeader } from ".";
+import { ServicesModal, Layout,SectionHeader } from ".";
 import services from "@/pages/api/services";
 
 export default function Services() {
   const [isMouseIn, setIsMouseIn] = useState(null);
   const [show, setShow] = useState(false);
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
-
+  const [viewWidth, setViewWidth] = useState(0);
+  
   const handleClose = () => setShow(false);
   const handleShow = (index) => {
     setShow(true);
     setCurrentServiceIndex(index);
   };
-  const [viewWidth, setViewWidth] = useState(0);
 
   const getTitleWithBreaks = (title) =>
     title.split(" ").map((word, index, array) => (
@@ -44,10 +44,11 @@ export default function Services() {
           <div className="services-grid w-100 p-0 m-0">
             {services?.map((service, index) => (
               <div
-                className={`cursor-pointer service-box position-relative shadow-lg overflow-hidden p-0 hidden zoom-out service${index}`}
+                className={`cursor-pointer service-box bg-danger position-relative shadow-lg overflow-hidden hidden zoom-out service${index}`}
                 style={{
                   // height: "auto",
-                  height: "21rem",
+                  // height: "21rem",
+                  paddingBottom: "110%",
                   cursor: "pointer",
                   borderRadius: "2px",
                 }}
@@ -70,26 +71,8 @@ export default function Services() {
                   loading="lazy"
                   decoding="async"
                   className=" object-fit-cover lazy-load"
-                  // style={{
-                  //   objectPosition: "50% 50%",
-                  //   width: "100%",
-                  //   height: "100%",
-                  // }}
                 />
-                {/* <CachedImage
-                  cacheKey={mapImagePathToCacheKey(service.image)}
-                  // fallbackSrc={service.image}
-                  sizes=""
-                  dataSizes="auto"
-                  loading="lazy"
-                  decoding="async"
-                  className=" object-fit-cover lazy-load"
-                  style={{
-                    objectPosition: "50% 50%",
-                    width: "100%",
-                    height: "100%",
-                  }}
-                /> */}
+
                 <div
                   className="w-100 position-absolute top-0 h-100 text-center"
                   style={{

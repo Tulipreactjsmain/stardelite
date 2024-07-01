@@ -3,7 +3,9 @@ import React from "react";
 export default function Google() {
   return (
     <svg
-    className="hidden zoom-out"
+      className="hidden zoom-out"
+      width="605" 
+      height="115" 
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"

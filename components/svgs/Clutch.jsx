@@ -3,9 +3,11 @@ import React from "react";
 export default function Clutch() {
   return (
     <svg
-      className="hidden zoom-out"
+      className="hidden zoom-out clutch"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 405.7 115"
+      width="605" 
+      height="115" 
     >
       <circle cx="299.2" cy="75.3" r="13.3" fill="#E62415" />
       <path

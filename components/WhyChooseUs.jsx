@@ -26,7 +26,7 @@ export default function CoreValues() {
       <section
         className="why-us d-flex justify-content-between flex-column"
         id="why-us"
-        style={{ paddingTop: "8.5rem", gap: "4rem" }}
+        style={{ paddingTop: "7rem", gap: "4rem" }}
       >
         <SectionHeader
           subTitle={"why you should trust us"}
