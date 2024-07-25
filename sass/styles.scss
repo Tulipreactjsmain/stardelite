@@ -291,9 +291,9 @@ h1 {
   picture {
     margin: auto !important;
     display: block !important;
-    // filter: grayscale(100%);
+    filter: grayscale(100%);
     width: 10% !important;
-    // opacity: 70% !important;
+    opacity: 70% !important;
     // mix-blend-mode: luminosity !important;
     // max-width: 12rem !important;
     .st3 {
@@ -303,6 +303,12 @@ h1 {
       fill: #fbbc05 !important;
     }
   }
+
+  svg:hover {
+    filter: grayscale(0) !important;
+    opacity: 1 !important;
+  }
+  
 
   picture {
     max-width: 7% !important;
@@ -980,7 +986,11 @@ ul {
 
   .trusted-by svg {
     width: 40% !important;
+    filter: grayscale(0%) !important;
+    opacity: 100% !important;
   }
+
+  
 
   .trusted-by picture {
     width: 40% !important;

@@ -1,5 +1,13 @@
 import React from "react";
-import { Layout, Clutch, TechImply, Google, TrustPilot, Unstop } from ".";
+import {
+  Layout,
+  Clutch,
+  TechImply,
+  Google,
+  TrustPilot,
+  Unstop,
+  Paystack,
+} from ".";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -21,10 +29,12 @@ export default function TrustedBy() {
 
   const trustedBrands = [
     <Google />,
+    <Paystack />,
     <Clutch />,
-    <TechImply />,
+    // <TechImply />,
     <TrustPilot />,
     <Unstop />,
+
     // <picture className="mt-3 w-25">
     //   <Image
     //     sizes="auto"

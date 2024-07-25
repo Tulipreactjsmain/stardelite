@@ -17,6 +17,7 @@ export { default as CeoComment } from "./CeoComment.jsx";
 export { default as ContactUs } from "./ContactUs";
 export { default as Gimp } from "./svgs/Gimp.jsx";
 export { default as Inkscape } from "./svgs/Inkscape.jsx";
+export { default as Paystack } from "./svgs/Paystack.jsx";
 export { default as AiIllustrator } from "./svgs/AiIllustrator.jsx";
 export { default as Aws } from "./svgs/Aws.jsx";
 export { default as Azure } from "./svgs/Azure.jsx";

@@ -3,6 +3,7 @@ import React from "react";
 export default function TrustPilot() {
   return (
     <svg
+      className="hidden zoom-out"
       width="605"
       height="115"
       viewBox="0 0 1696 419"
